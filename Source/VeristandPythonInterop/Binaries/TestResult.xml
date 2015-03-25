@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\NI Projects\EXAM\EXAM CVI dotnet\VeristandPythonInterop\Binaries\VeristandPythonInteropTest.dll" total="42" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-09-09" time="13:01:40">
+  <environment nunit-version="2.6.1.12217" clr-version="2.0.50727.5483" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.1\bin" machine-name="HU-BUD-NB061" user="czkeprtj" user-domain="EMEA" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\NI Projects\EXAM\EXAM CVI dotnet\VeristandPythonInterop\Binaries\VeristandPythonInteropTest.dll" executed="True" result="Success" success="True" time="342.526" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="VeristandPythonInteropTest" executed="True" result="Success" success="True" time="342.522" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="VeriStandInteropIntegrationTests" executed="True" result="Success" success="True" time="198.131" asserts="0">
+            <results>
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.CloseProjectShouldThrowExceptionIfProjectIsNotOpen" executed="True" result="Success" success="True" time="0.032" asserts="2" />
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.CloseShouldCloseOpenedProject" executed="True" result="Success" success="True" time="1.628" asserts="1" />
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.DeployShouldDeployProject" executed="True" result="Success" success="True" time="7.798" asserts="2" />
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.DeployWithProgressShouldDeployProjectWithProgress" executed="True" result="Success" success="True" time="8.278" asserts="2" />
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.DisconnectAndConnectShouldDisconnectAndReconnectToProject" executed="True" result="Success" success="True" time="11.894" asserts="6" />
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.GetActiveProjectShouldReturnProjects" executed="True" result="Success" success="True" time="2.174" asserts="2" />
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.GetAvailableChannelsShouldReturnChannelsToRead" executed="True" result="Success" success="True" time="5.532" asserts="5" />
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.GetAvailableChannelsTrueShouldReturnChannelsToWrite" executed="True" result="Success" success="True" time="6.556" asserts="5" />
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.GetChannelValue" executed="True" result="Success" success="True" time="6.318" asserts="1" />
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.GetMultipleChannelValues" executed="True" result="Success" success="True" time="6.999" asserts="1" />
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.GetTargetRateShouldReturnTargetRate" executed="True" result="Success" success="True" time="10.479" asserts="1" />
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.OpenProjectShouldOpenProject" executed="True" result="Success" success="True" time="1.679" asserts="1" />
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.OpenProjectShouldThrowExceptionIfProjectIsInvalid" executed="True" result="Success" success="True" time="0.360" asserts="1" />
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.OpenShouldClosePreviouslyOpenedProject" executed="True" result="Success" success="True" time="1.108" asserts="1" />
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.RunShouldRunOpenedProject" executed="True" result="Success" success="True" time="3.345" asserts="0" />
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.SetChannelValueSynch" executed="True" result="Success" success="True" time="7.076" asserts="1" />
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.SetMultipleChannelValuesSynch" executed="True" result="Success" success="True" time="7.076" asserts="1" />
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.SetParamValue" executed="True" result="Success" success="True" time="7.141" asserts="1" />
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.SetParamValueSynch" executed="True" result="Success" success="True" time="6.842" asserts="1" />
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.ShowProjectWindowShouldShowWindow" executed="True" result="Success" success="True" time="4.469" asserts="1" />
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.StartAndStopLogging2ShouldStartAndStopLogging2" executed="True" result="Success" success="True" time="23.125" asserts="0" />
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.StartAndStopLogging2TriggeredShouldStartAndStopLogging2Triggered" executed="True" result="Success" success="True" time="32.517" asserts="0" />
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.StartAndStopLoggingShouldStartAndStopLogging" executed="True" result="Success" success="True" time="12.638" asserts="0" />
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.UnDeployShouldUnDeployProject" executed="True" result="Success" success="True" time="13.666" asserts="2" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="VeriStandInteropLoggingTests" executed="True" result="Success" success="True" time="0.094" asserts="0">
+            <results>
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropLoggingTests.TDMSHandlerShouldReturnColumnLogData" executed="True" result="Success" success="True" time="0.074" asserts="1" />
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropLoggingTests.TDMSHandlerShouldReturnLineLogData" executed="True" result="Success" success="True" time="0.004" asserts="1" />
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropLoggingTests.TDMSHandlerTimeShouldReturnColumnTimeLogData" executed="True" result="Success" success="True" time="0.005" asserts="1" />
+              <test-case name="VeristandPythonInteropTest.VeriStandInteropLoggingTests.TDMSLoggingPropertiesTest" executed="True" result="Success" success="True" time="0.007" asserts="4" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="VeristandPythonInteropLaunchCloseTest" executed="True" result="Success" success="True" time="144.291" asserts="0">
+            <results>
+              <test-case name="VeristandPythonInteropTest.VeristandPythonInteropLaunchCloseTest.CloseShouldCloseVeriStandWhenAProjectIsOpen" executed="True" result="Success" success="True" time="9.695" asserts="0" />
+              <test-case name="VeristandPythonInteropTest.VeristandPythonInteropLaunchCloseTest.CloseShouldNotThrowExceptionWhenVeriStandIsNotLaunched" executed="True" result="Success" success="True" time="9.570" asserts="0" />
+              <test-case name="VeristandPythonInteropTest.VeristandPythonInteropLaunchCloseTest.CloseVeriStandShouldProvideErrorMessageOnTimeout" executed="True" result="Success" success="True" time="9.702" asserts="2" />
+              <test-case name="VeristandPythonInteropTest.VeristandPythonInteropLaunchCloseTest.DeployProjectShouldThrownExceptionWhenVeriStandIsNotLaunched" executed="True" result="Success" success="True" time="9.458" asserts="2" />
+              <test-case name="VeristandPythonInteropTest.VeristandPythonInteropLaunchCloseTest.LaunchVeriStandShouldProvideErrorMessageOnTimeout" executed="True" result="Success" success="True" time="9.493" asserts="2" />
+              <test-case name="VeristandPythonInteropTest.VeristandPythonInteropLaunchCloseTest.MethodsShouldThrowExceptionIfProjectNotOpened" executed="True" result="Success" success="True" time="19.431" asserts="6" />
+              <test-case name="VeristandPythonInteropTest.VeristandPythonInteropLaunchCloseTest.MethodsShouldThrownExceptionWhenVeriStandIsNotLaunched" executed="True" result="Success" success="True" time="9.733" asserts="14" />
+              <test-case name="VeristandPythonInteropTest.VeristandPythonInteropLaunchCloseTest.SetMultipleChannelValuesShouldThrowExceptionWhenArgumentIsNull" executed="True" result="Success" success="True" time="9.615" asserts="3" />
+              <test-case name="VeristandPythonInteropTest.VeristandPythonInteropLaunchCloseTest.SetMultipleChannelValuesShouldThrowExceptionWhenArgumentsAreNotCorrect" executed="True" result="Success" success="True" time="9.739" asserts="2" />
+              <test-case name="VeristandPythonInteropTest.VeristandPythonInteropLaunchCloseTest.ShouldCloseVeriStand" executed="True" result="Success" success="True" time="10.223" asserts="3" />
+              <test-case name="VeristandPythonInteropTest.VeristandPythonInteropLaunchCloseTest.ShouldLaunchVeriStand" executed="True" result="Success" success="True" time="9.551" asserts="2" />
+              <test-case name="VeristandPythonInteropTest.VeristandPythonInteropLaunchCloseTest.ShouldProvideDefaultTimeouts" executed="True" result="Success" success="True" time="9.026" asserts="2" />
+              <test-case name="VeristandPythonInteropTest.VeristandPythonInteropLaunchCloseTest.ShouldReadVeristandLocationFromRegistry" executed="True" result="Success" success="True" time="9.624" asserts="3" />
+              <test-case name="VeristandPythonInteropTest.VeristandPythonInteropLaunchCloseTest.ShowProjectWindowShouldThrownExceptionWhenVeriStandIsNotLaunched" executed="True" result="Success" success="True" time="9.412" asserts="2" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

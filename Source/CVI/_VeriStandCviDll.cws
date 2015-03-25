@@ -1,0 +1,617 @@
+[Workspace Header]
+Version = 1301
+Pathname = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/_VeriStandCviDll.cws"
+CVI Dir = "/c/program files (x86)/national instruments/cvi2013"
+CVI Shared Dir = "/C/Program Files (x86)/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2013"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files (x86)/IVI Foundation/IVI"
+IVI Standard Root 64-bit Dir = "/C/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files (x86)/IVI Foundation/VISA/winnt"
+VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
+Number of Projects = 3
+Active Project = 3
+Project 0001 = "VeriStandCviDll.prj"
+Project 0002 = "TestVS.prj"
+Project 0002 Folder Source Files Collapsed = True
+Project 0002 FolderId 0 Collapsed = True
+Project 0002 Folder Include Files Collapsed = True
+Project 0002 FolderId 1 Collapsed = True
+Project 0002 Folder User Interface Files Collapsed = True
+Project 0002 FolderId 2 Collapsed = True
+Project 0002 Folder Library Files Collapsed = True
+Project 0002 FolderId 3 Collapsed = True
+Project 0003 = "UnitTests/CUnitTests.prj"
+Project 0003 Collapsed = True
+Project 0003 Folder Library Files Collapsed = True
+Project 0003 FolderId 2 Collapsed = True
+Drag Bar Left = 155
+Window Top = 45
+Window Left = 192
+Window Bottom = 1035
+Window Right = 1729
+Maximized = True
+Maximized Children = True
+Max32 Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win At Start = True
+Bring Up Err Win For Errors = False
+Save Changes Before Running = "Always"
+Save Changes Before Compiling = "Always"
+Hide Windows = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 6
+Window Confinement Region Enabled = True
+MainColumnWidth = 138
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+
+[Project Header 0001]
+Version = 1301
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Debug"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+
+[Project Header 0002]
+Version = 1301
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Debug"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+
+[Project Header 0003]
+Version = 1301
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Debug"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+
+[File 0001]
+Path Line0001 = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/DotNetController/VeristandPythonInterop."
+Path Line0002 = "fp"
+File Type = "Function Panel"
+Disk Date = 3493098600
+In Projects = "1,3,"
+Window Top = 32
+Window Left = 10
+Window Height = 400
+Window Width = 400
+
+[File 0002]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/UnitTests/CUnitTests.c"
+File Type = "CSource"
+Disk Date = 3493026994
+In Projects = "3,"
+Window Top = 122
+Window Left = 58
+Window Z-Order = 3
+Source Window State = "1,93,94,94,45,45,45,0,0,80,0,0,0,0,0,24,86,0,104,50,411,804,1,0,"
+
+[File 0003]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/CUnit/Sources/Framework/CUError.c"
+File Type = "CSource"
+Disk Date = 3230920646
+In Projects = "3,"
+Window Top = 62
+Window Left = 26
+Window Z-Order = 6
+Source Window State = "1,39,39,39,0,26,26,0,0,71,0,0,0,0,0,20,0,0,46,35,349,715,1,0,"
+
+[File 0004]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/UnitTests/IntegrationTest.c"
+File Type = "CSource"
+Disk Date = 3493027002
+In Projects = "3,"
+Window Top = 122
+Window Left = 50
+Window Z-Order = 5
+Source Window State = "1,499,501,501,35,38,38,0,0,71,0,42,0,1,0,20,105,0,0,0,349,715,1,13,"
+
+[File 0005]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/VeriStandCviDll.c"
+File Type = "CSource"
+Disk Date = 3493098604
+In Projects = "1,"
+Window Top = 39
+Window Left = 616
+Window Z-Order = 1
+Source Window State = "1,568,568,568,65,66,66,0,0,180,0,0,0,0,0,41,639,0,659,63,1013,1170,1,16,"
+
+[File 0006]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/VeriStandHelper.c"
+File Type = "CSource"
+Disk Date = 3448443986
+In Projects = "1,"
+Window Top = 122
+Window Left = 58
+Window Z-Order = 4
+Source Window State = "1,43,92,43,0,4,0,0,0,67,0,3,0,3,0,20,53,0,63,9,349,683,1,0,"
+
+[File 0007]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/VeriStandCviDll.h"
+File Type = "Include"
+Disk Date = 3455120482
+In Projects = "1,2,3,"
+Window Top = 92
+Window Left = 34
+Window Z-Order = 2
+Source Window State = "1,24,25,24,0,0,0,0,0,71,0,0,0,0,0,20,0,0,20,13,349,715,1,13,"
+
+[File 0008]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/VeriStandHelper.h"
+File Type = "Include"
+Disk Date = 3448443986
+In Projects = "1,"
+Window Top = 152
+Window Left = 74
+Source Window State = "1,34,34,34,0,101,0,0,0,0,0,0,0,0,0,0,0,0,4,71,349,683,1,0,"
+
+[File 0009]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/TestVS.c"
+File Type = "CSource"
+Disk Date = 3435127504
+In Projects = "2,"
+Window Top = 36
+Window Left = 10
+Source Window State = "1,55,55,55,23,30,30,0,0,0,0,0,0,0,0,0,0,0,12,20,349,715,1,0,"
+
+[File 0010]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/TestVS.h"
+File Type = "Include"
+Disk Date = 3435125504
+In Projects = "2,"
+Window Top = 146
+Window Left = 68
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,76,427,768,1,0,"
+
+[File 0011]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/TestVS.uir"
+File Type = "User Interface Resource"
+Disk Date = 3435125490
+In Projects = "2,"
+
+[File 0012]
+Path Line0001 = "/c/NI Projects/EXAM/EXAM CVI dotnet/VeristandPythonInterop/Binaries/VeriStandCvi"
+Path Line0002 = "Dll.lib"
+File Type = "Library"
+Disk Date = 3493098606
+In Projects = "2,3,"
+
+[File 0013]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/CUnit/Sources/Automated/Automated.c"
+File Type = "CSource"
+Disk Date = 3435295574
+In Projects = "3,"
+Window Top = 32
+Window Left = 10
+Source Window State = "1,173,173,173,82,83,82,0,0,0,0,0,0,0,0,0,586,0,537,64,336,715,1,0,"
+
+[File 0014]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/CUnit/Headers/Automated.h"
+File Type = "Include"
+Disk Date = 3229111302
+In Projects = "3,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0015]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/CUnit/Sources/Basic/Basic.c"
+File Type = "CSource"
+Disk Date = 3256680944
+In Projects = "3,"
+Window Top = 152
+Window Left = 74
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,63,0,89,0,349,715,1,0,"
+
+[File 0016]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/CUnit/Headers/Basic.h"
+File Type = "Include"
+Disk Date = 3229111302
+In Projects = "3,"
+Window Top = 62
+Window Left = 26
+Source Window State = "1,86,86,86,15,32,32,0,3,0,0,0,0,0,0,0,56,0,86,15,349,715,1,0,"
+
+[File 0017]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/CUnit/Headers/Console.h"
+File Type = "Include"
+Disk Date = 3229111302
+In Projects = "3,"
+Window Top = 302
+Window Left = 154
+Source Window State = "1,52,52,52,28,48,48,0,3,0,0,0,0,0,0,0,7,0,52,28,349,715,1,0,"
+
+[File 0018]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/CUnit/Headers/CUCurses.h"
+File Type = "Include"
+Disk Date = 3230920646
+In Projects = "3,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0019]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/CUnit/Headers/CUError.h"
+File Type = "Include"
+Disk Date = 3228344146
+In Projects = "3,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0020]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/CUnit/Headers/CUnit.h"
+File Type = "Include"
+Disk Date = 3370000312
+In Projects = "3,"
+Window Top = 242
+Window Left = 122
+Source Window State = "1,121,121,121,8,17,17,0,3,0,0,0,0,0,0,0,109,0,121,8,349,715,1,0,"
+
+[File 0021]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/CUnit/Headers/CUnit_intl.h"
+File Type = "Include"
+Disk Date = 3230920646
+In Projects = "3,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0022]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/UnitTests/IntegrationTest.h"
+File Type = "Include"
+Disk Date = 3455250354
+In Projects = "3,"
+Window Top = 182
+Window Left = 90
+Source Window State = "1,39,39,39,5,42,42,0,0,0,0,0,0,0,0,0,0,0,26,64,349,715,1,16,"
+
+[File 0023]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/CUnit/Sources/Framework/MyMem.c"
+File Type = "CSource"
+Disk Date = 3230975954
+In Projects = "3,"
+Window Top = 92
+Window Left = 42
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,349,715,0,0,"
+
+[File 0024]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/CUnit/Headers/MyMem.h"
+File Type = "Include"
+Disk Date = 3228344146
+In Projects = "3,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0025]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/CUnit/Sources/Framework/TestDB.c"
+File Type = "CSource"
+Disk Date = 3232149902
+In Projects = "3,"
+Window Top = 122
+Window Left = 58
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33,349,715,1,14,"
+
+[File 0026]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/CUnit/Headers/TestDB.h"
+File Type = "Include"
+Disk Date = 3230920646
+In Projects = "3,"
+Window Top = 32
+Window Left = 10
+Source Window State = "1,57,57,57,8,26,8,0,3,0,0,0,0,0,0,0,21,0,57,26,349,715,1,0,"
+
+[File 0027]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/CUnit/Sources/Framework/TestRun.c"
+File Type = "CSource"
+Disk Date = 3369889902
+In Projects = "3,"
+Window Top = 152
+Window Left = 74
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,962,0,983,49,349,715,1,0,"
+
+[File 0028]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/CUnit/Headers/TestRun.h"
+File Type = "Include"
+Disk Date = 3369819556
+In Projects = "3,"
+Window Top = 32
+Window Left = 10
+Source Window State = "1,86,86,86,2,16,16,0,0,0,0,0,0,0,0,0,84,0,96,2,349,715,1,0,"
+
+[File 0029]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/CUnit/Sources/Framework/Util.c"
+File Type = "CSource"
+Disk Date = 3256684038
+In Projects = "3,"
+Window Top = 182
+Window Left = 90
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,349,715,1,0,"
+
+[File 0030]
+Path = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/CUnit/Headers/Util.h"
+File Type = "Include"
+Disk Date = 3230920646
+In Projects = "3,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0031]
+Path Line0001 = "/c/NI Projects/EXAM/EXAM CVI dotnet/CVI/DotNetController/VeristandPythonInterop."
+Path Line0002 = "h"
+File Type = "Include"
+Disk Date = 3493098600
+In Projects = "3,"
+Window Top = 74
+Window Left = 30
+Source Window State = "1,37,37,37,2,57,57,1,0,0,0,0,0,0,0,0,88,0,46,28,427,768,1,0,"
+
+[Default Build Config 0001 Debug]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args Line0001 = "\"C:\\NI Projects\\EXAM\\EXAM CVI dotnet\\Python\\TestScript - CVI dll - test fu"
+Command Line Args Line0002 = "nctions.py\""
+Working Directory = "C:\\NI Projects\\EXAM\\EXAM CVI dotnet\\Python"
+Environment Options = ""
+External Process Path = "/c/Programy/Python2.5/python.exe"
+
+[Default Build Config 0001 Release]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Debug64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Build Dependencies 0001]
+Number of Dependencies = 0
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Profile = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+
+[Execution Target 0001]
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[Command Line Args 0001]
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+
+[Default Build Config 0002 Debug]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0002 Release]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0002 Debug64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0002 Release64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Build Dependencies 0002]
+Number of Dependencies = 0
+
+[Build Options 0002]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Profile = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+
+[Execution Target 0002]
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0002]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0002]
+External Process Path = ""
+
+[Command Line Args 0002]
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+
+[Default Build Config 0003 Debug]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0003 Release]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0003 Debug64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0003 Release64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Build Dependencies 0003]
+Number of Dependencies = 0
+
+[Build Options 0003]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Profile = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+
+[Execution Target 0003]
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0003]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0003]
+External Process Path = ""
+
+[Command Line Args 0003]
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+
+[Watch 1]
+Watch Expression = "szLastErrorMessage"
+

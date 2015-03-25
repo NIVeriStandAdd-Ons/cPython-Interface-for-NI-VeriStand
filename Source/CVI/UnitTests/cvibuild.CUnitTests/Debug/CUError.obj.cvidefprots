@@ -1,0 +1,20 @@
+[CU_set_error]
+Class="Function"
+Prototype="void CU_set_error(CU_ErrorCode error);"
+
+[CU_get_error]
+Class="Function"
+Prototype="CU_ErrorCode CU_get_error();"
+
+[CU_get_error_msg]
+Class="Function"
+Prototype="const char *CU_get_error_msg();"
+
+[CU_set_error_action]
+Class="Function"
+Prototype="void CU_set_error_action(enum CU_ErrorAction action);"
+
+[CU_get_error_action]
+Class="Function"
+Prototype="enum CU_ErrorAction CU_get_error_action();"
+

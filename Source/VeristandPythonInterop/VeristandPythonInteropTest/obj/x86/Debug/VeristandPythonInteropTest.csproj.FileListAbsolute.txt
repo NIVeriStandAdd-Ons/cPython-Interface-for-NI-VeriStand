@@ -1,0 +1,20 @@
+D:\NI Projects\2011 ASAM EXAM HIL\EXAM CVI dotnet\VeristandPythonInterop\Binaries\VeristandPythonInteropTest.dll
+D:\NI Projects\2011 ASAM EXAM HIL\EXAM CVI dotnet\VeristandPythonInterop\Binaries\VeristandPythonInteropTest.pdb
+D:\NI Projects\2011 ASAM EXAM HIL\EXAM CVI dotnet\VeristandPythonInterop\VeristandPythonInteropTest\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\NI Projects\2011 ASAM EXAM HIL\EXAM CVI dotnet\VeristandPythonInterop\VeristandPythonInteropTest\obj\x86\Debug\VeristandPythonInteropTest.dll
+D:\NI Projects\2011 ASAM EXAM HIL\EXAM CVI dotnet\VeristandPythonInterop\VeristandPythonInteropTest\obj\x86\Debug\VeristandPythonInteropTest.pdb
+C:\NI Projects\Moog cPython\VeristandPythonInterop\Binaries\VeristandPythonInteropTest.dll
+C:\NI Projects\Moog cPython\VeristandPythonInterop\Binaries\VeristandPythonInteropTest.pdb
+C:\NI Projects\Moog cPython\VeristandPythonInterop\VeristandPythonInteropTest\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\NI Projects\Moog cPython\VeristandPythonInterop\VeristandPythonInteropTest\obj\x86\Debug\VeristandPythonInteropTest.dll
+C:\NI Projects\Moog cPython\VeristandPythonInterop\VeristandPythonInteropTest\obj\x86\Debug\VeristandPythonInteropTest.pdb
+c:\NI Projects\2011 ASAM EXAM HIL\EXAM CVI dotnet\VeristandPythonInterop\VeristandPythonInteropTest\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\NI Projects\2011 ASAM EXAM HIL\EXAM CVI dotnet\VeristandPythonInterop\Binaries\VeristandPythonInteropTest.dll
+c:\NI Projects\2011 ASAM EXAM HIL\EXAM CVI dotnet\VeristandPythonInterop\Binaries\VeristandPythonInteropTest.pdb
+c:\NI Projects\2011 ASAM EXAM HIL\EXAM CVI dotnet\VeristandPythonInterop\VeristandPythonInteropTest\obj\x86\Debug\VeristandPythonInteropTest.dll
+c:\NI Projects\2011 ASAM EXAM HIL\EXAM CVI dotnet\VeristandPythonInterop\VeristandPythonInteropTest\obj\x86\Debug\VeristandPythonInteropTest.pdb
+c:\NI Projects\EXAM\EXAM CVI dotnet\VeristandPythonInterop\Binaries\VeristandPythonInteropTest.dll
+c:\NI Projects\EXAM\EXAM CVI dotnet\VeristandPythonInterop\Binaries\VeristandPythonInteropTest.pdb
+c:\NI Projects\EXAM\EXAM CVI dotnet\VeristandPythonInterop\VeristandPythonInteropTest\obj\x86\Debug\VeristandPythonInteropTest.csprojResolveAssemblyReference.cache
+c:\NI Projects\EXAM\EXAM CVI dotnet\VeristandPythonInterop\VeristandPythonInteropTest\obj\x86\Debug\VeristandPythonInteropTest.dll
+c:\NI Projects\EXAM\EXAM CVI dotnet\VeristandPythonInterop\VeristandPythonInteropTest\obj\x86\Debug\VeristandPythonInteropTest.pdb

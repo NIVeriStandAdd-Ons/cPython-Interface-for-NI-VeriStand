@@ -1,0 +1,24 @@
+[CU_basic_run_tests]
+Class="Function"
+Prototype="CU_ErrorCode CU_basic_run_tests();"
+
+[CU_basic_run_suite]
+Class="Function"
+Prototype="CU_ErrorCode CU_basic_run_suite(struct CU_Suite *pSuite);"
+
+[CU_basic_run_test]
+Class="Function"
+Prototype="CU_ErrorCode CU_basic_run_test(struct CU_Suite *pSuite, struct CU_Test *pTest);"
+
+[CU_basic_set_mode]
+Class="Function"
+Prototype="void CU_basic_set_mode(CU_BasicRunMode mode);"
+
+[CU_basic_get_mode]
+Class="Function"
+Prototype="CU_BasicRunMode CU_basic_get_mode();"
+
+[CU_basic_show_failures]
+Class="Function"
+Prototype="void CU_basic_show_failures(struct CU_FailureRecord *pFailure);"
+

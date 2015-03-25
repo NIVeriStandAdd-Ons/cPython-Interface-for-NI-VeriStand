@@ -1,0 +1,62 @@
+-nologo
+-out:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\CUnitTests.exe
+-arch:x86
+-timestamp
+-debug:2
+-res:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\resources.res
+-entry:_CVIWinMainStartupCodeForDebugging@0
+-base:0x400000
+-linked:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\linkersummary.txt
+-dlldeps:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\dlldependencies.txt
+-licensing:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\linkerlicensing.txt
+-browsedeps:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\moduledependencies.txt
+-stackreserve:131072
+-stackcommit:4096
+-in:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\Automated.obj
+-in:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\Basic.obj
+-in:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\CUError.obj
+-in:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\CUnitTests.obj
+-in:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\IntegrationTest.obj
+-in:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\MyMem.obj
+-in:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\TestDB.obj
+-in:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\TestRun.obj
+-in:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\Util.obj
+-more:c:\program files (x86)\national instruments\cvi2013\bin\msvc\cvistart.lib
+-more:c:\program files (x86)\national instruments\cvi2013\bin\msvc\cvi.lib
+-more:c:\program files (x86)\national instruments\cvi2013\sdk\lib\msvc\advapi32.lib
+-more:c:\ProgramData\National Instruments\CVI2013\bin\msvc\analysis.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2013\toolslib\toolbox\msvc\asynctmr.obj
+-more:c:\Program Files (x86)\National Instruments\CVI2013\bin\msvc\cviauto.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2013\bin\msvc\cviddc.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2013\bin\msvc\cvidotnet.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2013\bin\msvc\cvinetstreams.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2013\bin\msvc\cvinetv.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2013\bin\msvc\cvintwrk.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2013\bin\msvc\cvitdms.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\FlexMotn.lib
+-more:c:\program files (x86)\national instruments\cvi2013\sdk\lib\msvc\gdi32.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2013\bin\msvc\gpib.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\toolslib\custctrl\msvc\ImageControl.obj
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\imaqio.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\ivi.lib
+-more:c:\program files (x86)\national instruments\cvi2013\sdk\lib\msvc\kernel32.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\nican.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\NIDAQmx.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\NIDiagCS.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\niemcc.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\NiFpga.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\niimaq.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\niimaqdx.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\nisyscfg.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\nivision.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2013\bin\msvc\nivxi.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\nixnet.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2013\bin\msvc\omp.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\pid.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2013\toolslib\toolbox\msvc\toolbox.obj
+-more:c:\program files (x86)\national instruments\cvi2013\sdk\lib\msvc\user32.lib
+-more:c:\program files (x86)\national instruments\cvi2013\sdk\lib\msvc\uuid.lib
+-more:c:\NI Projects\EXAM\EXAM CVI dotnet\VeristandPythonInterop\Binaries\msvc\VeriStandCviDll.lib
+-more:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\VeristandPythonInterop.obj
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\visa.lib
+-more:c:\program files (x86)\national instruments\cvi2013\sdk\lib\msvc\winmm.lib

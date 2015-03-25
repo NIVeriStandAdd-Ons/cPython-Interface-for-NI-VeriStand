@@ -1,0 +1,12 @@
+[StoreErrorForGetLastErrorFromDotNetHandle]
+Class="Function"
+Prototype="void StoreErrorForGetLastErrorFromDotNetHandle(char *pszFunctionName, void **exceptionHandle);"
+
+[LogErrorMessage]
+Class="Function"
+Prototype="void LogErrorMessage(char *pszErrorMessage);"
+
+[StoreErrorForGetLastError]
+Class="Function"
+Prototype="void StoreErrorForGetLastError(char *pszFunctionName, char *pszErrorMessage);"
+

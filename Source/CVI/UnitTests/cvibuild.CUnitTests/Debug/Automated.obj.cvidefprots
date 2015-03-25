@@ -1,0 +1,12 @@
+[CU_automated_run_tests]
+Class="Function"
+Prototype="void CU_automated_run_tests();"
+
+[CU_set_output_filename]
+Class="Function"
+Prototype="void CU_set_output_filename(const char *szFilenameRoot);"
+
+[CU_list_tests_to_file]
+Class="Function"
+Prototype="CU_ErrorCode CU_list_tests_to_file();"
+

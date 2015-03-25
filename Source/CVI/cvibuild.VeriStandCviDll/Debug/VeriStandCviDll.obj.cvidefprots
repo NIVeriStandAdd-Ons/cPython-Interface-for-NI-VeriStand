@@ -1,0 +1,172 @@
+[GetLastErrorMessage]
+Class="Function"
+Prototype="char *GetLastErrorMessage();"
+
+[CloseVeriStand]
+Class="Function"
+Prototype="int CloseVeriStand();"
+
+[RunProject]
+Class="Function"
+Prototype="int RunProject();"
+
+[CloseProject]
+Class="Function"
+Prototype="int CloseProject();"
+
+[ShowProjectWindow]
+Class="Function"
+Prototype="int ShowProjectWindow();"
+
+[OpenWorkspace]
+Class="Function"
+Prototype="int OpenWorkspace();"
+
+[Connect]
+Class="Function"
+Prototype="int Connect();"
+
+[Disconnect]
+Class="Function"
+Prototype="int Disconnect();"
+
+[CloseWorkspace]
+Class="Function"
+Prototype="int CloseWorkspace();"
+
+[DeployProject]
+Class="Function"
+Prototype="int DeployProject();"
+
+[DeployProjectWithProgress]
+Class="Function"
+Prototype="int DeployProjectWithProgress();"
+
+[UndeployProject]
+Class="Function"
+Prototype="int UndeployProject();"
+
+[GetChannelValue]
+Class="Function"
+Prototype="int GetChannelValue(char *pszChannelName, double *pdValue);"
+
+[GetMultipleChannelValues]
+Class="Function"
+Prototype="int GetMultipleChannelValues(char **channelNames, double *dValues, int iLength, int iCharLineLength);"
+
+[GetActiveProject]
+Class="Function"
+Prototype="int GetActiveProject(char *ActiveProject, int RequestedProjectIndex, int *numberOfProjects);"
+
+[GetDataLogging2SessionState]
+Class="Function"
+Prototype="int GetDataLogging2SessionState(char *sLogConfigName, char *sSessionState);"
+
+[GetDataLogging2State]
+Class="Function"
+Prototype="int GetDataLogging2State(char *sLogConfigName, int *sessionState);"
+
+[GetAllDeployedSessions]
+Class="Function"
+Prototype="int GetAllDeployedSessions(char *DeployedSession, int RequestedSessionIndex, int *numberOfSessions);"
+
+[GetAvailableChannelsToReadCount]
+Class="Function"
+Prototype="int GetAvailableChannelsToReadCount(int *numberOfChannels);"
+
+[GetAvailableChannelsToWriteCount]
+Class="Function"
+Prototype="int GetAvailableChannelsToWriteCount(int *numberOfChannels);"
+
+[GetTargetRate]
+Class="Function"
+Prototype="int GetTargetRate(double *TargetRate);"
+
+[GetAvailableChannelToRead]
+Class="Function"
+Prototype="int GetAvailableChannelToRead(char *channel, int requestedChannelIndex);"
+
+[GetAvailableChannelToWrite]
+Class="Function"
+Prototype="int GetAvailableChannelToWrite(char *channel, int requestedChannelIndex);"
+
+[IsOpenProjectRunning]
+Class="Function"
+Prototype="int IsOpenProjectRunning(int *running);"
+
+[SetChannelValue]
+Class="Function"
+Prototype="int SetChannelValue(char *pszChannelName, double dValue);"
+
+[SetChannelValueSynch]
+Class="Function"
+Prototype="int SetChannelValueSynch(char *pszChannelName, double dValue, double *pWriteTime);"
+
+[SetMultipleChannelValues]
+Class="Function"
+Prototype="int SetMultipleChannelValues(char **channelNames, double *dValues, int iLength, int iCharLineLength);"
+
+[SetMultipleChannelValuesSynch]
+Class="Function"
+Prototype="int SetMultipleChannelValuesSynch(char **channelNames, double *dValues, int iLength, int iCharLineLength, double *pWriteTime);"
+
+[OpenProject]
+Class="Function"
+Prototype="int OpenProject(char *pszFileName);"
+
+[StartDataLogging]
+Class="Function"
+Prototype="int StartDataLogging(char *logConfigName, char *logDescription, char *logFilePath, double lTriggerHighLimit, double lTriggerLowLimit, int lReplaceFile, enum NationalInstruments_VeriStand_ClientAPI_LogInfo_trigger lTriggerType, char *lTriggerChannel, double lRate, char **lFilePropertiesNames, int lFilePropertiesNamesLength, int lFilePropertiesNamesLineLength, char **lFilePropertiesValues, int lFilePropertiesValuesLength, int lFilePropertiesValuesLineLength, char **lChannelsToLog, int lChannelsToLogLength, int lChannelsToLogLineLength);"
+
+[StartDataLogging2]
+Class="Function"
+Prototype="int StartDataLogging2(char *logConfigName, char *logDescription, char *logFilePath, double fTriggerLevel, int lReplaceFile, int iTriggerSlope, char *lTriggerChannel, double lRate, char **lFilePropertiesNames, int lFilePropertiesNamesLength, int lFilePropertiesNamesLineLength, char **lFilePropertiesValues, int lFilePropertiesValuesLength, int lFilePropertiesValuesLineLength, char **lChannelsToLog, int lChannelsToLogLength, int lChannelsToLogLineLength, double fDuration, double fPreTriggerDuration, char **lChannelShortNames, int lChannelShortNamesLength, int lChannelShortNamesLineLength);"
+
+[StopDataLogging]
+Class="Function"
+Prototype="int StopDataLogging(char *logConfigName);"
+
+[StopDataLogging2]
+Class="Function"
+Prototype="int StopDataLogging2(char *logConfigName);"
+
+[TDMSOpen]
+Class="Function"
+Prototype="int TDMSOpen(char *filePath);"
+
+[TDMSClose]
+Class="Function"
+Prototype="int TDMSClose();"
+
+[GetTDMSLoggingRate]
+Class="Function"
+Prototype="int GetTDMSLoggingRate(double *loggingRate);"
+
+[GetTDMSLogChannelCount]
+Class="Function"
+Prototype="int GetTDMSLogChannelCount(int *logChannelCount);"
+
+[GetTDMSLogLength]
+Class="Function"
+Prototype="int GetTDMSLogLength(long long *logLength);"
+
+[GetTDMSLogChannelProperty]
+Class="Function"
+Prototype="int GetTDMSLogChannelProperty(int channelIndex, char *propertyName, char *propertyValue);"
+
+[TDMSReadColumn]
+Class="Function"
+Prototype="int TDMSReadColumn(double *logColumnData, int iColumnLength, int channelIndex);"
+
+[TDMSReadTimeColumn]
+Class="Function"
+Prototype="int TDMSReadTimeColumn(double *logColumnData, int iColumnLength);"
+
+[LaunchVeriStand]
+Class="Function"
+Prototype="int LaunchVeriStand();"
+
+[DllMain]
+Class="Function"
+Prototype="int DllMain(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+

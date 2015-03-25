@@ -1,0 +1,27 @@
+# Shared objects (inc. Windows DLLs)
+#*.so
+#*.so.*
+#*.dylib
+#*.dll		These are allowed because models are too easy to accidently ignore for demo repositories
+
+# Executables
+#*.exe
+
+# Windows
+# =========================
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+#*.cab
+#*.msi
+#*.msm
+#*.msp

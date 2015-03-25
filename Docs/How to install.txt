@@ -1,0 +1,19 @@
+1) Install NIVS 2013 SP1 and drivers
+2) Install CVI 2013 SP1 runtime
+http://www.ni.com/download/labwindowscvi-run-time-engine-2013-sp1/4561/en/
+
+3) Install cPython 2.5.4 
+https://www.python.org/download/releases/2.5.4/
+You can skip this step if EXAM is already installed. Installation of EXAM 3.4.5 contains this Python version.
+
+4)Install TDMS support for NIVS EXAM platform interface
+Setup.exe from EXAM CVI dotnet\VeristandPythonInterop\EXAM NI VeriStand Platform TDMS Support\Debug\ 
+
+5) Copy  "EXAM CVI dotnet" foder somewhere to your drive
+6) Start NIVS 2013 SP1
+7) Try to run manually $YourFolder$\VS\Sinewave UnitTest.nivsproj
+8) Undeploy and close the project.
+9) Open IDLE (Python GUI).
+10) Open $YourFolder$\Python\TestScript - CVI dll - test functions 1.8.py
+11) Fix the line 26 to errorCheck(veristandInterOp.OpenProject("$YourFolder$\\VS\\Sinewave UnitTest.nivsproj")) 
+12) Run the script

@@ -1,0 +1,120 @@
+[CU_initialize_registry]
+Class="Function"
+Prototype="CU_ErrorCode CU_initialize_registry();"
+
+[CU_registry_initialized]
+Class="Function"
+Prototype="int CU_registry_initialized();"
+
+[CU_cleanup_registry]
+Class="Function"
+Prototype="void CU_cleanup_registry();"
+
+[CU_get_registry]
+Class="Function"
+Prototype="struct CU_TestRegistry *CU_get_registry();"
+
+[CU_set_registry]
+Class="Function"
+Prototype="struct CU_TestRegistry *CU_set_registry(struct CU_TestRegistry *pRegistry);"
+
+[CU_add_suite]
+Class="Function"
+Prototype="struct CU_Suite *CU_add_suite(const char *strName, int (*pInit)(void), int (*pClean)(void));"
+
+[CU_set_suite_active]
+Class="Function"
+Prototype="CU_ErrorCode CU_set_suite_active(struct CU_Suite *pSuite, int fNewActive);"
+
+[CU_set_suite_name]
+Class="Function"
+Prototype="CU_ErrorCode CU_set_suite_name(struct CU_Suite *pSuite, const char *strNewName);"
+
+[CU_set_suite_initfunc]
+Class="Function"
+Prototype="CU_ErrorCode CU_set_suite_initfunc(struct CU_Suite *pSuite, int (*pNewInit)(void));"
+
+[CU_set_suite_cleanupfunc]
+Class="Function"
+Prototype="CU_ErrorCode CU_set_suite_cleanupfunc(struct CU_Suite *pSuite, int (*pNewClean)(void));"
+
+[CU_get_suite]
+Class="Function"
+Prototype="struct CU_Suite *CU_get_suite(const char *strName);"
+
+[CU_get_suite_at_pos]
+Class="Function"
+Prototype="struct CU_Suite *CU_get_suite_at_pos(unsigned int pos);"
+
+[CU_get_suite_pos]
+Class="Function"
+Prototype="unsigned int CU_get_suite_pos(struct CU_Suite *pSuite);"
+
+[CU_get_suite_pos_by_name]
+Class="Function"
+Prototype="unsigned int CU_get_suite_pos_by_name(const char *strName);"
+
+[CU_add_test]
+Class="Function"
+Prototype="struct CU_Test *CU_add_test(struct CU_Suite *pSuite, const char *strName, void (*pTestFunc)(void));"
+
+[CU_set_test_active]
+Class="Function"
+Prototype="CU_ErrorCode CU_set_test_active(struct CU_Test *pTest, int fNewActive);"
+
+[CU_set_test_name]
+Class="Function"
+Prototype="CU_ErrorCode CU_set_test_name(struct CU_Test *pTest, const char *strNewName);"
+
+[CU_set_test_func]
+Class="Function"
+Prototype="CU_ErrorCode CU_set_test_func(struct CU_Test *pTest, void (*pNewFunc)(void));"
+
+[CU_get_test]
+Class="Function"
+Prototype="struct CU_Test *CU_get_test(struct CU_Suite *pSuite, const char *strName);"
+
+[CU_get_test_at_pos]
+Class="Function"
+Prototype="struct CU_Test *CU_get_test_at_pos(struct CU_Suite *pSuite, unsigned int pos);"
+
+[CU_get_test_pos]
+Class="Function"
+Prototype="unsigned int CU_get_test_pos(struct CU_Suite *pSuite, struct CU_Test *pTest);"
+
+[CU_get_test_pos_by_name]
+Class="Function"
+Prototype="unsigned int CU_get_test_pos_by_name(struct CU_Suite *pSuite, const char *strName);"
+
+[CU_register_nsuites]
+Class="Function"
+Prototype="CU_ErrorCode CU_register_nsuites(int suite_count, ...);"
+
+[CU_register_suites]
+Class="Function"
+Prototype="CU_ErrorCode CU_register_suites(struct CU_SuiteInfo *suite_info);"
+
+[CU_create_new_registry]
+Class="Function"
+Prototype="struct CU_TestRegistry *CU_create_new_registry();"
+
+[CU_destroy_existing_registry]
+Class="Function"
+Prototype="void CU_destroy_existing_registry(struct CU_TestRegistry **ppRegistry);"
+
+[CU_get_suite_by_name]
+Class="Function"
+Prototype="struct CU_Suite *CU_get_suite_by_name(const char *szSuiteName, struct CU_TestRegistry *pRegistry);"
+
+[CU_get_suite_by_index]
+Class="Function"
+Prototype="struct CU_Suite *CU_get_suite_by_index(unsigned int index, struct CU_TestRegistry *pRegistry);"
+
+[CU_get_test_by_name]
+Class="Function"
+Prototype="struct CU_Test *CU_get_test_by_name(const char *szTestName, struct CU_Suite *pSuite);"
+
+[CU_get_test_by_index]
+Class="Function"
+Prototype="struct CU_Test *CU_get_test_by_index(unsigned int index, struct CU_Suite *pSuite);"
+

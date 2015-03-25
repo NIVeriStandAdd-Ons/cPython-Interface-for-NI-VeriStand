@@ -1,0 +1,88 @@
+[RunProjectShouldRunProject]
+Class="Function"
+Prototype="void RunProjectShouldRunProject();"
+
+[CloseShouldCloseOpenedProject]
+Class="Function"
+Prototype="void CloseShouldCloseOpenedProject();"
+
+[CloseOpenWorkspaceShouldCloseOpenRunningProject]
+Class="Function"
+Prototype="void CloseOpenWorkspaceShouldCloseOpenRunningProject();"
+
+[SetGetChannelValueShouldSetAndGetChannelValue]
+Class="Function"
+Prototype="void SetGetChannelValueShouldSetAndGetChannelValue();"
+
+[SetGetParamValueShouldSetAndGetParamValue]
+Class="Function"
+Prototype="void SetGetParamValueShouldSetAndGetParamValue();"
+
+[SetGetParamValueSynchShouldSetAndGetParamValueSynch]
+Class="Function"
+Prototype="void SetGetParamValueSynchShouldSetAndGetParamValueSynch();"
+
+[SetGetChannelValueSynchShouldSetAndGetChannelValueSynch]
+Class="Function"
+Prototype="void SetGetChannelValueSynchShouldSetAndGetChannelValueSynch();"
+
+[GetActiveProjectShouldReturnProjects]
+Class="Function"
+Prototype="void GetActiveProjectShouldReturnProjects();"
+
+[GetAvailableChannelsToReadCountShouldReturnCount]
+Class="Function"
+Prototype="void GetAvailableChannelsToReadCountShouldReturnCount();"
+
+[GetAvailableChannelsToWriteCountShouldReturnCount]
+Class="Function"
+Prototype="void GetAvailableChannelsToWriteCountShouldReturnCount();"
+
+[GetAvailableChannelToReadShouldReturnChannel]
+Class="Function"
+Prototype="void GetAvailableChannelToReadShouldReturnChannel();"
+
+[GetAvailableChannelToWriteShouldReturnChannel]
+Class="Function"
+Prototype="void GetAvailableChannelToWriteShouldReturnChannel();"
+
+[StartAndStopLoggingShouldStartAndStopLogging]
+Class="Function"
+Prototype="void StartAndStopLoggingShouldStartAndStopLogging();"
+
+[StartAndStopLogging2ShouldStartAndStopLogging2]
+Class="Function"
+Prototype="void StartAndStopLogging2ShouldStartAndStopLogging2();"
+
+[GetTDMSShouldReturnTDMSProperties]
+Class="Function"
+Prototype="void GetTDMSShouldReturnTDMSProperties();"
+
+[TDMSReadColumnShouldReturnTDMSColumn]
+Class="Function"
+Prototype="void TDMSReadColumnShouldReturnTDMSColumn();"
+
+[TDMSReadTimeColumnShouldReturnTDMSTimeColumn]
+Class="Function"
+Prototype="void TDMSReadTimeColumnShouldReturnTDMSTimeColumn();"
+
+[UnDeployShouldUnDeployProject]
+Class="Function"
+Prototype="void UnDeployShouldUnDeployProject();"
+
+[DisconnectAndConnectShouldDisconnectAndReconnectToProject]
+Class="Function"
+Prototype="void DisconnectAndConnectShouldDisconnectAndReconnectToProject();"
+
+[SetMultipleChannelsValueShouldSetMultipleChannelsValue]
+Class="Function"
+Prototype="void SetMultipleChannelsValueShouldSetMultipleChannelsValue();"
+
+[SetMultipleChannelsValueSynchShouldSetMultipleChannelsValueSynch]
+Class="Function"
+Prototype="void SetMultipleChannelsValueSynchShouldSetMultipleChannelsValueSynch();"
+
+[HandleError]
+Class="Function"
+Prototype="int HandleError(int status, char *pszFunctionName);"
+

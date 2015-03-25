@@ -1,0 +1,28 @@
+[CU_translate_special_characters]
+Class="Function"
+Prototype="unsigned int CU_translate_special_characters(const char *szSrc, char *szDest, unsigned int maxlen);"
+
+[CU_translated_strlen]
+Class="Function"
+Prototype="unsigned int CU_translated_strlen(const char *szSrc);"
+
+[CU_compare_strings]
+Class="Function"
+Prototype="int CU_compare_strings(const char *szSrc, const char *szDest);"
+
+[CU_trim]
+Class="Function"
+Prototype="void CU_trim(char *szString);"
+
+[CU_trim_left]
+Class="Function"
+Prototype="void CU_trim_left(char *szString);"
+
+[CU_trim_right]
+Class="Function"
+Prototype="void CU_trim_right(char *szString);"
+
+[CU_number_width]
+Class="Function"
+Prototype="unsigned int CU_number_width(int number);"
+

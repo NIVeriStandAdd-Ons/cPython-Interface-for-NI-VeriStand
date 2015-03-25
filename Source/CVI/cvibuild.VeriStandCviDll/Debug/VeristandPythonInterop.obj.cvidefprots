@@ -1,0 +1,204 @@
+[Initialize_VeristandPythonInterop]
+Class="Function"
+Prototype="int Initialize_VeristandPythonInterop();"
+
+[Close_VeristandPythonInterop]
+Class="Function"
+Prototype="int Close_VeristandPythonInterop();"
+
+[VeristandPythonInterop_VeriStandTDMSHandler__Create]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandTDMSHandler__Create(struct __VeristandPythonInterop_VeriStandTDMSHandler **__instance, void **__exception);"
+
+[VeristandPythonInterop_VeriStandTDMSHandler_TDMSOpen]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_TDMSOpen(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, char *filePath, void **__exception);"
+
+[VeristandPythonInterop_VeriStandTDMSHandler_TDMSClose]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_TDMSClose(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, void **__exception);"
+
+[VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLoggingRate]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLoggingRate(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, double *__returnValue, void **__exception);"
+
+[VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogChannelCount]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogChannelCount(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, int *__returnValue, void **__exception);"
+
+[VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogLength]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogLength(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, long long *__returnValue, void **__exception);"
+
+[VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogChannelProperty]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogChannelProperty(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, int channelIndex, char *propertyName, char **__returnValue, void **__exception);"
+
+[VeristandPythonInterop_VeriStandTDMSHandler_TDMSReadLine]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_TDMSReadLine(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, int reqLine, double **__returnValue, int *____returnValueLength, void **__exception);"
+
+[VeristandPythonInterop_VeriStandTDMSHandler_TDMSReadColumn]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_TDMSReadColumn(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, int reqColumn, double **__returnValue, int *____returnValueLength, void **__exception);"
+
+[VeristandPythonInterop_VeriStandTDMSHandler_TDMSTimeColumn]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_TDMSTimeColumn(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, double **__returnValue, int *____returnValueLength, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_GetVeristandInterop]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_GetVeristandInterop(struct __VeristandPythonInterop_VeriStandInterop **__returnValue, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_GetNewVeristandInterop]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_GetNewVeristandInterop(struct __VeristandPythonInterop_VeriStandInterop **__returnValue, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_DeployProject]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_DeployProject(struct __VeristandPythonInterop_VeriStandInterop *__instance, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_DeployProjectWithProgress]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_DeployProjectWithProgress(struct __VeristandPythonInterop_VeriStandInterop *__instance, int showProgress, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_UndeployProject]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_UndeployProject(struct __VeristandPythonInterop_VeriStandInterop *__instance, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_OpenWorkspace]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_OpenWorkspace(struct __VeristandPythonInterop_VeriStandInterop *__instance, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_CloseWorkspace]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_CloseWorkspace(struct __VeristandPythonInterop_VeriStandInterop *__instance, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_Connect]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_Connect(struct __VeristandPythonInterop_VeriStandInterop *__instance, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_Disconnect]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_Disconnect(struct __VeristandPythonInterop_VeriStandInterop *__instance, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_GetChannelValue]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_GetChannelValue(struct __VeristandPythonInterop_VeriStandInterop *__instance, char *channelIdentidier, double *__returnValue, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_GetTargetRate]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_GetTargetRate(struct __VeristandPythonInterop_VeriStandInterop *__instance, double *__returnValue, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_GetTargetIP]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_GetTargetIP(struct __VeristandPythonInterop_VeriStandInterop *__instance, char **__returnValue, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_GetMultipleChannelValues]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_GetMultipleChannelValues(struct __VeristandPythonInterop_VeriStandInterop *__instance, char **names, int __namesLength, double **__returnValue, int *____returnValueLength, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_GetActiveProjects]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_GetActiveProjects(struct __VeristandPythonInterop_VeriStandInterop *__instance, char ***__returnValue, int *____returnValueLength, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_GetAllDeployedSessions]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_GetAllDeployedSessions(struct __VeristandPythonInterop_VeriStandInterop *__instance, char ***__returnValue, int *____returnValueLength, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_SetMultipleChannelValues]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_SetMultipleChannelValues(struct __VeristandPythonInterop_VeriStandInterop *__instance, char **names, int __namesLength, double *values, int __valuesLength, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_SetMultipleChannelValuesSynch]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_SetMultipleChannelValuesSynch(struct __VeristandPythonInterop_VeriStandInterop *__instance, char **names, int __namesLength, double *values, int __valuesLength, double *writeTime, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_SetChannelValue]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_SetChannelValue(struct __VeristandPythonInterop_VeriStandInterop *__instance, char *channelIdentifier, double value, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_SetChannelValueSynch]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_SetChannelValueSynch(struct __VeristandPythonInterop_VeriStandInterop *__instance, char *channelIdentifier, double value, double *writeTime, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_LaunchVeriStand]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_LaunchVeriStand(struct __VeristandPythonInterop_VeriStandInterop *__instance, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_RunProject]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_RunProject(struct __VeristandPythonInterop_VeriStandInterop *__instance, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_CloseVeristand]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_CloseVeristand(struct __VeristandPythonInterop_VeriStandInterop *__instance, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_OpenProject]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_OpenProject(struct __VeristandPythonInterop_VeriStandInterop *__instance, char *projectPath, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_CloseProject]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_CloseProject(struct __VeristandPythonInterop_VeriStandInterop *__instance, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_ShowProjectWindow]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_ShowProjectWindow(struct __VeristandPythonInterop_VeriStandInterop *__instance, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_StartDataLogging]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_StartDataLogging(struct __VeristandPythonInterop_VeriStandInterop *__instance, char *logConfigName, char *lDescription, char *lFilePath, double lTriggerHighLimit, double lTriggerLowLimit, int lReplaceFile, enum NationalInstruments_VeriStand_ClientAPI_LogInfo_trigger lTriggerType, char *lTriggerChannel, double lRate, char **lFilePropertiesNames, int __lFilePropertiesNamesLength, char **lFilePropertiesValues, int __lFilePropertiesValuesLength, char **lChannelsToLog, int __lChannelsToLogLength, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_StartDataLogging2]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_StartDataLogging2(struct __VeristandPythonInterop_VeriStandInterop *__instance, char *logConfigName, char *lDescription, char *lFilePath, double fTriggerLevel, int iTriggerSlope, char *lTriggerChannel, double lRate, char **lFilePropertiesNames, int __lFilePropertiesNamesLength, char **lFilePropertiesValues, int __lFilePropertiesValuesLength, char **lChannelsToLog, int __lChannelsToLogLength, double lDuration, double lPreTriggerDuration, int lReplaceFile, char **lChannelShortNames, int __lChannelShortNamesLength, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_GetDataLogging2SessionState]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_GetDataLogging2SessionState(struct __VeristandPythonInterop_VeriStandInterop *__instance, char *logConfigName, char **__returnValue, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_GetDataLogging2State]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_GetDataLogging2State(struct __VeristandPythonInterop_VeriStandInterop *__instance, char *LogConfigName, int *__returnValue, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_StopDataLogging]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_StopDataLogging(struct __VeristandPythonInterop_VeriStandInterop *__instance, char *LogConfigName, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_StopDataLogging2]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_StopDataLogging2(struct __VeristandPythonInterop_VeriStandInterop *__instance, char *LogConfigName, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_GetAvailableChannelToRead]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_GetAvailableChannelToRead(struct __VeristandPythonInterop_VeriStandInterop *__instance, int channelIndex, int *availableChannelCount, char **__returnValue, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_GetAvailableChannelToWrite]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_GetAvailableChannelToWrite(struct __VeristandPythonInterop_VeriStandInterop *__instance, int channelIndex, int *availableChannelCount, char **__returnValue, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_GetAvailableChannelsToReadCount]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_GetAvailableChannelsToReadCount(struct __VeristandPythonInterop_VeriStandInterop *__instance, int *__returnValue, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_GetAvailableChannelsToWriteCount]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_GetAvailableChannelsToWriteCount(struct __VeristandPythonInterop_VeriStandInterop *__instance, int *__returnValue, void **__exception);"
+
+[VeristandPythonInterop_VSLogChannel__Create]
+Class="Function"
+Prototype="int VeristandPythonInterop_VSLogChannel__Create(struct __VeristandPythonInterop_VSLogChannel **__instance, void **__exception);"
+
+[VeristandPythonInterop_VSLogChannel_FillParams]
+Class="Function"
+Prototype="int VeristandPythonInterop_VSLogChannel_FillParams(struct __VeristandPythonInterop_VSLogChannel *__instance, char *channelPath, char *customName, char *customGroup, char **lProperties, int __lPropertiesLength1, int __lPropertiesLength2, void **__exception);"
+
+[VeristandPythonInterop_VSLogChannel__Get__lLogChannel]
+Class="Function"
+Prototype="int VeristandPythonInterop_VSLogChannel__Get__lLogChannel(struct __VeristandPythonInterop_VSLogChannel *__instance, struct __NationalInstruments_VeriStand_ClientAPI_LogChannel **__returnValue, void **__exception);"
+
+[VeristandPythonInterop_VSLogChannel__Set__lLogChannel]
+Class="Function"
+Prototype="int VeristandPythonInterop_VSLogChannel__Set__lLogChannel(struct __VeristandPythonInterop_VSLogChannel *__instance, struct __NationalInstruments_VeriStand_ClientAPI_LogChannel *lLogChannel, void **__exception);"
+

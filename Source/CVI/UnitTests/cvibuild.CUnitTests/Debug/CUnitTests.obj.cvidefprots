@@ -1,0 +1,20 @@
+[AddTests]
+Class="Function"
+Prototype="void AddTests();"
+
+[AddIntegrationTests]
+Class="Function"
+Prototype="int AddIntegrationTests(struct CU_Suite *pSuiteT);"
+
+[init_IntegrationTestSuite]
+Class="Function"
+Prototype="int init_IntegrationTestSuite();"
+
+[clean_IntegrationTestSuite]
+Class="Function"
+Prototype="int clean_IntegrationTestSuite();"
+
+[main]
+Class="Function"
+Prototype="int main(int argc, char **argv);"
+

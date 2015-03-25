@@ -1,0 +1,43 @@
+CCFLAGS = -g ;
+HDRS = 	"c:\\program files (x86)\\national instruments\\cvi2013\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2013\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\include\\clang\\2.9"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\sdk\\include"
+	"c:\\NI Projects\\EXAM\\EXAM CVI dotnet\\CVI\\UnitTests"
+	"C:\\Users\\Public\\Documents\\National Instruments\\TestStand 2013\\AdapterSupport\\CVI"
+	"C:\\Program Files (x86)\\National Instruments\\TestStand 2013\\API\\DLLInterfaces"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr\\TestStand\\API"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2013\\instr"
+	"c:\\NI Projects\\EXAM\\EXAM CVI dotnet\\CVI\\DotNetController"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2013\\bin"
+	"c:\\ProgramData\\National Instruments\\CVI2013\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	"c:\\NI Projects\\EXAM\\EXAM CVI dotnet\\CVI\\CUnit\\Headers"
+	"c:\\NI Projects\\EXAM\\EXAM CVI dotnet\\CVI"
+	;
+Object "c:\\NI Projects\\EXAM\\EXAM CVI dotnet\\CVI\\UnitTests\\cvibuild.CUnitTests\\Debug\\VeristandPythonInterop.obj" : "c:\\NI Projects\\EXAM\\EXAM CVI dotnet\\CVI\\DotNetController\\VeristandPythonInterop.c" ;
+FILENUM on "c:\\NI Projects\\EXAM\\EXAM CVI dotnet\\CVI\\UnitTests\\cvibuild.CUnitTests\\Debug\\VeristandPythonInterop.obj" = 1 ;
+DEFPROTS on "c:\\NI Projects\\EXAM\\EXAM CVI dotnet\\CVI\\UnitTests\\cvibuild.CUnitTests\\Debug\\VeristandPythonInterop.obj" = "c:\\NI Projects\\EXAM\\EXAM CVI dotnet\\CVI\\UnitTests\\cvibuild.CUnitTests\\Debug\\VeristandPythonInterop.obj.cvidefprots" ;
+OUTFILE on "c:\\NI Projects\\EXAM\\EXAM CVI dotnet\\CVI\\UnitTests\\cvibuild.CUnitTests\\Debug\\VeristandPythonInterop.obj" = "c:\\NI Projects\\EXAM\\EXAM CVI dotnet\\CVI\\UnitTests\\cvibuild.CUnitTests\\Debug\\VeristandPythonInterop.obj.out" ;
+PrjObjects += "c:\\NI Projects\\EXAM\\EXAM CVI dotnet\\CVI\\UnitTests\\cvibuild.CUnitTests\\Debug\\VeristandPythonInterop.obj" ;
+Depends all : $(PrjObjects) ;
