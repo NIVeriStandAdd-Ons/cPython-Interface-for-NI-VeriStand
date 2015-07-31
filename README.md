@@ -21,7 +21,7 @@ IP has been tested by developer. It is currently used by multiple customers.
 
 ### Dependencies ###
 
-NIVS 2013 SP1 and drivers (or later)
+NIVS 2014 and drivers (or later)
 
 CVI 2013 SP1 runtime
 

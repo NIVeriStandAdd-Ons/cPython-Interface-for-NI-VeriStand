@@ -372,9 +372,11 @@ namespace VeristandPythonInterop
             }*/
 
             this.VeriStandProcess = new Process();
-            this.VeriStandProcess.StartInfo.UseShellExecute = false;
+            //this.VeriStandProcess.StartInfo.UseShellExecute = false;
+            this.VeriStandProcess.StartInfo.UseShellExecute = true;
             this.VeriStandProcess.StartInfo.FileName = this.ReadVeriStandLocationFromRegistry();
             this.VeriStandProcess.StartInfo.CreateNoWindow = false;
+            this.VeriStandProcess.StartInfo.Verb = "runas";
             this.VeriStandProcess.Start();
 
             this.Factory = null;
@@ -450,7 +452,7 @@ namespace VeristandPythonInterop
             if (this.ProjectIsOpened == false)
             {  //we need to open a project in order to quit....
                 string pathPublic = System.Environment.GetFolderPath(Environment.SpecialFolder.CommonDocuments);
-                string exampleProjectPath = pathPublic + @"\National Instruments\NI VeriStand 2013\Projects\Example\Sinewave Delay.nivsproj";
+                string exampleProjectPath = pathPublic + @"\National Instruments\NI VeriStand 2014\Projects\Example\Sinewave Delay.nivsproj";
                 this.OpenProject(exampleProjectPath);
             }
 
