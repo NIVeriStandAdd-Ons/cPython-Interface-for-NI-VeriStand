@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RealTimeSequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<FileFormatVersion Major="2012" Minor="0" Fix="0" Build="0" />
+	<Version Major="1" Minor="0" Fix="0" Build="12" />
+	<References>
+		<Reference>
+			<Path>&lt;VeriStand&gt;:\nivs.lib\Sequence Library\Standard\Waveforms\SineWave.nivsseq</Path>
+			<Alias>SineWave</Alias>
+		</Reference>
+		<Reference>
+			<Path>&lt;VeriStand&gt;:\nivs.lib\Sequence Library\Standard\Timing\Wait.nivsseq</Path>
+			<Alias>Wait</Alias>
+		</Reference>
+		<Reference>
+			<Path>&lt;VeriStand&gt;:\nivs.lib\Sequence Library\Standard\Waveforms\Ramp.nivsseq</Path>
+			<Alias>Ramp</Alias>
+		</Reference>
+	</References>
+	<Variables>
+		<ReturnType>
+			<Identifier>Pass</Identifier>
+			<DefaultValue xsi:type="BooleanValue">
+				<Value>true</Value>
+			</DefaultValue>
+		</ReturnType>
+		<Parameters>
+			<ParameterDeclaration>
+				<Identifier>UnitTest</Identifier>
+				<DefaultValue xsi:type="DoubleValue">
+					<Value>0</Value>
+				</DefaultValue>
+				<EvaluationMethod>ByReference</EvaluationMethod>
+				<DefaultAssignment Path="" />
+			</ParameterDeclaration>
+			<ParameterDeclaration>
+				<Identifier>WaitParam</Identifier>
+				<DefaultValue xsi:type="DoubleValue">
+					<Value>0</Value>
+				</DefaultValue>
+				<EvaluationMethod>ByValue</EvaluationMethod>
+				<DefaultAssignment Path="" />
+			</ParameterDeclaration>
+		</Parameters>
+		<LocalVariables />
+		<ChannelReferences />
+	</Variables>
+	<Code>
+		<Setup>
+			<Body>
+				<Statement xsi:type="Expression">
+					<ExpressionString>UnitTest = 0</ExpressionString>
+				</Statement>
+			</Body>
+		</Setup>
+		<Main>
+			<Body>
+				<Statement xsi:type="Expression">
+					<ExpressionString>SineWave(UnitTest, 1, 2, 0, 1, 5)</ExpressionString>
+				</Statement>
+				<Statement xsi:type="Expression">
+					<ExpressionString>Wait(WaitParam)</ExpressionString>
+				</Statement>
+				<Statement xsi:type="Expression">
+					<ExpressionString>Ramp(UnitTest, 0, 100, 2)</ExpressionString>
+				</Statement>
+			</Body>
+		</Main>
+		<CleanUp>
+			<Body>
+				<Statement xsi:type="Expression">
+					<ExpressionString>UnitTest = 0</ExpressionString>
+				</Statement>
+			</Body>
+		</CleanUp>
+	</Code>
+</RealTimeSequence>

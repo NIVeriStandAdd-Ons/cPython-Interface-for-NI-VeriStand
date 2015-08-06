@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StimulusProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<FileFormatVersion Major="2012" Minor="0" Fix="0" Build="0" />
+	<Version Major="1" Minor="0" Fix="0" Build="0" />
+	<Setup Name="Setup" />
+	<Main Name="Main">
+		<Step xsi:type="RealTimeSequenceCallStep">
+			<ParameterAssignments>
+				<ParameterAssignment Name="UnitTest">
+					<Value xsi:type="SystemDefinitionChannelResource" Path="Aliases/UnitTest1" />
+				</ParameterAssignment>
+				<ParameterAssignment Name="WaitParam">
+					<Value xsi:type="DoubleValue">
+						<Value>2</Value>
+					</Value>
+				</ParameterAssignment>
+			</ParameterAssignments>
+			<SequencePath>Test  RT seq.nivsseq</SequencePath>
+			<Target />
+			<OutputEvaluation xsi:type="BooleanEvaluation">
+				<Invert>false</Invert>
+			</OutputEvaluation>
+		</Step>
+	</Main>
+	<CleanUp Name="Clean Up" />
+	<ResultsDirectory>Test Results</ResultsDirectory>
+</StimulusProfile>
