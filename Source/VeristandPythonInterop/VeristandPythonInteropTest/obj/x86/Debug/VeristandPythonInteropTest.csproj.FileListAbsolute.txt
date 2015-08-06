@@ -18,3 +18,8 @@ c:\NI Projects\EXAM\EXAM CVI dotnet\VeristandPythonInterop\Binaries\VeristandPyt
 c:\NI Projects\EXAM\EXAM CVI dotnet\VeristandPythonInterop\VeristandPythonInteropTest\obj\x86\Debug\VeristandPythonInteropTest.csprojResolveAssemblyReference.cache
 c:\NI Projects\EXAM\EXAM CVI dotnet\VeristandPythonInterop\VeristandPythonInteropTest\obj\x86\Debug\VeristandPythonInteropTest.dll
 c:\NI Projects\EXAM\EXAM CVI dotnet\VeristandPythonInterop\VeristandPythonInteropTest\obj\x86\Debug\VeristandPythonInteropTest.pdb
+d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\VeristandPythonInterop\Binaries\VeristandPythonInteropTest.dll
+d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\VeristandPythonInterop\Binaries\VeristandPythonInteropTest.pdb
+d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\VeristandPythonInterop\VeristandPythonInteropTest\obj\x86\Debug\VeristandPythonInteropTest.csprojResolveAssemblyReference.cache
+d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\VeristandPythonInterop\VeristandPythonInteropTest\obj\x86\Debug\VeristandPythonInteropTest.dll
+d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\VeristandPythonInterop\VeristandPythonInteropTest\obj\x86\Debug\VeristandPythonInteropTest.pdb

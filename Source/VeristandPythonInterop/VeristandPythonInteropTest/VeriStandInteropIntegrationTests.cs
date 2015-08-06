@@ -15,7 +15,7 @@ namespace VeristandPythonInteropTest
     {
         VeriStandInterop VeriStandInterop { get; set; }
 
-        private static string ExampleVeriStandProjectPath = @"C:\NI Projects\EXAM\EXAM CVI dotnet\VS\Sinewave UnitTest.nivsproj"; 
+        private static string ExampleVeriStandProjectPath = @"d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\VS\Sinewave UnitTest.nivsproj"; 
         //private static string ExampleVeriStandProjectPath = @"C:\NI Projects\EXAM\EXAM Platform Interface\VS\EngineEXAM.nivsproj"; 
         
 
@@ -24,7 +24,7 @@ namespace VeristandPythonInteropTest
         {
             //this.VeriStandInterop = VeriStandInterop.GetVeristandInterop();
             this.VeriStandInterop = VeriStandInterop.GetNewVeristandInterop();
-            this.VeriStandInterop.LaunchVeriStand();
+            this.VeriStandInterop.LaunchVeriStand(false);
         }
 
         [TestFixtureTearDown]
@@ -481,7 +481,50 @@ namespace VeristandPythonInteropTest
             /*sessionState = this.VeriStandInterop.GetDataLogging2State(taskName);
             Console.WriteLine(sessionState.ToString());*/
 
-        }        
+        }
+
+        [Test]
+        public void StimulusExecuteAsynchShouldStartStimulus()
+        {
+            string logPath = @"d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\VS\Stimulus Profiles\RT Sequence and Stimulus profile\Test Stimulus.nivsstimprof";
+
+            this.VeriStandInterop.OpenProject(VeriStandInteropIntegrationTests.ExampleVeriStandProjectPath);
+            this.VeriStandInterop.DeployProject();
+            this.VeriStandInterop.OpenWorkspace();
+
+            this.VeriStandInterop.StimulusExecuteAsynch(logPath, "10");
+
+            Thread.Sleep(2000);
+
+            Assert.AreEqual(2, this.VeriStandInterop.StimulusState());
+            Thread.Sleep(10000);
+
+
+        }
+
+        [Test] 
+        public void RTSequenceExecuteAsynchShouldStartRTSequence() 
+        {
+            string filePath = @"d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\VS\Stimulus Profiles\RT Sequence and Stimulus profile\Test  RT seq.nivsseq";
+
+            this.VeriStandInterop.OpenProject(VeriStandInteropIntegrationTests.ExampleVeriStandProjectPath);
+            this.VeriStandInterop.DeployProject();
+            this.VeriStandInterop.OpenWorkspace();
+
+            string[] paramNames = new string[2] {"UnitTest", "WaitParam"};
+            string[] paramValues = new string[2] { "Aliases/UnitTest1", "5" };
+            string[] paramTypes = new string[2] { "Path", "Double" };
+            
+
+            this.VeriStandInterop.RTSequenceExecuteAsynch(filePath,paramNames,paramValues,paramTypes);
+
+            Thread.Sleep(2000);
+
+            Assert.AreEqual(1, this.VeriStandInterop.RTSequenceState());
+            Thread.Sleep(10000);
+            Assert.AreEqual(4, this.VeriStandInterop.RTSequenceState());
+            this.VeriStandInterop.RTSequenceUndeploy();            
+        }
     }
 
     [TestFixture]
@@ -490,7 +533,7 @@ namespace VeristandPythonInteropTest
         [Test]
         public void TDMSHandlerShouldReturnLineLogData()
         {
-            string ExampleLogPath = @"C:\NI Projects\EXAM\EXAM CVI dotnet\VS\Logs\EXAM_TEMP__NIVS_testMeas.tdms";
+            string ExampleLogPath = @"d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\VS\Logs\EXAM_TEMP__NIVS_testMeas.tdms";
             VeriStandTDMSHandler TDMSHandler = new VeriStandTDMSHandler();
             TDMSHandler.TDMSOpen(ExampleLogPath);
             double[] logLine;
@@ -504,7 +547,7 @@ namespace VeristandPythonInteropTest
         [Test]
         public void TDMSHandlerShouldReturnColumnLogData()
         {
-            string ExampleLogPath = @"C:\NI Projects\EXAM\EXAM CVI dotnet\VS\Logs\EXAM_TEMP__NIVS_testMeas_column.tdms";
+            string ExampleLogPath = @"d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\VS\Logs\EXAM_TEMP__NIVS_testMeas_column.tdms";
             VeriStandTDMSHandler TDMSHandler = new VeriStandTDMSHandler();
             TDMSHandler.TDMSOpen(ExampleLogPath);
             double[] logColumn;
@@ -521,7 +564,7 @@ namespace VeristandPythonInteropTest
         [Test]
         public void TDMSHandlerTimeShouldReturnColumnTimeLogData()
         {
-            string ExampleLogPath = @"C:\NI Projects\EXAM\EXAM CVI dotnet\VS\Logs\EXAM_TEMP__NIVS_testMeasTime.tdms";
+            string ExampleLogPath = @"d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\VS\Logs\EXAM_TEMP__NIVS_testMeasTime.tdms";
             VeriStandTDMSHandler TDMSHandler = new VeriStandTDMSHandler();
             TDMSHandler.TDMSOpen(ExampleLogPath);
             double[] logColumn;
@@ -541,7 +584,7 @@ namespace VeristandPythonInteropTest
         [Test]
         public void TDMSLoggingPropertiesTest()
         {
-            string ExampleLogPath = @"C:\NI Projects\EXAM\EXAM CVI dotnet\VS\Logs\EXAM_TEMP__NIVS_testMeas_column.tdms";
+            string ExampleLogPath = @"d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\VS\Logs\EXAM_TEMP__NIVS_testMeas_column.tdms";
             VeriStandTDMSHandler TDMSHandler = new VeriStandTDMSHandler();
             TDMSHandler.TDMSOpen(ExampleLogPath);
             

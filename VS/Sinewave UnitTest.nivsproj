@@ -279,74 +279,74 @@
 			<Description />
 			<Properties />
 			<Errors />
-			<Section Name="Sinewave Delay.nivssdf (1)" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666">
+			<Section Name="Sinewave Delay.nivssdf" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666">
 				<Description />
 				<Properties>
 					<Property Name="Path">
-						<String>C:\NI Projects\EXAM\EXAM CVI dotnet\VS\Sinewave Delay.nivssdf</String>
+						<String>D:\NI Projects\EXAM &amp; cPython\Python development\cPython-Interface-for-NI-VeriStand\VS\Sinewave Delay.nivssdf</String>
 					</Property>
 				</Properties>
 				<Errors />
 			</Section>
-			<Section Name="Sinewave Delay.nivsscreen (1)" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666">
+			<Section Name="Sinewave Delay.nivsscreen" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666">
 				<Description />
 				<Properties>
 					<Property Name="Path">
-						<String>C:\NI Projects\EXAM\EXAM CVI dotnet\VS\Sinewave Delay.nivsscreen</String>
+						<String>D:\NI Projects\EXAM &amp; cPython\Python development\cPython-Interface-for-NI-VeriStand\VS\Sinewave Delay.nivsscreen</String>
 					</Property>
 				</Properties>
 				<Errors />
 			</Section>
-			<Section Name="Step Profile.nivstest (1)" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666">
+			<Section Name="Step Profile.nivstest" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666">
 				<Description />
 				<Properties>
 					<Property Name="Path">
-						<String>C:\NI Projects\EXAM\EXAM CVI dotnet\VS\Stimulus Profiles\Step Profile\Step Profile.nivstest</String>
+						<String>D:\NI Projects\EXAM &amp; cPython\Python development\cPython-Interface-for-NI-VeriStand\VS\Stimulus Profiles\Step Profile\Step Profile.nivstest</String>
 					</Property>
 				</Properties>
 				<Errors />
 			</Section>
-			<Section Name="Table Profile.nivstest (1)" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666">
+			<Section Name="Table Profile.nivstest" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666">
 				<Description />
 				<Properties>
 					<Property Name="Path">
-						<String>C:\NI Projects\EXAM\EXAM CVI dotnet\VS\Stimulus Profiles\Table Profile\Table Profile.nivstest</String>
+						<String>D:\NI Projects\EXAM &amp; cPython\Python development\cPython-Interface-for-NI-VeriStand\VS\Stimulus Profiles\Table Profile\Table Profile.nivstest</String>
 					</Property>
 				</Properties>
 				<Errors />
 			</Section>
-			<Section Name="Sinewave UnitTest.nivscf (1)" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666">
+			<Section Name="Sinewave UnitTest.nivscf" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666">
 				<Description />
 				<Properties>
 					<Property Name="Path">
-						<String>C:\NI Projects\EXAM\EXAM CVI dotnet\VS\Sinewave UnitTest.nivscf</String>
+						<String>D:\NI Projects\EXAM &amp; cPython\Python development\cPython-Interface-for-NI-VeriStand\VS\Sinewave UnitTest.nivscf</String>
 					</Property>
 				</Properties>
 				<Errors />
 			</Section>
-			<Section Name="delay.dll (1)" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666">
+			<Section Name="delay.dll" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666">
 				<Description />
 				<Properties>
 					<Property Name="Path">
-						<String>C:\NI Projects\EXAM\EXAM CVI dotnet\VS\Models\delay.dll</String>
+						<String>D:\NI Projects\EXAM &amp; cPython\Python development\cPython-Interface-for-NI-VeriStand\VS\Models\delay.dll</String>
 					</Property>
 				</Properties>
 				<Errors />
 			</Section>
-			<Section Name="random.dll (1)" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666">
+			<Section Name="random.dll" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666">
 				<Description />
 				<Properties>
 					<Property Name="Path">
-						<String>C:\NI Projects\EXAM\EXAM CVI dotnet\VS\Models\random.dll</String>
+						<String>D:\NI Projects\EXAM &amp; cPython\Python development\cPython-Interface-for-NI-VeriStand\VS\Models\random.dll</String>
 					</Property>
 				</Properties>
 				<Errors />
 			</Section>
-			<Section Name="sinewave.dll (1)" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666">
+			<Section Name="sinewave.dll" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666">
 				<Description />
 				<Properties>
 					<Property Name="Path">
-						<String>C:\NI Projects\EXAM\EXAM CVI dotnet\VS\Models\sinewave.dll</String>
+						<String>D:\NI Projects\EXAM &amp; cPython\Python development\cPython-Interface-for-NI-VeriStand\VS\Models\sinewave.dll</String>
 					</Property>
 				</Properties>
 				<Errors />

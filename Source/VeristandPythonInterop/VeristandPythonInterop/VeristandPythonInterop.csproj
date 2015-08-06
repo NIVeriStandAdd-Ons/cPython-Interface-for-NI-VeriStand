@@ -82,10 +82,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\Program Files (x86)\National Instruments\VeriStand 2012\nivs.lib\Reference Assemblies\NationalInstruments.VeriStand.ClientAPI.dll</HintPath>
     </Reference>
+    <Reference Include="NationalInstruments.VeriStand.DataTypes, Version=2014.0.0.0, Culture=neutral, PublicKeyToken=a6d690c380daa308, processorArchitecture=MSIL" />
     <Reference Include="NationalInstruments.VeriStand.Internal, Version=2013.1.0.0, Culture=neutral, PublicKeyToken=a6d690c380daa308, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\NationalInstruments.VeriStand.Internal\v4.0_2013.1.0.0__a6d690c380daa308\NationalInstruments.VeriStand.Internal.dll</HintPath>
     </Reference>
+    <Reference Include="NationalInstruments.VeriStand.RealTimeSequenceDefinitionApi, Version=2014.0.0.0, Culture=neutral, PublicKeyToken=a6d690c380daa308, processorArchitecture=MSIL" />
     <Reference Include="NationalInstruments.VeriStand.SystemDefinitionAPI, Version=2012.0.1.0, Culture=neutral, PublicKeyToken=a6d690c380daa308, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\Program Files (x86)\National Instruments\VeriStand 2012\nivs.lib\Reference Assemblies\NationalInstruments.VeriStand.SystemDefinitionAPI.dll</HintPath>

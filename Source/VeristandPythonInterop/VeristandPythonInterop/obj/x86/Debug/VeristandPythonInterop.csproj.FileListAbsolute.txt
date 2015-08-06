@@ -30,3 +30,11 @@ c:\NI Projects\EXAM\EXAM CVI dotnet\VeristandPythonInterop\VeristandPythonIntero
 c:\NI Projects\EXAM\EXAM CVI dotnet\VeristandPythonInterop\VeristandPythonInterop\obj\x86\Debug\VeristandPythonInterop.dll.licenses
 c:\NI Projects\EXAM\EXAM CVI dotnet\VeristandPythonInterop\VeristandPythonInterop\obj\x86\Debug\VeristandPythonInterop.dll
 c:\NI Projects\EXAM\EXAM CVI dotnet\VeristandPythonInterop\VeristandPythonInterop\obj\x86\Debug\VeristandPythonInterop.pdb
+d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\VeristandPythonInterop\Binaries\VeristandPythonInterop.dll
+d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\VeristandPythonInterop\Binaries\VeristandPythonInterop.pdb
+d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\VeristandPythonInterop\VeristandPythonInterop\obj\x86\Debug\VeristandPythonInterop.csprojResolveAssemblyReference.cache
+d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\VeristandPythonInterop\VeristandPythonInterop\obj\x86\Debug\VeristandPythonInterop.ErrorMessages.resources
+d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\VeristandPythonInterop\VeristandPythonInterop\obj\x86\Debug\VeristandPythonInterop.csproj.GenerateResource.Cache
+d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\VeristandPythonInterop\VeristandPythonInterop\obj\x86\Debug\VeristandPythonInterop.dll.licenses
+d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\VeristandPythonInterop\VeristandPythonInterop\obj\x86\Debug\VeristandPythonInterop.dll
+d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\VeristandPythonInterop\VeristandPythonInterop\obj\x86\Debug\VeristandPythonInterop.pdb

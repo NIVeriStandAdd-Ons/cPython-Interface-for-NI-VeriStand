@@ -21,7 +21,7 @@ namespace VeristandPythonInteropTest
         {
             //Console.WriteLine("Setup launch");
             this.VeriStandInterop = new VeriStandInterop();
-            this.VeriStandInterop.LaunchVeriStand();
+            this.VeriStandInterop.LaunchVeriStand(false);
 
         }
 
@@ -67,7 +67,7 @@ namespace VeristandPythonInteropTest
         [Test]
         public void ShouldLaunchVeriStand()
         {
-            this.VeriStandInterop.LaunchVeriStand();
+            this.VeriStandInterop.LaunchVeriStand(false);
 
             Assert.IsTrue(this.IsProcessOpen("NI VeriStand"), "The Veristand process failed to start");
             Assert.IsNotNull(this.VeriStandInterop.Factory);
@@ -109,7 +109,7 @@ namespace VeristandPythonInteropTest
             Exception e = Assert.Throws<InvalidOperationException>(() =>
                 {
                     this.VeriStandInterop.MaxVeriStandLaunchTimeout = 0;
-                    this.VeriStandInterop.LaunchVeriStand();
+                    this.VeriStandInterop.LaunchVeriStand(false);
                     //Thread.Sleep(1000);
                 });
 
@@ -277,5 +277,7 @@ namespace VeristandPythonInteropTest
 	        }
 	        return false;
         }
+
+        
     }
 }

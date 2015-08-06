@@ -11,6 +11,8 @@ using NationalInstruments.VeriStand.ClientAPI.Logging;
 using NationalInstruments.VeriStand.SystemDefinitionAPI;
 using System.Threading;
 using System.IO;
+using NationalInstruments.VeriStand.StimulusProfileDefinitionApi;
+using NationalInstruments.VeriStand.Data;
 
 [assembly: InternalsVisibleTo("VeristandPythonInteropTest")]
 namespace VeristandPythonInterop
@@ -46,7 +48,10 @@ namespace VeristandPythonInterop
                 string[] activeProject = this.Factory.GetActiveProjects("");
                 return (activeProject.Length > 0);
             }            
-        }        
+        }
+
+        internal  StimulusProfile activeStimulus { get; set; }
+        internal IStimulusProfileSession activeRTSequence { get; set; }
 
         #endregion 
 
@@ -364,6 +369,11 @@ namespace VeristandPythonInterop
 
         public void LaunchVeriStand()
         {
+            this.LaunchVeriStand(false);
+        }
+
+        public void LaunchVeriStand(bool runAs)
+        {
             // Console.WriteLine("LaunchVeriStand");
             /*if (Process.GetProcessesByName("NI VeriStand").Length != 0)
             {
@@ -373,10 +383,13 @@ namespace VeristandPythonInterop
 
             this.VeriStandProcess = new Process();
             //this.VeriStandProcess.StartInfo.UseShellExecute = false;
-            this.VeriStandProcess.StartInfo.UseShellExecute = true;
+            if (runAs) { this.VeriStandProcess.StartInfo.UseShellExecute = true; }
+            else { this.VeriStandProcess.StartInfo.UseShellExecute = false; };
             this.VeriStandProcess.StartInfo.FileName = this.ReadVeriStandLocationFromRegistry();
             this.VeriStandProcess.StartInfo.CreateNoWindow = false;
-            this.VeriStandProcess.StartInfo.Verb = "runas";
+            
+            if (runAs) this.VeriStandProcess.StartInfo.Verb = "runas";
+            
             this.VeriStandProcess.Start();
 
             this.Factory = null;
@@ -733,6 +746,107 @@ namespace VeristandPythonInterop
             return channelsToWrite.Count;
         }
 
+        public void StimulusExecuteAsynch(string stimulusFile, string uutSerialNumber)
+        {
+            this.activeStimulus = null;
+            ThrowExceptionIfVeriStandIsNotLaunched();
+            ThrowExceptionIfProjectIsNotOpened();
+                        
+            StimulusProfile myStimulus = new StimulusProfile(stimulusFile);
+            this.activeStimulus = myStimulus;
+            myStimulus.ExecuteAsync("", uutSerialNumber);
+            
+        }
+        public int StimulusState()
+        {
+            ThrowExceptionIfVeriStandIsNotLaunched();
+            ThrowExceptionIfProjectIsNotOpened();
+
+            StepExecutionState activeStimulusState = this.activeStimulus.State;
+            return (int)activeStimulusState;
+
+        }
+
+        public void RTSequenceExecuteAsynch(string RTSequenceFile, string[] ParamNames, string[] ParamValues, string[] ParamTypes)
+        {
+            this.activeRTSequence = null;
+            ThrowExceptionIfVeriStandIsNotLaunched();
+            ThrowExceptionIfProjectIsNotOpened();
+
+            try { this.activeRTSequence.Undeploy(); }
+            catch {};
+
+            SequenceParameterAssignmentInfo[] basicParameters = new SequenceParameterAssignmentInfo[ParamNames.Count()];
+
+            int j = 0;
+            foreach (string Param in ParamNames)
+            {                             
+
+                switch (ParamTypes[j])
+                    {
+                        case "Path": ;
+                              basicParameters[j] = new SequenceParameterAssignmentInfo(Param, new SystemDefinitionChannelResource(ParamValues[j]));
+                        break;
+
+                        case "Double":
+                              basicParameters[j] = new SequenceParameterAssignmentInfo(Param, new DoubleValue(Convert.ToDouble(ParamValues[j])));
+                        break;
+
+                        default: ;
+                        break;
+                }                               
+                
+                j++;
+            }
+            
+            //Specify sequences used
+            SequenceCallInfo basicEngine = new SequenceCallInfo(RTSequenceFile,"Controller",basicParameters,false,10000);
+
+            SequenceCallInfo[] mySequences = new SequenceCallInfo[1]; // {basicEngine};   
+            mySequences[0] = basicEngine;
+
+            //Create a Stimulus Profile Session            
+            IStimulusProfileSession mySession = this.Factory.GetIStimulusProfileSession("", "PythonTestSession", mySequences, "");
+
+            //Deploy the Stimulus Profile Session to the target
+            string sessionID = "";
+            Error myError;
+            mySession.Deploy(false, out sessionID, out myError);            
+            ErrChk(myError);
+
+            //Run the session
+            mySession.Run(out myError);
+            ErrChk(myError);
+            this.activeRTSequence = mySession;
+
+        }
+        public int RTSequenceState()
+        {
+            ThrowExceptionIfVeriStandIsNotLaunched();
+            ThrowExceptionIfProjectIsNotOpened();
+
+            string activeRTSequenceName = this.activeRTSequence.SequenceNames[0];
+            SequenceState activeRTSequenceState = this.activeRTSequence[activeRTSequenceName].State;
+            return (int)activeRTSequenceState;
+
+        }
+
+        public void RTSequenceUndeploy()
+        {
+            ThrowExceptionIfVeriStandIsNotLaunched();
+            ThrowExceptionIfProjectIsNotOpened();
+
+            this.activeRTSequence.Undeploy();
+            //return (int)activeStimulusState;
+
+        }
+
+        private static void ErrChk(Error error)
+        {
+            if (error.IsError)
+                throw new Exception(String.Format("{0:X}", error.Code) + ": " + error.Message);
+        }
+
         private List<string> GetAvailableChannels(bool onlyWriteEnabled)
         {            
             IWorkspace2 Workspace = this.WorkSpace;            
@@ -837,13 +951,7 @@ namespace VeristandPythonInterop
         {
             if (this.ProjectIsOpened == false)
                 throw new InvalidOperationException(ErrorMessages.ErrorMessageShowHide);
-        }
-
-        private static void ErrChk(Error error)
-        {
-            if (error.IsError)
-                throw new InvalidOperationException(String.Format("{0:X}", error.Code) + ": " + error.Message);
-        }
+        }              
 
         #endregion
     }
