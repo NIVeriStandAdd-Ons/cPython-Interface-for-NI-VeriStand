@@ -23,7 +23,7 @@ errorCheck(veristandInterOp.LaunchVeriStand())
 
 
 print "OpenProject"
-errorCheck(veristandInterOp.OpenProject("C:\\NI Projects\\EXAM\EXAM CVI dotnet\\VS\\Sinewave UnitTest.nivsproj"))
+errorCheck(veristandInterOp.OpenProject("d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\VS\\Sinewave UnitTest.nivsproj"))
 
 print "ShowProjectWindow"
 errorCheck(veristandInterOp.ShowProjectWindow())
@@ -37,7 +37,7 @@ sleep(2)
 
 print "CloseWorkspace"
 errorCheck(veristandInterOp.CloseWorkspace())
-sleep(2)
+sleep(4)
 
 print "OpenWorkspace"
 errorCheck(veristandInterOp.OpenWorkspace())
@@ -239,6 +239,61 @@ print sLogStatus.value
 print iLogStatus
 print "StopDatalogging2Triggered"
 errorCheck(veristandInterOp.StopDataLogging2(taskName3))
+
+RTsequencePath = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\VS\\Stimulus Profiles\\RT Sequence and Stimulus profile\\Test  RT seq.nivsseq"
+stimulusPath = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\VS\\Stimulus Profiles\\RT Sequence and Stimulus profile\\Test Stimulus.nivsstimprof"
+UUTnumber = "010"
+iStimulusState=c_int(0)
+iRTSequenceState=c_int(0)
+lParamNamesLineLength = 255
+lParamValuesLineLength = 255
+lParamTypesLineLength = 255
+lParamNamesLength = 2
+lParamValuesLength = 2
+lParamTypesLength = 2
+
+lParamNames = ((c_char * lParamNamesLineLength) * lParamNamesLength)() #must match longest channel
+lParamNames[0].value = "UnitTest"
+lParamNames[1].value = "WaitParam"
+plParamNames =  pointer(lParamNames)
+
+lParamValues = ((c_char * lParamValuesLineLength) * lParamValuesLength)() #must match longest channel
+lParamValues[0].value = "Aliases/UnitTest1"
+lParamValues[1].value = "5"
+plParamValues =  pointer(lParamValues)
+
+lParamTypes = ((c_char * lParamTypesLineLength) * lParamTypesLength)() #must match longest channel
+lParamTypes[0].value = "Path"
+lParamTypes[1].value = "Double"
+plParamTypes =  pointer(lParamTypes)
+
+#StimulusExecuteAsynch
+errorCheck(veristandInterOp.StimulusExecuteAsynch(stimulusPath,UUTnumber))
+print "Stimulus started"
+sleep(2)
+errorCheck(veristandInterOp.GetStimulusState(byref(iStimulusState)))
+print iStimulusState
+sleep(10)
+errorCheck(veristandInterOp.GetStimulusState(byref(iStimulusState)))
+print iStimulusState
+
+#RTSequenceExecuteAsynch
+
+errorCheck(veristandInterOp.RTSequenceExecuteAsynch(RTsequencePath,byref(plParamNames),lParamNamesLength, lParamNamesLineLength,
+                                                    byref(plParamValues),lParamValuesLength, lParamValuesLineLength,
+                                                    byref(plParamTypes),lParamTypesLength,lParamTypesLineLength))
+print "RT Sequence started"
+sleep(2)
+errorCheck(veristandInterOp.GetRTSequenceState(byref(iRTSequenceState)))
+print iRTSequenceState
+sleep(15)
+errorCheck(veristandInterOp.GetRTSequenceState(byref(iRTSequenceState)))
+print iRTSequenceState
+errorCheck(veristandInterOp.GetStimulusState(byref(iStimulusState)))
+
+#mandatory
+print "RT Sequence undeploy"
+errorCheck(veristandInterOp.RTSequenceUndeploy())
 
 
 print "CloseWorkspace"

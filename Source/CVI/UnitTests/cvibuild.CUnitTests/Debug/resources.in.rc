@@ -24,7 +24,7 @@ BEGIN
             VALUE "FileDescription", "CUnitTests (Debug x86)\0"
             VALUE "FileVersion", "1.0\0"
             VALUE "InternalName", "CUnitTests\0"
-            VALUE "LegalCopyright", "Copyright © NI 2014\0"
+            VALUE "LegalCopyright", "Copyright © NI 2015\0"
             VALUE "OriginalFilename", "CUnitTests.exe\0"
             VALUE "ProductName", "NI CUnitTests\0"
             VALUE "ProductVersion", "1.0\0"

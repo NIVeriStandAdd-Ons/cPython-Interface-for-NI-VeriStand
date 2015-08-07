@@ -1,0 +1,112 @@
+HDRS = 	"C:\\Users\\Public\\Documents\\National Instruments\\TestStand 2014 (32-bit)\\AdapterSupport\\CVI"
+	"C:\\Program Files (x86)\\National Instruments\\TestStand 2014\\API\\DLLInterfaces"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr\\TestStand\\API"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2013\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2013\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\include\\clang\\2.9"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2013\\sdk\\include"
+	"d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\DotNetController"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2013\\bin"
+	"c:\\ProgramData\\National Instruments\\CVI2013\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "Automated.c" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\CUnit\\Sources\\Automated" ;
+LOCATE on "Automated.h" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\CUnit\\Headers" ;
+LOCATE on "Basic.c" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\CUnit\\Sources\\Basic" ;
+LOCATE on "Basic.h" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\CUnit\\Headers" ;
+LOCATE on "Console.h" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\CUnit\\Headers" ;
+LOCATE on "CUCurses.h" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\CUnit\\Headers" ;
+LOCATE on "CUError.c" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\CUnit\\Sources\\Framework" ;
+LOCATE on "CUError.h" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\CUnit\\Headers" ;
+LOCATE on "CUnit.h" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\CUnit\\Headers" ;
+LOCATE on "CUnit_intl.h" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\CUnit\\Headers" ;
+LOCATE on "CUnitTests.c" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests" ;
+LOCATE on "IntegrationTest.c" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests" ;
+LOCATE on "IntegrationTest.h" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests" ;
+LOCATE on "MyMem.c" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\CUnit\\Sources\\Framework" ;
+LOCATE on "MyMem.h" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\CUnit\\Headers" ;
+LOCATE on "TestDB.c" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\CUnit\\Sources\\Framework" ;
+LOCATE on "TestDB.h" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\CUnit\\Headers" ;
+LOCATE on "TestRun.c" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\CUnit\\Sources\\Framework" ;
+LOCATE on "TestRun.h" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\CUnit\\Headers" ;
+LOCATE on "Util.c" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\CUnit\\Sources\\Framework" ;
+LOCATE on "Util.h" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\CUnit\\Headers" ;
+LOCATE on "VeriStandCviDll.h" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI" ;
+LOCATE on "VeristandPythonInterop.h" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\DotNetController" ;
+Object "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\Automated.obj" : "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\CUnit\\Sources\\Automated\\Automated.c" ;
+FILENUM on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\Automated.obj" = 1 ;
+DEFPROTS on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\Automated.obj" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\Automated.obj.cvidefprots" ;
+OUTFILE on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\Automated.obj" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\Automated.obj.out" ;
+PrjObjects += "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\Automated.obj" ;
+Object "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\Basic.obj" : "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\CUnit\\Sources\\Basic\\Basic.c" ;
+FILENUM on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\Basic.obj" = 2 ;
+DEFPROTS on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\Basic.obj" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\Basic.obj.cvidefprots" ;
+OUTFILE on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\Basic.obj" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\Basic.obj.out" ;
+PrjObjects += "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\Basic.obj" ;
+Object "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\CUError.obj" : "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\CUnit\\Sources\\Framework\\CUError.c" ;
+FILENUM on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\CUError.obj" = 3 ;
+DEFPROTS on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\CUError.obj" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\CUError.obj.cvidefprots" ;
+OUTFILE on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\CUError.obj" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\CUError.obj.out" ;
+PrjObjects += "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\CUError.obj" ;
+Object "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\CUnitTests.obj" : "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\CUnitTests.c" ;
+FILENUM on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\CUnitTests.obj" = 4 ;
+DEFPROTS on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\CUnitTests.obj" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\CUnitTests.obj.cvidefprots" ;
+OUTFILE on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\CUnitTests.obj" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\CUnitTests.obj.out" ;
+PrjObjects += "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\CUnitTests.obj" ;
+Object "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\IntegrationTest.obj" : "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\IntegrationTest.c" ;
+FILENUM on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\IntegrationTest.obj" = 5 ;
+DEFPROTS on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\IntegrationTest.obj" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\IntegrationTest.obj.cvidefprots" ;
+OUTFILE on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\IntegrationTest.obj" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\IntegrationTest.obj.out" ;
+PrjObjects += "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\IntegrationTest.obj" ;
+Object "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\MyMem.obj" : "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\CUnit\\Sources\\Framework\\MyMem.c" ;
+FILENUM on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\MyMem.obj" = 6 ;
+DEFPROTS on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\MyMem.obj" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\MyMem.obj.cvidefprots" ;
+OUTFILE on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\MyMem.obj" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\MyMem.obj.out" ;
+PrjObjects += "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\MyMem.obj" ;
+Object "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\TestDB.obj" : "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\CUnit\\Sources\\Framework\\TestDB.c" ;
+FILENUM on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\TestDB.obj" = 7 ;
+DEFPROTS on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\TestDB.obj" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\TestDB.obj.cvidefprots" ;
+OUTFILE on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\TestDB.obj" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\TestDB.obj.out" ;
+PrjObjects += "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\TestDB.obj" ;
+Object "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\TestRun.obj" : "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\CUnit\\Sources\\Framework\\TestRun.c" ;
+FILENUM on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\TestRun.obj" = 8 ;
+DEFPROTS on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\TestRun.obj" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\TestRun.obj.cvidefprots" ;
+OUTFILE on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\TestRun.obj" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\TestRun.obj.out" ;
+PrjObjects += "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\TestRun.obj" ;
+Object "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\Util.obj" : "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\CUnit\\Sources\\Framework\\Util.c" ;
+FILENUM on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\Util.obj" = 9 ;
+DEFPROTS on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\Util.obj" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\Util.obj.cvidefprots" ;
+OUTFILE on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\Util.obj" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\Util.obj.out" ;
+PrjObjects += "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\Util.obj" ;
+Object "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\VeristandPythonInterop.obj" : "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\DotNetController\\VeristandPythonInterop.c" ;
+FILENUM on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\VeristandPythonInterop.obj" = 10 ;
+DEFPROTS on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\VeristandPythonInterop.obj" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\VeristandPythonInterop.obj.cvidefprots" ;
+OUTFILE on "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\VeristandPythonInterop.obj" = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\VeristandPythonInterop.obj.out" ;
+InstrObjects += "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\VeristandPythonInterop.obj" ;
+Object "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\resources.res" : "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\resources.in.rc" ;
+MainFromObjects "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\CUnitTests.exe" : $(PrjObjects) $(InstrObjects) ;
+Depends "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\CUnitTests.exe" : "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\link_options.txt" ;
+Depends "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\CUnitTests.exe" : "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\resources.res" ;
+Depends all : "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\UnitTests\\cvibuild.CUnitTests\\Release\\CUnitTests.exe" ;

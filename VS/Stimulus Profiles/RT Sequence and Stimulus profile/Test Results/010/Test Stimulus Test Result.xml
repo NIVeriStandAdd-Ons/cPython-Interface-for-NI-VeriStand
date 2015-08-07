@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="TRML.xsl"?>
+<TestResults xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uuid="54233018-986f-4e8f-9e97-a76be2c63a35" xmlns="http://www.ieee.org/ATML/2007/TestResults">
+	<Personnel>
+		<SystemOperator ID="EMEA\czkeprtj" />
+	</Personnel>
+	<References>
+		<Reference uuid="5d89f012-402e-4920-829c-029bc60435c9" name="Test Stimulus">
+			<Text xmlns="http://www.ieee.org/ATML/2006/Common">d:\NI Projects\EXAM &amp; cPython\Python development\cPython-Interface-for-NI-VeriStand\VS\Stimulus Profiles\RT Sequence and Stimulus profile\Test Stimulus.nivsstimprof</Text>
+		</Reference>
+	</References>
+	<ResultSet ID="Test Result" name="d:\NI Projects\EXAM &amp; cPython\Python development\cPython-Interface-for-NI-VeriStand\VS\Stimulus Profiles\RT Sequence and Stimulus profile\Test Results\010\Test Stimulus Test Result.xml" startDateTime="2015-08-07T09:57:47.2411261+02:00" endDateTime="2015-08-07T09:57:56.8831973+02:00">
+		<Outcome value="Passed" />
+		<Test ID="Setup" name="Setup" startDateTime="2015-08-07T09:57:47.2451253+02:00" endDateTime="2015-08-07T09:57:47.2451253+02:00">
+			<Outcome value="Passed" />
+		</Test>
+		<TestGroup ID="Main" name="Main" startDateTime="2015-08-07T09:57:47.2471249+02:00" endDateTime="2015-08-07T09:57:47.2471249+02:00">
+			<Outcome value="Passed" />
+			<Test ID="Main/Call RealTimeSequence: Test  RT seq.nivsseq" name="Test  RT seq" startDateTime="2015-08-07T09:57:47.2481247+02:00" endDateTime="2015-08-07T09:57:56.8721995+02:00">
+				<Parameters>
+					<Parameter ID="UnitTest">
+						<Data>
+							<Datum xsi:type="string" xmlns="http://www.ieee.org/ATML/2006/Common">
+								<Value>Aliases/UnitTest1</Value>
+							</Datum>
+						</Data>
+					</Parameter>
+					<Parameter ID="WaitParam">
+						<Data>
+							<Datum xsi:type="double" value="2" xmlns="http://www.ieee.org/ATML/2006/Common" />
+						</Data>
+					</Parameter>
+					<Parameter ID="Main/Call RealTimeSequence: Test  RT seq.nivsseq.SequenceFile" name="Test  RT seq">
+						<Reference uuid="56651fb8-c13e-422b-9a73-1a102642a871" name="Test  RT seq">
+							<Text xmlns="http://www.ieee.org/ATML/2006/Common">d:\NI Projects\EXAM &amp; cPython\Python development\cPython-Interface-for-NI-VeriStand\VS\Stimulus Profiles\RT Sequence and Stimulus profile\Test  RT seq.nivsseq</Text>
+						</Reference>
+					</Parameter>
+				</Parameters>
+				<Outcome value="Passed" />
+				<TestResult ID="Pass">
+					<TestData>
+						<Datum xsi:type="boolean" value="true" xmlns="http://www.ieee.org/ATML/2006/Common" />
+					</TestData>
+					<TestLimits>
+						<Limits>
+							<Expected comparator="EQ" xmlns="http://www.ieee.org/ATML/2006/Common">
+								<Datum xsi:type="boolean" value="true" />
+							</Expected>
+						</Limits>
+					</TestLimits>
+				</TestResult>
+			</Test>
+		</TestGroup>
+		<Test ID="Clean Up" name="Clean Up" startDateTime="2015-08-07T09:57:56.8821975+02:00" endDateTime="2015-08-07T09:57:56.8821975+02:00">
+			<Outcome value="Passed" />
+		</Test>
+	</ResultSet>
+	<TestDescription>
+		<Definition version="1_0_0_0" xmlns="http://www.ieee.org/ATML/2006/Common">
+			<Identification />
+		</Definition>
+	</TestDescription>
+	<UUT UutType="software">
+		<SerialNumber xmlns="http://www.ieee.org/ATML/2006/Common">010</SerialNumber>
+	</UUT>
+</TestResults>

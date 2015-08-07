@@ -1029,6 +1029,154 @@ int StopDataLogging2(char *logConfigName)
 	return STATUS_OK;                 
 }
 
+int RTSequenceExecuteAsynch(char *filePath, char ** lParamNames,int lParamNamesLength, int lParamNamesLineLength,
+							char ** lParamValues,int lParamValuesLength, int lParamValuesLineLength,
+							char ** lParamTypes,int lParamTypesLength, int lParamTypesLineLength)
+{
+	CDotNetHandle exception_Handle;
+	int iStatus = 0, i=0;
+	
+	char ** lParamNamesTemp = 0;
+	char **	lParamValuesTemp = 0;
+	char **	lParamTypesTemp = 0;
+	
+	lParamNamesTemp = (char **)malloc(sizeof(char *) * (lParamNamesLength));
+	if (lParamNamesTemp == NULL) return -1;
+	for (i = 0; i < lParamNamesLength; ++i)
+	{
+		lParamNamesTemp[i] = *lParamNames+(i*lParamNamesLineLength);
+	};
+	
+	lParamValuesTemp = (char **)malloc(sizeof(char *) * (lParamValuesLength));
+	if (lParamValuesTemp == NULL) return -1;
+	for (i = 0; i < lParamValuesLength; ++i)
+	{
+		lParamValuesTemp[i] = *lParamValues+(i*lParamValuesLineLength);
+	};
+	
+	lParamTypesTemp = (char **)malloc(sizeof(char *) * (lParamTypesLength));
+	if (lParamTypesTemp == NULL) return -1;
+	for (i = 0; i < lParamTypesLength; ++i)
+	{
+		lParamTypesTemp[i] = *lParamTypes+(i*lParamTypesLineLength);
+	};
+	
+	iStatus = VeristandPythonInterop_VeriStandInterop_RTSequenceExecuteAsynch(
+		instance_handle, filePath,
+		lParamNamesTemp,lParamNamesLength,
+		lParamValuesTemp,lParamValuesLength,
+		lParamTypesTemp,lParamTypesLength,
+		&exception_Handle);
+	
+	/*iStatus = VeristandPythonInterop_VeriStandInterop_StartDataLogging2(
+		instance_handle,logConfigName,logDescription,logFilePath,
+		fTriggerLevel,iTriggerSlope,lTriggerChannel,lRate,
+		lFilePropertiesNamesTemp, lFilePropertiesNamesLength,lFilePropertiesValuesTemp,lFilePropertiesValuesLength,
+		lChannelsToLogTemp, lChannelsToLogLength,fDuration,fPreTriggerDuration,lReplaceFile, lChannelShortNamesTemp,lChannelShortNamesLength, 
+		&exception_Handle);*/
+	
+	free(lParamNamesTemp);
+	free(lParamValuesTemp);
+	free(lParamTypesTemp);
+		
+	if (iStatus != STATUS_OK) 
+	{ 
+		StoreErrorForGetLastErrorFromDotNetHandle (__FUNCTION__, exception_Handle);
+
+		return iStatus; 
+	}
+	
+	return STATUS_OK;    
+	         
+}
+
+
+int StimulusExecuteAsynch(char *filePath, char *UUTSerialNumber)
+{
+	CDotNetHandle exception_Handle;
+
+	int iStatus = 0;
+	
+	iStatus = VeristandPythonInterop_VeriStandInterop_StimulusExecuteAsynch(
+		instance_handle,
+		filePath,
+		UUTSerialNumber,
+		&exception_Handle);
+		
+	if (iStatus != STATUS_OK)  
+	{ 
+		StoreErrorForGetLastErrorFromDotNetHandle (__FUNCTION__, exception_Handle);
+
+		return iStatus; 
+	}
+	
+	return STATUS_OK;                 
+}
+
+int GetStimulusState(int *sessionState)
+{
+	// NOTE - Reference arguments must be allocated using CDotNetAllocateMemory
+	
+	CDotNetHandle exception_Handle;
+	int iStatus = 0;
+	
+	iStatus = VeristandPythonInterop_VeriStandInterop_StimulusState(
+		instance_handle,
+		sessionState,
+		&exception_Handle);
+	
+	if (iStatus != STATUS_OK) 
+	{ 
+		StoreErrorForGetLastErrorFromDotNetHandle (__FUNCTION__, exception_Handle);
+		return iStatus;             
+	}	
+	
+	return iStatus;                 
+}
+
+int GetRTSequenceState(int *sessionState)
+{
+	// NOTE - Reference arguments must be allocated using CDotNetAllocateMemory
+	
+	CDotNetHandle exception_Handle;
+	int iStatus = 0;
+	
+	iStatus = VeristandPythonInterop_VeriStandInterop_RTSequenceState(
+		instance_handle,
+		sessionState,
+		&exception_Handle);
+	
+	if (iStatus != STATUS_OK) 
+	{ 
+		StoreErrorForGetLastErrorFromDotNetHandle (__FUNCTION__, exception_Handle);
+		return iStatus;             
+	}	
+	
+	return iStatus;                 
+}
+
+int RTSequenceUndeploy(void)
+{
+	// NOTE - Reference arguments must be allocated using CDotNetAllocateMemory
+	
+	CDotNetHandle exception_Handle;
+	int iStatus = 0;
+
+	
+	
+	iStatus = VeristandPythonInterop_VeriStandInterop_RTSequenceUndeploy(
+		instance_handle,
+		&exception_Handle);
+	
+	if (iStatus != STATUS_OK) 
+	{ 
+		StoreErrorForGetLastErrorFromDotNetHandle (__FUNCTION__, exception_Handle);
+		return iStatus;             
+	}	
+	
+	return iStatus;                 
+}
+
 
 int TDMSOpen(char *filePath)
 {

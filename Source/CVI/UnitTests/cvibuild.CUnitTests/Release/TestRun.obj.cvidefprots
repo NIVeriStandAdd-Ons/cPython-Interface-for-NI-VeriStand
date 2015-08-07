@@ -1,0 +1,156 @@
+[CU_assertImplementation]
+Class="Function"
+Prototype="int CU_assertImplementation(int bValue, unsigned int uiLine, const char *strCondition, const char *strFile, const char *strFunction, int bFatal);"
+
+[CU_set_suite_start_handler]
+Class="Function"
+Prototype="void CU_set_suite_start_handler(void (*pSuiteStartHandler)(struct CU_Suite *));"
+
+[CU_set_test_start_handler]
+Class="Function"
+Prototype="void CU_set_test_start_handler(void (*pTestStartHandler)(struct CU_Test *, struct CU_Suite *));"
+
+[CU_set_test_complete_handler]
+Class="Function"
+Prototype="void CU_set_test_complete_handler(void (*pTestCompleteHandler)(struct CU_Test *, struct CU_Suite *, struct CU_FailureRecord *));"
+
+[CU_set_suite_complete_handler]
+Class="Function"
+Prototype="void CU_set_suite_complete_handler(void (*pSuiteCompleteHandler)(struct CU_Suite *, struct CU_FailureRecord *));"
+
+[CU_set_all_test_complete_handler]
+Class="Function"
+Prototype="void CU_set_all_test_complete_handler(void (*pAllTestsCompleteHandler)(struct CU_FailureRecord *));"
+
+[CU_set_suite_init_failure_handler]
+Class="Function"
+Prototype="void CU_set_suite_init_failure_handler(void (*pSuiteInitFailureHandler)(struct CU_Suite *));"
+
+[CU_set_suite_cleanup_failure_handler]
+Class="Function"
+Prototype="void CU_set_suite_cleanup_failure_handler(void (*pSuiteCleanupFailureHandler)(struct CU_Suite *));"
+
+[CU_get_suite_start_handler]
+Class="Function"
+Prototype="void (*CU_get_suite_start_handler())(struct CU_Suite *);"
+
+[CU_get_test_start_handler]
+Class="Function"
+Prototype="void (*CU_get_test_start_handler())(struct CU_Test *, struct CU_Suite *);"
+
+[CU_get_test_complete_handler]
+Class="Function"
+Prototype="void (*CU_get_test_complete_handler())(struct CU_Test *, struct CU_Suite *, struct CU_FailureRecord *);"
+
+[CU_get_suite_complete_handler]
+Class="Function"
+Prototype="void (*CU_get_suite_complete_handler())(struct CU_Suite *, struct CU_FailureRecord *);"
+
+[CU_get_all_test_complete_handler]
+Class="Function"
+Prototype="void (*CU_get_all_test_complete_handler())(struct CU_FailureRecord *);"
+
+[CU_get_suite_init_failure_handler]
+Class="Function"
+Prototype="void (*CU_get_suite_init_failure_handler())(struct CU_Suite *);"
+
+[CU_get_suite_cleanup_failure_handler]
+Class="Function"
+Prototype="void (*CU_get_suite_cleanup_failure_handler())(struct CU_Suite *);"
+
+[CU_get_number_of_suites_run]
+Class="Function"
+Prototype="unsigned int CU_get_number_of_suites_run();"
+
+[CU_get_number_of_suites_failed]
+Class="Function"
+Prototype="unsigned int CU_get_number_of_suites_failed();"
+
+[CU_get_number_of_suites_inactive]
+Class="Function"
+Prototype="unsigned int CU_get_number_of_suites_inactive();"
+
+[CU_get_number_of_tests_run]
+Class="Function"
+Prototype="unsigned int CU_get_number_of_tests_run();"
+
+[CU_get_number_of_tests_failed]
+Class="Function"
+Prototype="unsigned int CU_get_number_of_tests_failed();"
+
+[CU_get_number_of_tests_inactive]
+Class="Function"
+Prototype="unsigned int CU_get_number_of_tests_inactive();"
+
+[CU_get_number_of_asserts]
+Class="Function"
+Prototype="unsigned int CU_get_number_of_asserts();"
+
+[CU_get_number_of_successes]
+Class="Function"
+Prototype="unsigned int CU_get_number_of_successes();"
+
+[CU_get_number_of_failures]
+Class="Function"
+Prototype="unsigned int CU_get_number_of_failures();"
+
+[CU_get_number_of_failure_records]
+Class="Function"
+Prototype="unsigned int CU_get_number_of_failure_records();"
+
+[CU_get_elapsed_time]
+Class="Function"
+Prototype="double CU_get_elapsed_time();"
+
+[CU_get_failure_list]
+Class="Function"
+Prototype="struct CU_FailureRecord *CU_get_failure_list();"
+
+[CU_get_run_summary]
+Class="Function"
+Prototype="struct CU_RunSummary *CU_get_run_summary();"
+
+[CU_run_all_tests]
+Class="Function"
+Prototype="CU_ErrorCode CU_run_all_tests();"
+
+[CU_run_suite]
+Class="Function"
+Prototype="CU_ErrorCode CU_run_suite(struct CU_Suite *pSuite);"
+
+[CU_run_test]
+Class="Function"
+Prototype="CU_ErrorCode CU_run_test(struct CU_Suite *pSuite, struct CU_Test *pTest);"
+
+[CU_clear_previous_results]
+Class="Function"
+Prototype="void CU_clear_previous_results();"
+
+[CU_get_current_suite]
+Class="Function"
+Prototype="struct CU_Suite *CU_get_current_suite();"
+
+[CU_get_current_test]
+Class="Function"
+Prototype="struct CU_Test *CU_get_current_test();"
+
+[CU_is_test_running]
+Class="Function"
+Prototype="int CU_is_test_running();"
+
+[CU_set_fail_on_inactive]
+Class="Function"
+Prototype="void CU_set_fail_on_inactive(int new_inactive);"
+
+[CU_get_fail_on_inactive]
+Class="Function"
+Prototype="int CU_get_fail_on_inactive();"
+
+[CU_print_run_results]
+Class="Function"
+Prototype="void CU_print_run_results(FILE *file);"
+
+[CU_get_run_results_string]
+Class="Function"
+Prototype="char *CU_get_run_results_string();"
+

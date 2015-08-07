@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="true">
   <TopNode>[0-1047]D:\NI Projects\EXAM &amp; cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\VeristandPythonInterop\Binaries\VeristandPythonInteropTest.dll</TopNode>
-  <SelectedNode>[0-1027]VeristandPythonInteropTest.VeriStandInteropLoggingTests</SelectedNode>
+  <SelectedNode>[0-1025]VeristandPythonInteropTest.VeriStandInteropIntegrationTests.StimulusExecuteAsynchShouldStartStimulus</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
     <Node UniqueName="[0-1047]D:\NI Projects\EXAM &amp; cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\VeristandPythonInterop\Binaries\VeristandPythonInteropTest.dll" Expanded="true" />
     <Node UniqueName="[0-1048]VeristandPythonInteropTest" Expanded="true" />
     <Node UniqueName="[0-1000]VeristandPythonInteropTest.VeriStandInteropIntegrationTests" Expanded="true" />
     <Node UniqueName="[0-1026]VeristandPythonInteropTest.VeriStandInteropIntegrationTests.RTSequenceExecuteAsynchShouldStartRTSequence" Checked="true" />
-    <Node UniqueName="[0-1027]VeristandPythonInteropTest.VeriStandInteropLoggingTests" Expanded="true" Checked="true" />
+    <Node UniqueName="[0-1025]VeristandPythonInteropTest.VeriStandInteropIntegrationTests.StimulusExecuteAsynchShouldStartStimulus" Checked="true" />
+    <Node UniqueName="[0-1027]VeristandPythonInteropTest.VeriStandInteropLoggingTests" Expanded="true" />
     <Node UniqueName="[0-1032]VeristandPythonInteropTest.VeristandPythonInteropLaunchCloseTest" Expanded="true" />
   </Nodes>
 </VisualState>

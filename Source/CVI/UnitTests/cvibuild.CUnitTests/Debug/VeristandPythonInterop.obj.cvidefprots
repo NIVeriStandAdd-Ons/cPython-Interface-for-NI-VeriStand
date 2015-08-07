@@ -6,46 +6,6 @@ Prototype="int Initialize_VeristandPythonInterop();"
 Class="Function"
 Prototype="int Close_VeristandPythonInterop();"
 
-[VeristandPythonInterop_VeriStandTDMSHandler__Create]
-Class="Function"
-Prototype="int VeristandPythonInterop_VeriStandTDMSHandler__Create(struct __VeristandPythonInterop_VeriStandTDMSHandler **__instance, void **__exception);"
-
-[VeristandPythonInterop_VeriStandTDMSHandler_TDMSOpen]
-Class="Function"
-Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_TDMSOpen(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, char *filePath, void **__exception);"
-
-[VeristandPythonInterop_VeriStandTDMSHandler_TDMSClose]
-Class="Function"
-Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_TDMSClose(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, void **__exception);"
-
-[VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLoggingRate]
-Class="Function"
-Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLoggingRate(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, double *__returnValue, void **__exception);"
-
-[VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogChannelCount]
-Class="Function"
-Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogChannelCount(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, int *__returnValue, void **__exception);"
-
-[VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogLength]
-Class="Function"
-Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogLength(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, long long *__returnValue, void **__exception);"
-
-[VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogChannelProperty]
-Class="Function"
-Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogChannelProperty(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, int channelIndex, char *propertyName, char **__returnValue, void **__exception);"
-
-[VeristandPythonInterop_VeriStandTDMSHandler_TDMSReadLine]
-Class="Function"
-Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_TDMSReadLine(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, int reqLine, double **__returnValue, int *____returnValueLength, void **__exception);"
-
-[VeristandPythonInterop_VeriStandTDMSHandler_TDMSReadColumn]
-Class="Function"
-Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_TDMSReadColumn(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, int reqColumn, double **__returnValue, int *____returnValueLength, void **__exception);"
-
-[VeristandPythonInterop_VeriStandTDMSHandler_TDMSTimeColumn]
-Class="Function"
-Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_TDMSTimeColumn(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, double **__returnValue, int *____returnValueLength, void **__exception);"
-
 [VeristandPythonInterop_VeriStandInterop_GetVeristandInterop]
 Class="Function"
 Prototype="int VeristandPythonInterop_VeriStandInterop_GetVeristandInterop(struct __VeristandPythonInterop_VeriStandInterop **__returnValue, void **__exception);"
@@ -126,6 +86,10 @@ Prototype="int VeristandPythonInterop_VeriStandInterop_SetChannelValueSynch(stru
 Class="Function"
 Prototype="int VeristandPythonInterop_VeriStandInterop_LaunchVeriStand(struct __VeristandPythonInterop_VeriStandInterop *__instance, void **__exception);"
 
+[VeristandPythonInterop_VeriStandInterop_LaunchVeriStand_1]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_LaunchVeriStand_1(struct __VeristandPythonInterop_VeriStandInterop *__instance, int runAs, void **__exception);"
+
 [VeristandPythonInterop_VeriStandInterop_RunProject]
 Class="Function"
 Prototype="int VeristandPythonInterop_VeriStandInterop_RunProject(struct __VeristandPythonInterop_VeriStandInterop *__instance, void **__exception);"
@@ -186,6 +150,26 @@ Prototype="int VeristandPythonInterop_VeriStandInterop_GetAvailableChannelsToRea
 Class="Function"
 Prototype="int VeristandPythonInterop_VeriStandInterop_GetAvailableChannelsToWriteCount(struct __VeristandPythonInterop_VeriStandInterop *__instance, int *__returnValue, void **__exception);"
 
+[VeristandPythonInterop_VeriStandInterop_StimulusExecuteAsynch]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_StimulusExecuteAsynch(struct __VeristandPythonInterop_VeriStandInterop *__instance, char *stimulusFile, char *uutSerialNumber, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_StimulusState]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_StimulusState(struct __VeristandPythonInterop_VeriStandInterop *__instance, int *__returnValue, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_RTSequenceExecuteAsynch]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_RTSequenceExecuteAsynch(struct __VeristandPythonInterop_VeriStandInterop *__instance, char *RTSequenceFile, char **ParamNames, int __ParamNamesLength, char **ParamValues, int __ParamValuesLength, char **ParamTypes, int __ParamTypesLength, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_RTSequenceState]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_RTSequenceState(struct __VeristandPythonInterop_VeriStandInterop *__instance, int *__returnValue, void **__exception);"
+
+[VeristandPythonInterop_VeriStandInterop_RTSequenceUndeploy]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_RTSequenceUndeploy(struct __VeristandPythonInterop_VeriStandInterop *__instance, void **__exception);"
+
 [VeristandPythonInterop_VSLogChannel__Create]
 Class="Function"
 Prototype="int VeristandPythonInterop_VSLogChannel__Create(struct __VeristandPythonInterop_VSLogChannel **__instance, void **__exception);"
@@ -201,4 +185,44 @@ Prototype="int VeristandPythonInterop_VSLogChannel__Get__lLogChannel(struct __Ve
 [VeristandPythonInterop_VSLogChannel__Set__lLogChannel]
 Class="Function"
 Prototype="int VeristandPythonInterop_VSLogChannel__Set__lLogChannel(struct __VeristandPythonInterop_VSLogChannel *__instance, struct __NationalInstruments_VeriStand_ClientAPI_LogChannel *lLogChannel, void **__exception);"
+
+[VeristandPythonInterop_VeriStandTDMSHandler__Create]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandTDMSHandler__Create(struct __VeristandPythonInterop_VeriStandTDMSHandler **__instance, void **__exception);"
+
+[VeristandPythonInterop_VeriStandTDMSHandler_TDMSOpen]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_TDMSOpen(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, char *filePath, void **__exception);"
+
+[VeristandPythonInterop_VeriStandTDMSHandler_TDMSClose]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_TDMSClose(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, void **__exception);"
+
+[VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLoggingRate]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLoggingRate(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, double *__returnValue, void **__exception);"
+
+[VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogChannelCount]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogChannelCount(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, int *__returnValue, void **__exception);"
+
+[VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogLength]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogLength(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, long long *__returnValue, void **__exception);"
+
+[VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogChannelProperty]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogChannelProperty(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, int channelIndex, char *propertyName, char **__returnValue, void **__exception);"
+
+[VeristandPythonInterop_VeriStandTDMSHandler_TDMSReadLine]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_TDMSReadLine(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, int reqLine, double **__returnValue, int *____returnValueLength, void **__exception);"
+
+[VeristandPythonInterop_VeriStandTDMSHandler_TDMSReadColumn]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_TDMSReadColumn(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, int reqColumn, double **__returnValue, int *____returnValueLength, void **__exception);"
+
+[VeristandPythonInterop_VeriStandTDMSHandler_TDMSTimeColumn]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandTDMSHandler_TDMSTimeColumn(struct __VeristandPythonInterop_VeriStandTDMSHandler *__instance, double **__returnValue, int *____returnValueLength, void **__exception);"
 

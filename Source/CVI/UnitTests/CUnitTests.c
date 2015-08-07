@@ -115,6 +115,8 @@ int AddIntegrationTests (CU_pSuite pSuiteT)
 			  || (NULL == CU_add_test(pSuiteT, "GetTDMSShouldReturnTDMSProperties", GetTDMSShouldReturnTDMSProperties))
 			  || (NULL == CU_add_test(pSuiteT, "TDMSReadColumnShouldReturnTDMSColumn", TDMSReadColumnShouldReturnTDMSColumn))
 			  || (NULL == CU_add_test(pSuiteT, "TDMSReadTimeColumnShouldReturnTDMSTimeColumn", TDMSReadTimeColumnShouldReturnTDMSTimeColumn))
+			  || (NULL == CU_add_test(pSuiteT, "StimulusExecuteAsynchShouldStartStimulus", StimulusExecuteAsynchShouldStartStimulus)) 
+			  || (NULL == CU_add_test(pSuiteT, "RTSequenceExecuteAsynchShouldStartRTSequence", RTSequenceExecuteAsynchShouldStartRTSequence)) 
 			  
 			)
    		{

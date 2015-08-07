@@ -39,5 +39,7 @@ void SetGetParamValueSynchShouldSetAndGetParamValueSynch (void);
 void SetGetParamValueShouldSetAndGetParamValue (void);
 void TDMSReadColumnShouldReturnTDMSColumn (void);
 void TDMSReadTimeColumnShouldReturnTDMSTimeColumn(void);
+void StimulusExecuteAsynchShouldStartStimulus(void);
+void RTSequenceExecuteAsynchShouldStartRTSequence(void);
 
 #endif  /* ndef __IntegrationTest_H__ */

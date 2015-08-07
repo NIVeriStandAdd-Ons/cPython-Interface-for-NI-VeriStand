@@ -1,26 +1,26 @@
 -nologo
--out:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\CUnitTests.exe
+-out:d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\CVI\UnitTests\cvibuild.CUnitTests\Debug\CUnitTests.exe
 -arch:x86
 -timestamp
 -debug:2
--res:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\resources.res
+-res:d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\CVI\UnitTests\cvibuild.CUnitTests\Debug\resources.res
 -entry:_CVIWinMainStartupCodeForDebugging@0
 -base:0x400000
--linked:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\linkersummary.txt
--dlldeps:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\dlldependencies.txt
--licensing:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\linkerlicensing.txt
--browsedeps:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\moduledependencies.txt
+-linked:d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\CVI\UnitTests\cvibuild.CUnitTests\Debug\linkersummary.txt
+-dlldeps:d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\CVI\UnitTests\cvibuild.CUnitTests\Debug\dlldependencies.txt
+-licensing:d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\CVI\UnitTests\cvibuild.CUnitTests\Debug\linkerlicensing.txt
+-browsedeps:d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\CVI\UnitTests\cvibuild.CUnitTests\Debug\moduledependencies.txt
 -stackreserve:131072
 -stackcommit:4096
--in:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\Automated.obj
--in:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\Basic.obj
--in:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\CUError.obj
--in:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\CUnitTests.obj
--in:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\IntegrationTest.obj
--in:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\MyMem.obj
--in:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\TestDB.obj
--in:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\TestRun.obj
--in:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\Util.obj
+-in:d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\CVI\UnitTests\cvibuild.CUnitTests\Debug\Automated.obj
+-in:d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\CVI\UnitTests\cvibuild.CUnitTests\Debug\Basic.obj
+-in:d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\CVI\UnitTests\cvibuild.CUnitTests\Debug\CUError.obj
+-in:d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\CVI\UnitTests\cvibuild.CUnitTests\Debug\CUnitTests.obj
+-in:d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\CVI\UnitTests\cvibuild.CUnitTests\Debug\IntegrationTest.obj
+-in:d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\CVI\UnitTests\cvibuild.CUnitTests\Debug\MyMem.obj
+-in:d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\CVI\UnitTests\cvibuild.CUnitTests\Debug\TestDB.obj
+-in:d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\CVI\UnitTests\cvibuild.CUnitTests\Debug\TestRun.obj
+-in:d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\CVI\UnitTests\cvibuild.CUnitTests\Debug\Util.obj
 -more:c:\program files (x86)\national instruments\cvi2013\bin\msvc\cvistart.lib
 -more:c:\program files (x86)\national instruments\cvi2013\bin\msvc\cvi.lib
 -more:c:\program files (x86)\national instruments\cvi2013\sdk\lib\msvc\advapi32.lib
@@ -56,7 +56,7 @@
 -more:c:\Program Files (x86)\National Instruments\CVI2013\toolslib\toolbox\msvc\toolbox.obj
 -more:c:\program files (x86)\national instruments\cvi2013\sdk\lib\msvc\user32.lib
 -more:c:\program files (x86)\national instruments\cvi2013\sdk\lib\msvc\uuid.lib
--more:c:\NI Projects\EXAM\EXAM CVI dotnet\VeristandPythonInterop\Binaries\msvc\VeriStandCviDll.lib
--more:c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\UnitTests\cvibuild.CUnitTests\Debug\VeristandPythonInterop.obj
+-more:d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\VeristandPythonInterop\Binaries\msvc\VeriStandCviDll.lib
+-more:d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\CVI\UnitTests\cvibuild.CUnitTests\Debug\VeristandPythonInterop.obj
 -more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\visa.lib
 -more:c:\program files (x86)\national instruments\cvi2013\sdk\lib\msvc\winmm.lib

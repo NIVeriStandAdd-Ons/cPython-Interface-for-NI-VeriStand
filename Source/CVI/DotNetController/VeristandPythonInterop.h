@@ -6,7 +6,7 @@
 // key token information from the constant and just specify the name of the assembly.
 //
 // Other assemblies referenced by the target assembly:
-// Name: NationalInstruments.VeriStand.ClientAPI, Location: C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\NationalInstruments.VeriStand.ClientAPI\v4.0_2013.1.0.0__a6d690c380daa308\NationalInstruments.VeriStand.ClientAPI.dll
+// Name: NationalInstruments.VeriStand.ClientAPI, Location: C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\NationalInstruments.VeriStand.ClientAPI\v4.0_2014.0.0.0__a6d690c380daa308\NationalInstruments.VeriStand.ClientAPI.dll
 //
 // If any assembly, including the target assembly, is not installed in the
 // Global Assembly Cache (GAC) or in the application directory, and the wrapper
@@ -15,8 +15,8 @@
 // calling CDotNetRegisterAssemblyPath before calling the wrapper code.
 //
 // Types exposed by the target assembly but defined in other assemblies:
-// CVI name: NationalInstruments_VeriStand_ClientAPI_LogChannel, .NET name: NationalInstruments.VeriStand.ClientAPI.LogChannel, Assembly: NationalInstruments.VeriStand.ClientAPI, Module: Global Assembly Cache
 // CVI name: NationalInstruments_VeriStand_ClientAPI_LogInfo_trigger, .NET name: NationalInstruments.VeriStand.ClientAPI.LogInfo+trigger, Assembly: NationalInstruments.VeriStand.ClientAPI, Module: Global Assembly Cache
+// CVI name: NationalInstruments_VeriStand_ClientAPI_LogChannel, .NET name: NationalInstruments.VeriStand.ClientAPI.LogChannel, Assembly: NationalInstruments.VeriStand.ClientAPI, Module: Global Assembly Cache
 
 #include <cvidotnet.h>
 
@@ -25,10 +25,10 @@ extern "C" {
 #endif
 
 // Type definitions
-typedef struct __VeristandPythonInterop_VeriStandTDMSHandler * VeristandPythonInterop_VeriStandTDMSHandler;
 typedef struct __VeristandPythonInterop_VeriStandInterop * VeristandPythonInterop_VeriStandInterop;
 typedef struct __VeristandPythonInterop_VSLogChannel * VeristandPythonInterop_VSLogChannel;
 typedef struct __NationalInstruments_VeriStand_ClientAPI_LogChannel * NationalInstruments_VeriStand_ClientAPI_LogChannel;
+typedef struct __VeristandPythonInterop_VeriStandTDMSHandler * VeristandPythonInterop_VeriStandTDMSHandler;
 
 // C wrapper for enumeration type NationalInstruments.VeriStand.ClientAPI.LogInfo+trigger
 #ifndef NationalInstruments_VeriStand_ClientAPI_LogInfo_trigger_DEFINED
@@ -47,53 +47,6 @@ typedef enum NationalInstruments_VeriStand_ClientAPI_LogInfo_trigger
 // Global Functions
 int CVIFUNC Initialize_VeristandPythonInterop(void);
 int CVIFUNC Close_VeristandPythonInterop(void);
-
-// Type: VeristandPythonInterop.VeriStandTDMSHandler
-int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler__Create(
-	VeristandPythonInterop_VeriStandTDMSHandler * __instance,
-	CDotNetHandle * __exception);
-int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_TDMSOpen(
-	VeristandPythonInterop_VeriStandTDMSHandler __instance,
-	char * filePath,
-	CDotNetHandle * __exception);
-int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_TDMSClose(
-	VeristandPythonInterop_VeriStandTDMSHandler __instance,
-	CDotNetHandle * __exception);
-int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLoggingRate(
-	VeristandPythonInterop_VeriStandTDMSHandler __instance,
-	double * __returnValue,
-	CDotNetHandle * __exception);
-int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogChannelCount(
-	VeristandPythonInterop_VeriStandTDMSHandler __instance,
-	int * __returnValue,
-	CDotNetHandle * __exception);
-int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogLength(
-	VeristandPythonInterop_VeriStandTDMSHandler __instance,
-	__int64 * __returnValue,
-	CDotNetHandle * __exception);
-int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogChannelProperty(
-	VeristandPythonInterop_VeriStandTDMSHandler __instance,
-	int channelIndex,
-	char * propertyName,
-	char ** __returnValue,
-	CDotNetHandle * __exception);
-int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_TDMSReadLine(
-	VeristandPythonInterop_VeriStandTDMSHandler __instance,
-	int reqLine,
-	double ** __returnValue,
-	ssize_t * ____returnValueLength,
-	CDotNetHandle * __exception);
-int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_TDMSReadColumn(
-	VeristandPythonInterop_VeriStandTDMSHandler __instance,
-	int reqColumn,
-	double ** __returnValue,
-	ssize_t * ____returnValueLength,
-	CDotNetHandle * __exception);
-int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_TDMSTimeColumn(
-	VeristandPythonInterop_VeriStandTDMSHandler __instance,
-	double ** __returnValue,
-	ssize_t * ____returnValueLength,
-	CDotNetHandle * __exception);
 
 // Type: VeristandPythonInterop.VeriStandInterop
 int CVIFUNC VeristandPythonInterop_VeriStandInterop_GetVeristandInterop(
@@ -182,6 +135,10 @@ int CVIFUNC VeristandPythonInterop_VeriStandInterop_SetChannelValueSynch(
 	CDotNetHandle * __exception);
 int CVIFUNC VeristandPythonInterop_VeriStandInterop_LaunchVeriStand(
 	VeristandPythonInterop_VeriStandInterop __instance,
+	CDotNetHandle * __exception);
+int CVIFUNC VeristandPythonInterop_VeriStandInterop_LaunchVeriStand_1(
+	VeristandPythonInterop_VeriStandInterop __instance,
+	int runAs,
 	CDotNetHandle * __exception);
 int CVIFUNC VeristandPythonInterop_VeriStandInterop_RunProject(
 	VeristandPythonInterop_VeriStandInterop __instance,
@@ -276,6 +233,32 @@ int CVIFUNC VeristandPythonInterop_VeriStandInterop_GetAvailableChannelsToWriteC
 	VeristandPythonInterop_VeriStandInterop __instance,
 	int * __returnValue,
 	CDotNetHandle * __exception);
+int CVIFUNC VeristandPythonInterop_VeriStandInterop_StimulusExecuteAsynch(
+	VeristandPythonInterop_VeriStandInterop __instance,
+	char * stimulusFile,
+	char * uutSerialNumber,
+	CDotNetHandle * __exception);
+int CVIFUNC VeristandPythonInterop_VeriStandInterop_StimulusState(
+	VeristandPythonInterop_VeriStandInterop __instance,
+	int * __returnValue,
+	CDotNetHandle * __exception);
+int CVIFUNC VeristandPythonInterop_VeriStandInterop_RTSequenceExecuteAsynch(
+	VeristandPythonInterop_VeriStandInterop __instance,
+	char * RTSequenceFile,
+	char ** ParamNames,
+	ssize_t __ParamNamesLength,
+	char ** ParamValues,
+	ssize_t __ParamValuesLength,
+	char ** ParamTypes,
+	ssize_t __ParamTypesLength,
+	CDotNetHandle * __exception);
+int CVIFUNC VeristandPythonInterop_VeriStandInterop_RTSequenceState(
+	VeristandPythonInterop_VeriStandInterop __instance,
+	int * __returnValue,
+	CDotNetHandle * __exception);
+int CVIFUNC VeristandPythonInterop_VeriStandInterop_RTSequenceUndeploy(
+	VeristandPythonInterop_VeriStandInterop __instance,
+	CDotNetHandle * __exception);
 
 // Type: VeristandPythonInterop.VSLogChannel
 int CVIFUNC VeristandPythonInterop_VSLogChannel__Create(
@@ -297,6 +280,53 @@ int CVIFUNC VeristandPythonInterop_VSLogChannel__Get__lLogChannel(
 int CVIFUNC VeristandPythonInterop_VSLogChannel__Set__lLogChannel(
 	VeristandPythonInterop_VSLogChannel __instance,
 	NationalInstruments_VeriStand_ClientAPI_LogChannel lLogChannel,
+	CDotNetHandle * __exception);
+
+// Type: VeristandPythonInterop.VeriStandTDMSHandler
+int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler__Create(
+	VeristandPythonInterop_VeriStandTDMSHandler * __instance,
+	CDotNetHandle * __exception);
+int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_TDMSOpen(
+	VeristandPythonInterop_VeriStandTDMSHandler __instance,
+	char * filePath,
+	CDotNetHandle * __exception);
+int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_TDMSClose(
+	VeristandPythonInterop_VeriStandTDMSHandler __instance,
+	CDotNetHandle * __exception);
+int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLoggingRate(
+	VeristandPythonInterop_VeriStandTDMSHandler __instance,
+	double * __returnValue,
+	CDotNetHandle * __exception);
+int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogChannelCount(
+	VeristandPythonInterop_VeriStandTDMSHandler __instance,
+	int * __returnValue,
+	CDotNetHandle * __exception);
+int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogLength(
+	VeristandPythonInterop_VeriStandTDMSHandler __instance,
+	__int64 * __returnValue,
+	CDotNetHandle * __exception);
+int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogChannelProperty(
+	VeristandPythonInterop_VeriStandTDMSHandler __instance,
+	int channelIndex,
+	char * propertyName,
+	char ** __returnValue,
+	CDotNetHandle * __exception);
+int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_TDMSReadLine(
+	VeristandPythonInterop_VeriStandTDMSHandler __instance,
+	int reqLine,
+	double ** __returnValue,
+	ssize_t * ____returnValueLength,
+	CDotNetHandle * __exception);
+int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_TDMSReadColumn(
+	VeristandPythonInterop_VeriStandTDMSHandler __instance,
+	int reqColumn,
+	double ** __returnValue,
+	ssize_t * ____returnValueLength,
+	CDotNetHandle * __exception);
+int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_TDMSTimeColumn(
+	VeristandPythonInterop_VeriStandTDMSHandler __instance,
+	double ** __returnValue,
+	ssize_t * ____returnValueLength,
 	CDotNetHandle * __exception);
 
 

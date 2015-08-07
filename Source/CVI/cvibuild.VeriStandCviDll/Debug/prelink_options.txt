@@ -1,8 +1,8 @@
--inrc c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\cvibuild.VeriStandCviDll\Debug\resources.in.rc
--outrc c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\cvibuild.VeriStandCviDll\Debug\resources.out.rc
--inhdef c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\cvibuild.VeriStandCviDll\Debug\VeriStandCviDll.h.hdefs
--outdef c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\cvibuild.VeriStandCviDll\Debug\VeriStandCviDll.dll.defs
--indefprot c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\cvibuild.VeriStandCviDll\Debug\VeriStandCviDll.obj.cvidefprots
--indefprot c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\cvibuild.VeriStandCviDll\Debug\VeriStandHelper.obj.cvidefprots
--indefprot c:\NI Projects\EXAM\EXAM CVI dotnet\CVI\cvibuild.VeriStandCviDll\Debug\VeristandPythonInterop.obj.cvidefprots
+-inrc d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\CVI\cvibuild.VeriStandCviDll\Debug\resources.in.rc
+-outrc d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\CVI\cvibuild.VeriStandCviDll\Debug\resources.out.rc
+-inhdef d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\CVI\cvibuild.VeriStandCviDll\Debug\VeriStandCviDll.h.hdefs
+-outdef d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\CVI\cvibuild.VeriStandCviDll\Debug\VeriStandCviDll.dll.defs
+-indefprot d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\CVI\cvibuild.VeriStandCviDll\Debug\VeriStandCviDll.obj.cvidefprots
+-indefprot d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\CVI\cvibuild.VeriStandCviDll\Debug\VeriStandHelper.obj.cvidefprots
+-indefprot d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\CVI\cvibuild.VeriStandCviDll\Debug\VeristandPythonInterop.obj.cvidefprots
 -dllName VeriStandCviDll.dll

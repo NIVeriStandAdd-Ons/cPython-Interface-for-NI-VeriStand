@@ -59,7 +59,14 @@ int GetAvailableChannelToRead(char *channel,int requestedChannelIndex);
 int GetAvailableChannelToWrite(char *channel,int requestedChannelIndex);
 int GetDataLogging2SessionState(char *sLogConfigName,char *sSessionState);
 int GetDataLogging2State(char *sLogConfigName,int *sessionState);
-
+int StimulusExecuteAsynch(char *filePath, char *UUTSerialNumber);
+int GetStimulusState(int *stimulusState);						 
+int RTSequenceExecuteAsynch(char *filePath, char ** lParamNames,int lParamNamesLength, int lParamNamesLineLength,
+							char ** lParamValues,int lParamValuesLength, int lParamValuesLineLength,
+							char ** lParamTypes,int lParamTypesLength, int lParamTypesLineLength);
+int GetRTSequenceState(int *RTSequenceState);
+int RTSequenceUndeploy(void);
+							 
 int GetTDMSLoggingRate(double *loggingRate);
 int GetTDMSLogChannelCount(int *logChannelCount);
 int GetTDMSLogLength(__int64 *logLength);

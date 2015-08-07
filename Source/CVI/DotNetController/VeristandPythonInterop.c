@@ -59,500 +59,6 @@ __Error:
 }
 
 
-// Type: VeristandPythonInterop.VeriStandTDMSHandler
-int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler__Create(
-	VeristandPythonInterop_VeriStandTDMSHandler * __instance,
-	CDotNetHandle * __exception)
-{
-	int __error = 0;
-
-	if (__exception)
-		*__exception = 0;
-
-
-	*__instance = 0;
-
-	// Call constructor
-	__errChk(CDotNetCreateGenericInstance(
-		__assemblyHandle, 
-		"VeristandPythonInterop.VeriStandTDMSHandler", 
-		0, 
-		0, 
-		__instance, 
-		0, 
-		0, 
-		0, 
-		0, 
-		__exception));
-
-
-__Error:
-	return __error;
-}
-
-int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_TDMSOpen(
-	VeristandPythonInterop_VeriStandTDMSHandler __instance,
-	char * filePath,
-	CDotNetHandle * __exception)
-{
-	int __error = 0;
-	char * __parameterTypeNames[1] = {0};
-	unsigned int __parameterTypes[1];
-	void * __parameters[1];
-
-	if (__exception)
-		*__exception = 0;
-
-
-	// Pre-process parameter: filePath
-	__parameterTypeNames[0] = "System.String";
-	__parameterTypes[0] = (CDOTNET_STRING);
-	__parameters[0] = &filePath;
-
-	// Call instance member
-	__errChk(CDotNetInvokeGenericMember(
-		__assemblyHandle, 
-		"VeristandPythonInterop.VeriStandTDMSHandler", 
-		__instance, 
-		CDOTNET_CALL_METHOD, 
-		"TDMSOpen", 
-		0, 
-		0, 
-		1, 
-		(const char **)__parameterTypeNames, 
-		__parameterTypes, 
-		__parameters, 
-		0, 
-		0, 
-		__exception));
-
-
-__Error:
-	return __error;
-}
-
-int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_TDMSClose(
-	VeristandPythonInterop_VeriStandTDMSHandler __instance,
-	CDotNetHandle * __exception)
-{
-	int __error = 0;
-
-	if (__exception)
-		*__exception = 0;
-
-
-	// Call instance member
-	__errChk(CDotNetInvokeGenericMember(
-		__assemblyHandle, 
-		"VeristandPythonInterop.VeriStandTDMSHandler", 
-		__instance, 
-		CDOTNET_CALL_METHOD, 
-		"TDMSClose", 
-		0, 
-		0, 
-		0, 
-		0, 
-		0, 
-		0, 
-		0, 
-		0, 
-		__exception));
-
-
-__Error:
-	return __error;
-}
-
-int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLoggingRate(
-	VeristandPythonInterop_VeriStandTDMSHandler __instance,
-	double * __returnValue,
-	CDotNetHandle * __exception)
-{
-	int __error = 0;
-	unsigned int __returnValueTypeId;
-
-	if (__exception)
-		*__exception = 0;
-
-
-	// Pre-process return value
-	__returnValueTypeId = CDOTNET_DOUBLE;
-
-	// Call instance member
-	__errChk(CDotNetInvokeGenericMember(
-		__assemblyHandle, 
-		"VeristandPythonInterop.VeriStandTDMSHandler", 
-		__instance, 
-		CDOTNET_CALL_METHOD, 
-		"GetTDMSLoggingRate", 
-		0, 
-		0, 
-		0, 
-		0, 
-		0, 
-		0, 
-		&__returnValueTypeId, 
-		__returnValue, 
-		__exception));
-
-
-__Error:
-	return __error;
-}
-
-int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogChannelCount(
-	VeristandPythonInterop_VeriStandTDMSHandler __instance,
-	int * __returnValue,
-	CDotNetHandle * __exception)
-{
-	int __error = 0;
-	unsigned int __returnValueTypeId;
-
-	if (__exception)
-		*__exception = 0;
-
-
-	// Pre-process return value
-	__returnValueTypeId = CDOTNET_INT32;
-
-	// Call instance member
-	__errChk(CDotNetInvokeGenericMember(
-		__assemblyHandle, 
-		"VeristandPythonInterop.VeriStandTDMSHandler", 
-		__instance, 
-		CDOTNET_CALL_METHOD, 
-		"GetTDMSLogChannelCount", 
-		0, 
-		0, 
-		0, 
-		0, 
-		0, 
-		0, 
-		&__returnValueTypeId, 
-		__returnValue, 
-		__exception));
-
-
-__Error:
-	return __error;
-}
-
-int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogLength(
-	VeristandPythonInterop_VeriStandTDMSHandler __instance,
-	__int64 * __returnValue,
-	CDotNetHandle * __exception)
-{
-	int __error = 0;
-	unsigned int __returnValueTypeId;
-
-	if (__exception)
-		*__exception = 0;
-
-
-	// Pre-process return value
-	__returnValueTypeId = CDOTNET_INT64;
-
-	// Call instance member
-	__errChk(CDotNetInvokeGenericMember(
-		__assemblyHandle, 
-		"VeristandPythonInterop.VeriStandTDMSHandler", 
-		__instance, 
-		CDOTNET_CALL_METHOD, 
-		"GetTDMSLogLength", 
-		0, 
-		0, 
-		0, 
-		0, 
-		0, 
-		0, 
-		&__returnValueTypeId, 
-		__returnValue, 
-		__exception));
-
-
-__Error:
-	return __error;
-}
-
-int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogChannelProperty(
-	VeristandPythonInterop_VeriStandTDMSHandler __instance,
-	int channelIndex,
-	char * propertyName,
-	char ** __returnValue,
-	CDotNetHandle * __exception)
-{
-	int __error = 0;
-	char * __parameterTypeNames[2] = {0};
-	unsigned int __parameterTypes[2];
-	void * __parameters[2];
-	unsigned int __returnValueTypeId;
-
-	if (__exception)
-		*__exception = 0;
-	if (__returnValue)
-		*__returnValue = 0;
-
-
-	// Pre-process parameter: channelIndex
-	__parameterTypeNames[0] = "System.Int32";
-	__parameterTypes[0] = (CDOTNET_INT32);
-	__parameters[0] = &channelIndex;
-
-	// Pre-process parameter: propertyName
-	__parameterTypeNames[1] = "System.String";
-	__parameterTypes[1] = (CDOTNET_STRING);
-	__parameters[1] = &propertyName;
-
-	// Pre-process return value
-	__returnValueTypeId = CDOTNET_STRING;
-
-	// Call instance member
-	__errChk(CDotNetInvokeGenericMember(
-		__assemblyHandle, 
-		"VeristandPythonInterop.VeriStandTDMSHandler", 
-		__instance, 
-		CDOTNET_CALL_METHOD, 
-		"GetTDMSLogChannelProperty", 
-		0, 
-		0, 
-		2, 
-		(const char **)__parameterTypeNames, 
-		__parameterTypes, 
-		__parameters, 
-		&__returnValueTypeId, 
-		__returnValue, 
-		__exception));
-
-
-__Error:
-	if (__error < 0) {
-		_CDotNetGenDisposeScalar(
-			__returnValue, 
-			CDOTNET_STRING);
-	}
-	return __error;
-}
-
-int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_TDMSReadLine(
-	VeristandPythonInterop_VeriStandTDMSHandler __instance,
-	int reqLine,
-	double ** __returnValue,
-	ssize_t * ____returnValueLength,
-	CDotNetHandle * __exception)
-{
-	int __error = 0;
-	char * __parameterTypeNames[1] = {0};
-	unsigned int __parameterTypes[1];
-	void * __parameters[1];
-	CDotNetHandle __returnValue__ = 0;
-	unsigned int __returnValueTypeId;
-
-	if (__exception)
-		*__exception = 0;
-	if (__returnValue)
-		*__returnValue = 0;
-	if (__returnValue)
-		*____returnValueLength = 0;
-
-
-	// Pre-process parameter: reqLine
-	__parameterTypeNames[0] = "System.Int32";
-	__parameterTypes[0] = (CDOTNET_INT32);
-	__parameters[0] = &reqLine;
-
-	// Pre-process return value
-	__returnValueTypeId = CDOTNET_DOUBLE | CDOTNET_ARRAY;
-
-	// Call instance member
-	__errChk(CDotNetInvokeGenericMember(
-		__assemblyHandle, 
-		"VeristandPythonInterop.VeriStandTDMSHandler", 
-		__instance, 
-		CDOTNET_CALL_METHOD, 
-		"TDMSReadLine", 
-		0, 
-		0, 
-		1, 
-		(const char **)__parameterTypeNames, 
-		__parameterTypes, 
-		__parameters, 
-		&__returnValueTypeId, 
-		&__returnValue__, 
-		__exception));
-
-	// Post-process return value
-	if (__returnValue__) {
-		if (__returnValue)
-			__errChk(CDotNetGetArrayElements(
-				__returnValue__, 
-				CDOTNET_DOUBLE, 
-				0, 
-				__returnValue));
-		if (__returnValue)
-			__errChk(CDotNetGetArrayLength(
-				__returnValue__, 
-				0, 
-				____returnValueLength));
-	}
-
-
-__Error:
-	if (__returnValue__)
-		CDotNetDiscardHandle(__returnValue__);
-	if (__error < 0) {
-		_CDotNetGenDisposeArray(
-			__returnValue, 
-			CDOTNET_DOUBLE, 
-			1, 
-			____returnValueLength);
-	}
-	return __error;
-}
-
-int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_TDMSReadColumn(
-	VeristandPythonInterop_VeriStandTDMSHandler __instance,
-	int reqColumn,
-	double ** __returnValue,
-	ssize_t * ____returnValueLength,
-	CDotNetHandle * __exception)
-{
-	int __error = 0;
-	char * __parameterTypeNames[1] = {0};
-	unsigned int __parameterTypes[1];
-	void * __parameters[1];
-	CDotNetHandle __returnValue__ = 0;
-	unsigned int __returnValueTypeId;
-
-	if (__exception)
-		*__exception = 0;
-	if (__returnValue)
-		*__returnValue = 0;
-	if (__returnValue)
-		*____returnValueLength = 0;
-
-
-	// Pre-process parameter: reqColumn
-	__parameterTypeNames[0] = "System.Int32";
-	__parameterTypes[0] = (CDOTNET_INT32);
-	__parameters[0] = &reqColumn;
-
-	// Pre-process return value
-	__returnValueTypeId = CDOTNET_DOUBLE | CDOTNET_ARRAY;
-
-	// Call instance member
-	__errChk(CDotNetInvokeGenericMember(
-		__assemblyHandle, 
-		"VeristandPythonInterop.VeriStandTDMSHandler", 
-		__instance, 
-		CDOTNET_CALL_METHOD, 
-		"TDMSReadColumn", 
-		0, 
-		0, 
-		1, 
-		(const char **)__parameterTypeNames, 
-		__parameterTypes, 
-		__parameters, 
-		&__returnValueTypeId, 
-		&__returnValue__, 
-		__exception));
-
-	// Post-process return value
-	if (__returnValue__) {
-		if (__returnValue)
-			__errChk(CDotNetGetArrayElements(
-				__returnValue__, 
-				CDOTNET_DOUBLE, 
-				0, 
-				__returnValue));
-		if (__returnValue)
-			__errChk(CDotNetGetArrayLength(
-				__returnValue__, 
-				0, 
-				____returnValueLength));
-	}
-
-
-__Error:
-	if (__returnValue__)
-		CDotNetDiscardHandle(__returnValue__);
-	if (__error < 0) {
-		_CDotNetGenDisposeArray(
-			__returnValue, 
-			CDOTNET_DOUBLE, 
-			1, 
-			____returnValueLength);
-	}
-	return __error;
-}
-
-int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_TDMSTimeColumn(
-	VeristandPythonInterop_VeriStandTDMSHandler __instance,
-	double ** __returnValue,
-	ssize_t * ____returnValueLength,
-	CDotNetHandle * __exception)
-{
-	int __error = 0;
-	CDotNetHandle __returnValue__ = 0;
-	unsigned int __returnValueTypeId;
-
-	if (__exception)
-		*__exception = 0;
-	if (__returnValue)
-		*__returnValue = 0;
-	if (__returnValue)
-		*____returnValueLength = 0;
-
-
-	// Pre-process return value
-	__returnValueTypeId = CDOTNET_DOUBLE | CDOTNET_ARRAY;
-
-	// Call instance member
-	__errChk(CDotNetInvokeGenericMember(
-		__assemblyHandle, 
-		"VeristandPythonInterop.VeriStandTDMSHandler", 
-		__instance, 
-		CDOTNET_CALL_METHOD, 
-		"TDMSTimeColumn", 
-		0, 
-		0, 
-		0, 
-		0, 
-		0, 
-		0, 
-		&__returnValueTypeId, 
-		&__returnValue__, 
-		__exception));
-
-	// Post-process return value
-	if (__returnValue__) {
-		if (__returnValue)
-			__errChk(CDotNetGetArrayElements(
-				__returnValue__, 
-				CDOTNET_DOUBLE, 
-				0, 
-				__returnValue));
-		if (__returnValue)
-			__errChk(CDotNetGetArrayLength(
-				__returnValue__, 
-				0, 
-				____returnValueLength));
-	}
-
-
-__Error:
-	if (__returnValue__)
-		CDotNetDiscardHandle(__returnValue__);
-	if (__error < 0) {
-		_CDotNetGenDisposeArray(
-			__returnValue, 
-			CDOTNET_DOUBLE, 
-			1, 
-			____returnValueLength);
-	}
-	return __error;
-}
-
-
 // Type: VeristandPythonInterop.VeriStandInterop
 int CVIFUNC VeristandPythonInterop_VeriStandInterop_GetVeristandInterop(
 	VeristandPythonInterop_VeriStandInterop * __returnValue,
@@ -1504,6 +1010,47 @@ __Error:
 	return __error;
 }
 
+int CVIFUNC VeristandPythonInterop_VeriStandInterop_LaunchVeriStand_1(
+	VeristandPythonInterop_VeriStandInterop __instance,
+	int runAs,
+	CDotNetHandle * __exception)
+{
+	int __error = 0;
+	char * __parameterTypeNames[1] = {0};
+	unsigned int __parameterTypes[1];
+	void * __parameters[1];
+
+	if (__exception)
+		*__exception = 0;
+
+
+	// Pre-process parameter: runAs
+	__parameterTypeNames[0] = "System.Boolean";
+	__parameterTypes[0] = (CDOTNET_BOOLEAN);
+	__parameters[0] = &runAs;
+
+	// Call instance member
+	__errChk(CDotNetInvokeGenericMember(
+		__assemblyHandle, 
+		"VeristandPythonInterop.VeriStandInterop", 
+		__instance, 
+		CDOTNET_CALL_METHOD, 
+		"LaunchVeriStand", 
+		0, 
+		0, 
+		1, 
+		(const char **)__parameterTypeNames, 
+		__parameterTypes, 
+		__parameters, 
+		0, 
+		0, 
+		__exception));
+
+
+__Error:
+	return __error;
+}
+
 int CVIFUNC VeristandPythonInterop_VeriStandInterop_RunProject(
 	VeristandPythonInterop_VeriStandInterop __instance,
 	CDotNetHandle * __exception)
@@ -1740,7 +1287,7 @@ int CVIFUNC VeristandPythonInterop_VeriStandInterop_StartDataLogging(
 		&lTriggerType, 
 		&lTriggerType__, 
 		__exception));
-	__parameterTypeNames[6] = "NationalInstruments.VeriStand.ClientAPI.LogInfo+trigger,NationalInstruments.VeriStand.ClientAPI, Version=2013.1.0.0, Culture=neutral, PublicKeyToken=a6d690c380daa308";
+	__parameterTypeNames[6] = "NationalInstruments.VeriStand.ClientAPI.LogInfo+trigger,NationalInstruments.VeriStand.ClientAPI, Version=2014.0.0.0, Culture=neutral, PublicKeyToken=a6d690c380daa308";
 	__parameterTypes[6] = (CDOTNET_ENUM);
 	__parameters[6] = &lTriggerType__;
 
@@ -2363,6 +1910,254 @@ __Error:
 	return __error;
 }
 
+int CVIFUNC VeristandPythonInterop_VeriStandInterop_StimulusExecuteAsynch(
+	VeristandPythonInterop_VeriStandInterop __instance,
+	char * stimulusFile,
+	char * uutSerialNumber,
+	CDotNetHandle * __exception)
+{
+	int __error = 0;
+	char * __parameterTypeNames[2] = {0};
+	unsigned int __parameterTypes[2];
+	void * __parameters[2];
+
+	if (__exception)
+		*__exception = 0;
+
+
+	// Pre-process parameter: stimulusFile
+	__parameterTypeNames[0] = "System.String";
+	__parameterTypes[0] = (CDOTNET_STRING);
+	__parameters[0] = &stimulusFile;
+
+	// Pre-process parameter: uutSerialNumber
+	__parameterTypeNames[1] = "System.String";
+	__parameterTypes[1] = (CDOTNET_STRING);
+	__parameters[1] = &uutSerialNumber;
+
+	// Call instance member
+	__errChk(CDotNetInvokeGenericMember(
+		__assemblyHandle, 
+		"VeristandPythonInterop.VeriStandInterop", 
+		__instance, 
+		CDOTNET_CALL_METHOD, 
+		"StimulusExecuteAsynch", 
+		0, 
+		0, 
+		2, 
+		(const char **)__parameterTypeNames, 
+		__parameterTypes, 
+		__parameters, 
+		0, 
+		0, 
+		__exception));
+
+
+__Error:
+	return __error;
+}
+
+int CVIFUNC VeristandPythonInterop_VeriStandInterop_StimulusState(
+	VeristandPythonInterop_VeriStandInterop __instance,
+	int * __returnValue,
+	CDotNetHandle * __exception)
+{
+	int __error = 0;
+	unsigned int __returnValueTypeId;
+
+	if (__exception)
+		*__exception = 0;
+
+
+	// Pre-process return value
+	__returnValueTypeId = CDOTNET_INT32;
+
+	// Call instance member
+	__errChk(CDotNetInvokeGenericMember(
+		__assemblyHandle, 
+		"VeristandPythonInterop.VeriStandInterop", 
+		__instance, 
+		CDOTNET_CALL_METHOD, 
+		"StimulusState", 
+		0, 
+		0, 
+		0, 
+		0, 
+		0, 
+		0, 
+		&__returnValueTypeId, 
+		__returnValue, 
+		__exception));
+
+
+__Error:
+	return __error;
+}
+
+int CVIFUNC VeristandPythonInterop_VeriStandInterop_RTSequenceExecuteAsynch(
+	VeristandPythonInterop_VeriStandInterop __instance,
+	char * RTSequenceFile,
+	char ** ParamNames,
+	ssize_t __ParamNamesLength,
+	char ** ParamValues,
+	ssize_t __ParamValuesLength,
+	char ** ParamTypes,
+	ssize_t __ParamTypesLength,
+	CDotNetHandle * __exception)
+{
+	int __error = 0;
+	char * __parameterTypeNames[4] = {0};
+	unsigned int __parameterTypes[4];
+	void * __parameters[4];
+	CDotNetHandle ParamNames__ = 0;
+	CDotNetHandle ParamValues__ = 0;
+	CDotNetHandle ParamTypes__ = 0;
+
+	if (__exception)
+		*__exception = 0;
+
+
+	// Pre-process parameter: RTSequenceFile
+	__parameterTypeNames[0] = "System.String";
+	__parameterTypes[0] = (CDOTNET_STRING);
+	__parameters[0] = &RTSequenceFile;
+
+	// Pre-process parameter: ParamNames
+	if (ParamNames)
+		__errChk(CDotNetCreateArray(
+			CDOTNET_STRING, 
+			1, 
+			0, 
+			&__ParamNamesLength, 
+			ParamNames, 
+			&ParamNames__));
+	__parameterTypeNames[1] = "System.String[]";
+	__parameterTypes[1] = (CDOTNET_STRING | CDOTNET_ARRAY);
+	__parameters[1] = &ParamNames__;
+
+	// Pre-process parameter: ParamValues
+	if (ParamValues)
+		__errChk(CDotNetCreateArray(
+			CDOTNET_STRING, 
+			1, 
+			0, 
+			&__ParamValuesLength, 
+			ParamValues, 
+			&ParamValues__));
+	__parameterTypeNames[2] = "System.String[]";
+	__parameterTypes[2] = (CDOTNET_STRING | CDOTNET_ARRAY);
+	__parameters[2] = &ParamValues__;
+
+	// Pre-process parameter: ParamTypes
+	if (ParamTypes)
+		__errChk(CDotNetCreateArray(
+			CDOTNET_STRING, 
+			1, 
+			0, 
+			&__ParamTypesLength, 
+			ParamTypes, 
+			&ParamTypes__));
+	__parameterTypeNames[3] = "System.String[]";
+	__parameterTypes[3] = (CDOTNET_STRING | CDOTNET_ARRAY);
+	__parameters[3] = &ParamTypes__;
+
+	// Call instance member
+	__errChk(CDotNetInvokeGenericMember(
+		__assemblyHandle, 
+		"VeristandPythonInterop.VeriStandInterop", 
+		__instance, 
+		CDOTNET_CALL_METHOD, 
+		"RTSequenceExecuteAsynch", 
+		0, 
+		0, 
+		4, 
+		(const char **)__parameterTypeNames, 
+		__parameterTypes, 
+		__parameters, 
+		0, 
+		0, 
+		__exception));
+
+
+__Error:
+	if (ParamNames__)
+		CDotNetDiscardHandle(ParamNames__);
+	if (ParamValues__)
+		CDotNetDiscardHandle(ParamValues__);
+	if (ParamTypes__)
+		CDotNetDiscardHandle(ParamTypes__);
+	return __error;
+}
+
+int CVIFUNC VeristandPythonInterop_VeriStandInterop_RTSequenceState(
+	VeristandPythonInterop_VeriStandInterop __instance,
+	int * __returnValue,
+	CDotNetHandle * __exception)
+{
+	int __error = 0;
+	unsigned int __returnValueTypeId;
+
+	if (__exception)
+		*__exception = 0;
+
+
+	// Pre-process return value
+	__returnValueTypeId = CDOTNET_INT32;
+
+	// Call instance member
+	__errChk(CDotNetInvokeGenericMember(
+		__assemblyHandle, 
+		"VeristandPythonInterop.VeriStandInterop", 
+		__instance, 
+		CDOTNET_CALL_METHOD, 
+		"RTSequenceState", 
+		0, 
+		0, 
+		0, 
+		0, 
+		0, 
+		0, 
+		&__returnValueTypeId, 
+		__returnValue, 
+		__exception));
+
+
+__Error:
+	return __error;
+}
+
+int CVIFUNC VeristandPythonInterop_VeriStandInterop_RTSequenceUndeploy(
+	VeristandPythonInterop_VeriStandInterop __instance,
+	CDotNetHandle * __exception)
+{
+	int __error = 0;
+
+	if (__exception)
+		*__exception = 0;
+
+
+	// Call instance member
+	__errChk(CDotNetInvokeGenericMember(
+		__assemblyHandle, 
+		"VeristandPythonInterop.VeriStandInterop", 
+		__instance, 
+		CDOTNET_CALL_METHOD, 
+		"RTSequenceUndeploy", 
+		0, 
+		0, 
+		0, 
+		0, 
+		0, 
+		0, 
+		0, 
+		0, 
+		__exception));
+
+
+__Error:
+	return __error;
+}
+
 
 // Type: VeristandPythonInterop.VSLogChannel
 int CVIFUNC VeristandPythonInterop_VSLogChannel__Create(
@@ -2529,7 +2324,7 @@ int CVIFUNC VeristandPythonInterop_VSLogChannel__Set__lLogChannel(
 
 
 	// Pre-process parameter: lLogChannel
-	__parameterTypeNames[0] = "NationalInstruments.VeriStand.ClientAPI.LogChannel,NationalInstruments.VeriStand.ClientAPI, Version=2013.1.0.0, Culture=neutral, PublicKeyToken=a6d690c380daa308";
+	__parameterTypeNames[0] = "NationalInstruments.VeriStand.ClientAPI.LogChannel,NationalInstruments.VeriStand.ClientAPI, Version=2014.0.0.0, Culture=neutral, PublicKeyToken=a6d690c380daa308";
 	__parameterTypes[0] = (CDOTNET_OBJECT);
 	__parameters[0] = &lLogChannel;
 
@@ -2556,6 +2351,500 @@ __Error:
 }
 
 
+// Type: VeristandPythonInterop.VeriStandTDMSHandler
+int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler__Create(
+	VeristandPythonInterop_VeriStandTDMSHandler * __instance,
+	CDotNetHandle * __exception)
+{
+	int __error = 0;
+
+	if (__exception)
+		*__exception = 0;
+
+
+	*__instance = 0;
+
+	// Call constructor
+	__errChk(CDotNetCreateGenericInstance(
+		__assemblyHandle, 
+		"VeristandPythonInterop.VeriStandTDMSHandler", 
+		0, 
+		0, 
+		__instance, 
+		0, 
+		0, 
+		0, 
+		0, 
+		__exception));
+
+
+__Error:
+	return __error;
+}
+
+int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_TDMSOpen(
+	VeristandPythonInterop_VeriStandTDMSHandler __instance,
+	char * filePath,
+	CDotNetHandle * __exception)
+{
+	int __error = 0;
+	char * __parameterTypeNames[1] = {0};
+	unsigned int __parameterTypes[1];
+	void * __parameters[1];
+
+	if (__exception)
+		*__exception = 0;
+
+
+	// Pre-process parameter: filePath
+	__parameterTypeNames[0] = "System.String";
+	__parameterTypes[0] = (CDOTNET_STRING);
+	__parameters[0] = &filePath;
+
+	// Call instance member
+	__errChk(CDotNetInvokeGenericMember(
+		__assemblyHandle, 
+		"VeristandPythonInterop.VeriStandTDMSHandler", 
+		__instance, 
+		CDOTNET_CALL_METHOD, 
+		"TDMSOpen", 
+		0, 
+		0, 
+		1, 
+		(const char **)__parameterTypeNames, 
+		__parameterTypes, 
+		__parameters, 
+		0, 
+		0, 
+		__exception));
+
+
+__Error:
+	return __error;
+}
+
+int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_TDMSClose(
+	VeristandPythonInterop_VeriStandTDMSHandler __instance,
+	CDotNetHandle * __exception)
+{
+	int __error = 0;
+
+	if (__exception)
+		*__exception = 0;
+
+
+	// Call instance member
+	__errChk(CDotNetInvokeGenericMember(
+		__assemblyHandle, 
+		"VeristandPythonInterop.VeriStandTDMSHandler", 
+		__instance, 
+		CDOTNET_CALL_METHOD, 
+		"TDMSClose", 
+		0, 
+		0, 
+		0, 
+		0, 
+		0, 
+		0, 
+		0, 
+		0, 
+		__exception));
+
+
+__Error:
+	return __error;
+}
+
+int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLoggingRate(
+	VeristandPythonInterop_VeriStandTDMSHandler __instance,
+	double * __returnValue,
+	CDotNetHandle * __exception)
+{
+	int __error = 0;
+	unsigned int __returnValueTypeId;
+
+	if (__exception)
+		*__exception = 0;
+
+
+	// Pre-process return value
+	__returnValueTypeId = CDOTNET_DOUBLE;
+
+	// Call instance member
+	__errChk(CDotNetInvokeGenericMember(
+		__assemblyHandle, 
+		"VeristandPythonInterop.VeriStandTDMSHandler", 
+		__instance, 
+		CDOTNET_CALL_METHOD, 
+		"GetTDMSLoggingRate", 
+		0, 
+		0, 
+		0, 
+		0, 
+		0, 
+		0, 
+		&__returnValueTypeId, 
+		__returnValue, 
+		__exception));
+
+
+__Error:
+	return __error;
+}
+
+int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogChannelCount(
+	VeristandPythonInterop_VeriStandTDMSHandler __instance,
+	int * __returnValue,
+	CDotNetHandle * __exception)
+{
+	int __error = 0;
+	unsigned int __returnValueTypeId;
+
+	if (__exception)
+		*__exception = 0;
+
+
+	// Pre-process return value
+	__returnValueTypeId = CDOTNET_INT32;
+
+	// Call instance member
+	__errChk(CDotNetInvokeGenericMember(
+		__assemblyHandle, 
+		"VeristandPythonInterop.VeriStandTDMSHandler", 
+		__instance, 
+		CDOTNET_CALL_METHOD, 
+		"GetTDMSLogChannelCount", 
+		0, 
+		0, 
+		0, 
+		0, 
+		0, 
+		0, 
+		&__returnValueTypeId, 
+		__returnValue, 
+		__exception));
+
+
+__Error:
+	return __error;
+}
+
+int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogLength(
+	VeristandPythonInterop_VeriStandTDMSHandler __instance,
+	__int64 * __returnValue,
+	CDotNetHandle * __exception)
+{
+	int __error = 0;
+	unsigned int __returnValueTypeId;
+
+	if (__exception)
+		*__exception = 0;
+
+
+	// Pre-process return value
+	__returnValueTypeId = CDOTNET_INT64;
+
+	// Call instance member
+	__errChk(CDotNetInvokeGenericMember(
+		__assemblyHandle, 
+		"VeristandPythonInterop.VeriStandTDMSHandler", 
+		__instance, 
+		CDOTNET_CALL_METHOD, 
+		"GetTDMSLogLength", 
+		0, 
+		0, 
+		0, 
+		0, 
+		0, 
+		0, 
+		&__returnValueTypeId, 
+		__returnValue, 
+		__exception));
+
+
+__Error:
+	return __error;
+}
+
+int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_GetTDMSLogChannelProperty(
+	VeristandPythonInterop_VeriStandTDMSHandler __instance,
+	int channelIndex,
+	char * propertyName,
+	char ** __returnValue,
+	CDotNetHandle * __exception)
+{
+	int __error = 0;
+	char * __parameterTypeNames[2] = {0};
+	unsigned int __parameterTypes[2];
+	void * __parameters[2];
+	unsigned int __returnValueTypeId;
+
+	if (__exception)
+		*__exception = 0;
+	if (__returnValue)
+		*__returnValue = 0;
+
+
+	// Pre-process parameter: channelIndex
+	__parameterTypeNames[0] = "System.Int32";
+	__parameterTypes[0] = (CDOTNET_INT32);
+	__parameters[0] = &channelIndex;
+
+	// Pre-process parameter: propertyName
+	__parameterTypeNames[1] = "System.String";
+	__parameterTypes[1] = (CDOTNET_STRING);
+	__parameters[1] = &propertyName;
+
+	// Pre-process return value
+	__returnValueTypeId = CDOTNET_STRING;
+
+	// Call instance member
+	__errChk(CDotNetInvokeGenericMember(
+		__assemblyHandle, 
+		"VeristandPythonInterop.VeriStandTDMSHandler", 
+		__instance, 
+		CDOTNET_CALL_METHOD, 
+		"GetTDMSLogChannelProperty", 
+		0, 
+		0, 
+		2, 
+		(const char **)__parameterTypeNames, 
+		__parameterTypes, 
+		__parameters, 
+		&__returnValueTypeId, 
+		__returnValue, 
+		__exception));
+
+
+__Error:
+	if (__error < 0) {
+		_CDotNetGenDisposeScalar(
+			__returnValue, 
+			CDOTNET_STRING);
+	}
+	return __error;
+}
+
+int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_TDMSReadLine(
+	VeristandPythonInterop_VeriStandTDMSHandler __instance,
+	int reqLine,
+	double ** __returnValue,
+	ssize_t * ____returnValueLength,
+	CDotNetHandle * __exception)
+{
+	int __error = 0;
+	char * __parameterTypeNames[1] = {0};
+	unsigned int __parameterTypes[1];
+	void * __parameters[1];
+	CDotNetHandle __returnValue__ = 0;
+	unsigned int __returnValueTypeId;
+
+	if (__exception)
+		*__exception = 0;
+	if (__returnValue)
+		*__returnValue = 0;
+	if (__returnValue)
+		*____returnValueLength = 0;
+
+
+	// Pre-process parameter: reqLine
+	__parameterTypeNames[0] = "System.Int32";
+	__parameterTypes[0] = (CDOTNET_INT32);
+	__parameters[0] = &reqLine;
+
+	// Pre-process return value
+	__returnValueTypeId = CDOTNET_DOUBLE | CDOTNET_ARRAY;
+
+	// Call instance member
+	__errChk(CDotNetInvokeGenericMember(
+		__assemblyHandle, 
+		"VeristandPythonInterop.VeriStandTDMSHandler", 
+		__instance, 
+		CDOTNET_CALL_METHOD, 
+		"TDMSReadLine", 
+		0, 
+		0, 
+		1, 
+		(const char **)__parameterTypeNames, 
+		__parameterTypes, 
+		__parameters, 
+		&__returnValueTypeId, 
+		&__returnValue__, 
+		__exception));
+
+	// Post-process return value
+	if (__returnValue__) {
+		if (__returnValue)
+			__errChk(CDotNetGetArrayElements(
+				__returnValue__, 
+				CDOTNET_DOUBLE, 
+				0, 
+				__returnValue));
+		if (__returnValue)
+			__errChk(CDotNetGetArrayLength(
+				__returnValue__, 
+				0, 
+				____returnValueLength));
+	}
+
+
+__Error:
+	if (__returnValue__)
+		CDotNetDiscardHandle(__returnValue__);
+	if (__error < 0) {
+		_CDotNetGenDisposeArray(
+			__returnValue, 
+			CDOTNET_DOUBLE, 
+			1, 
+			____returnValueLength);
+	}
+	return __error;
+}
+
+int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_TDMSReadColumn(
+	VeristandPythonInterop_VeriStandTDMSHandler __instance,
+	int reqColumn,
+	double ** __returnValue,
+	ssize_t * ____returnValueLength,
+	CDotNetHandle * __exception)
+{
+	int __error = 0;
+	char * __parameterTypeNames[1] = {0};
+	unsigned int __parameterTypes[1];
+	void * __parameters[1];
+	CDotNetHandle __returnValue__ = 0;
+	unsigned int __returnValueTypeId;
+
+	if (__exception)
+		*__exception = 0;
+	if (__returnValue)
+		*__returnValue = 0;
+	if (__returnValue)
+		*____returnValueLength = 0;
+
+
+	// Pre-process parameter: reqColumn
+	__parameterTypeNames[0] = "System.Int32";
+	__parameterTypes[0] = (CDOTNET_INT32);
+	__parameters[0] = &reqColumn;
+
+	// Pre-process return value
+	__returnValueTypeId = CDOTNET_DOUBLE | CDOTNET_ARRAY;
+
+	// Call instance member
+	__errChk(CDotNetInvokeGenericMember(
+		__assemblyHandle, 
+		"VeristandPythonInterop.VeriStandTDMSHandler", 
+		__instance, 
+		CDOTNET_CALL_METHOD, 
+		"TDMSReadColumn", 
+		0, 
+		0, 
+		1, 
+		(const char **)__parameterTypeNames, 
+		__parameterTypes, 
+		__parameters, 
+		&__returnValueTypeId, 
+		&__returnValue__, 
+		__exception));
+
+	// Post-process return value
+	if (__returnValue__) {
+		if (__returnValue)
+			__errChk(CDotNetGetArrayElements(
+				__returnValue__, 
+				CDOTNET_DOUBLE, 
+				0, 
+				__returnValue));
+		if (__returnValue)
+			__errChk(CDotNetGetArrayLength(
+				__returnValue__, 
+				0, 
+				____returnValueLength));
+	}
+
+
+__Error:
+	if (__returnValue__)
+		CDotNetDiscardHandle(__returnValue__);
+	if (__error < 0) {
+		_CDotNetGenDisposeArray(
+			__returnValue, 
+			CDOTNET_DOUBLE, 
+			1, 
+			____returnValueLength);
+	}
+	return __error;
+}
+
+int CVIFUNC VeristandPythonInterop_VeriStandTDMSHandler_TDMSTimeColumn(
+	VeristandPythonInterop_VeriStandTDMSHandler __instance,
+	double ** __returnValue,
+	ssize_t * ____returnValueLength,
+	CDotNetHandle * __exception)
+{
+	int __error = 0;
+	CDotNetHandle __returnValue__ = 0;
+	unsigned int __returnValueTypeId;
+
+	if (__exception)
+		*__exception = 0;
+	if (__returnValue)
+		*__returnValue = 0;
+	if (__returnValue)
+		*____returnValueLength = 0;
+
+
+	// Pre-process return value
+	__returnValueTypeId = CDOTNET_DOUBLE | CDOTNET_ARRAY;
+
+	// Call instance member
+	__errChk(CDotNetInvokeGenericMember(
+		__assemblyHandle, 
+		"VeristandPythonInterop.VeriStandTDMSHandler", 
+		__instance, 
+		CDOTNET_CALL_METHOD, 
+		"TDMSTimeColumn", 
+		0, 
+		0, 
+		0, 
+		0, 
+		0, 
+		0, 
+		&__returnValueTypeId, 
+		&__returnValue__, 
+		__exception));
+
+	// Post-process return value
+	if (__returnValue__) {
+		if (__returnValue)
+			__errChk(CDotNetGetArrayElements(
+				__returnValue__, 
+				CDOTNET_DOUBLE, 
+				0, 
+				__returnValue));
+		if (__returnValue)
+			__errChk(CDotNetGetArrayLength(
+				__returnValue__, 
+				0, 
+				____returnValueLength));
+	}
+
+
+__Error:
+	if (__returnValue__)
+		CDotNetDiscardHandle(__returnValue__);
+	if (__error < 0) {
+		_CDotNetGenDisposeArray(
+			__returnValue, 
+			CDOTNET_DOUBLE, 
+			1, 
+			____returnValueLength);
+	}
+	return __error;
+}
+
+
 
 // Internal functions
 static int CVIFUNC NationalInstruments_VeriStand_ClientAPI_LogInfo_trigger__Create(
@@ -2573,7 +2862,7 @@ static int CVIFUNC NationalInstruments_VeriStand_ClientAPI_LogInfo_trigger__Crea
 	*handle = 0;
 
 	__errChk(CDotNetLoadAssembly(
-		"NationalInstruments.VeriStand.ClientAPI, Version=2013.1.0.0, Culture=neutral, PublicKeyToken=a6d690c380daa308", 
+		"NationalInstruments.VeriStand.ClientAPI, Version=2014.0.0.0, Culture=neutral, PublicKeyToken=a6d690c380daa308", 
 		&assembly));
 
 	__errChk(CDotNetCreateInstance(

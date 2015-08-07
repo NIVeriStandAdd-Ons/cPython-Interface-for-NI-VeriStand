@@ -134,6 +134,26 @@ Prototype="int GetDataLogging2SessionState(char *sLogConfigName, char *sSessionS
 Class="Function"
 Prototype="int GetDataLogging2State(char *sLogConfigName, int *sessionState);"
 
+[StimulusExecuteAsynch]
+Class="Function"
+Prototype="int StimulusExecuteAsynch(char *filePath, char *UUTSerialNumber);"
+
+[GetStimulusState]
+Class="Function"
+Prototype="int GetStimulusState(int *stimulusState);"
+
+[RTSequenceExecuteAsynch]
+Class="Function"
+Prototype="int RTSequenceExecuteAsynch(char *filePath, char **lParamNames, int lParamNamesLength, int lParamNamesLineLength, char **lParamValues, int lParamValuesLength, int lParamValuesLineLength, char **lParamTypes, int lParamTypesLength, int lParamTypesLineLength);"
+
+[GetRTSequenceState]
+Class="Function"
+Prototype="int GetRTSequenceState(int *RTSequenceState);"
+
+[RTSequenceUndeploy]
+Class="Function"
+Prototype="int RTSequenceUndeploy();"
+
 [GetTDMSLoggingRate]
 Class="Function"
 Prototype="int GetTDMSLoggingRate(double *loggingRate);"

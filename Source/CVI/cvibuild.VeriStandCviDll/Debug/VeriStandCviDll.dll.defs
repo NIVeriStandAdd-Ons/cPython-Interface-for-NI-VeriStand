@@ -9,6 +9,11 @@ GetTDMSLogChannelProperty
 GetTDMSLogLength
 GetTDMSLogChannelCount
 GetTDMSLoggingRate
+RTSequenceUndeploy
+GetRTSequenceState
+RTSequenceExecuteAsynch
+GetStimulusState
+StimulusExecuteAsynch
 GetDataLogging2State
 GetDataLogging2SessionState
 GetAvailableChannelToWrite

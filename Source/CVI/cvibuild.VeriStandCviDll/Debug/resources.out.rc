@@ -1,7 +1,7 @@
 #include "c:\program files (x86)\national instruments\cvi2013\sdk\include\winver.h"
 
 
-2 24 "c:\\NI Projects\\EXAM\\EXAM CVI dotnet\\CVI\\cvibuild.VeriStandCviDll\\Debug\\manifest.xml"
+2 24 "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\Source\\CVI\\cvibuild.VeriStandCviDll\\Debug\\manifest.xml"
 
 
 STRINGTABLE DISCARDABLE
@@ -26,7 +26,7 @@ BEGIN
             VALUE "FileDescription", "VeriStandCviDll (Debug x86)\0"
             VALUE "FileVersion", "1.0\0"
             VALUE "InternalName", "VeriStandCviDll\0"
-            VALUE "LegalCopyright", "Copyright © NI 2014\0"
+            VALUE "LegalCopyright", "Copyright © NI 2015\0"
             VALUE "OriginalFilename", "VeriStandCviDll.dll\0"
             VALUE "ProductName", "NI VeriStandCviDll\0"
             VALUE "ProductVersion", "1.0\0"
@@ -80,6 +80,10 @@ CVIDLLexports CVIDLLprototypes
    "\n",
    "int GetMultipleChannelValues(char **channelNames, double *dValues, int iLength, int iCharLineLength);"
    "\n",
+   "int GetRTSequenceState(int *sessionState);"
+   "\n",
+   "int GetStimulusState(int *sessionState);"
+   "\n",
    "int GetTDMSLogChannelCount(int *logChannelCount);"
    "\n",
    "int GetTDMSLogChannelProperty(int channelIndex, char *propertyName, char *propertyValue);"
@@ -102,6 +106,10 @@ CVIDLLexports CVIDLLprototypes
    "\n",
    "int OpenWorkspace();"
    "\n",
+   "int RTSequenceExecuteAsynch(char *filePath, char **lParamNames, int lParamNamesLength, int lParamNamesLineLength, char **lParamValues, int lParamValuesLength, int lParamValuesLineLength, char **lParamTypes, int lParamTypesLength, int lParamTypesLineLength);"
+   "\n",
+   "int RTSequenceUndeploy();"
+   "\n",
    "int RunProject();"
    "\n",
    "int SetChannelValue(char *pszChannelName, double dValue);"
@@ -117,6 +125,8 @@ CVIDLLexports CVIDLLprototypes
    "int StartDataLogging(char *logConfigName, char *logDescription, char *logFilePath, double lTriggerHighLimit, double lTriggerLowLimit, int lReplaceFile, enum NationalInstruments_VeriStand_ClientAPI_LogInfo_trigger lTriggerType, char *lTriggerChannel, double lRate, char **lFilePropertiesNames, int lFilePropertiesNamesLength, int lFilePropertiesNamesLineLength, char **lFilePropertiesValues, int lFilePropertiesValuesLength, int lFilePropertiesValuesLineLength, char **lChannelsToLog, int lChannelsToLogLength, int lChannelsToLogLineLength);"
    "\n",
    "int StartDataLogging2(char *logConfigName, char *logDescription, char *logFilePath, double fTriggerLevel, int lReplaceFile, int iTriggerSlope, char *lTriggerChannel, double lRate, char **lFilePropertiesNames, int lFilePropertiesNamesLength, int lFilePropertiesNamesLineLength, char **lFilePropertiesValues, int lFilePropertiesValuesLength, int lFilePropertiesValuesLineLength, char **lChannelsToLog, int lChannelsToLogLength, int lChannelsToLogLineLength, double fDuration, double fPreTriggerDuration, char **lChannelShortNames, int lChannelShortNamesLength, int lChannelShortNamesLineLength);"
+   "\n",
+   "int StimulusExecuteAsynch(char *filePath, char *UUTSerialNumber);"
    "\n",
    "int StopDataLogging(char *logConfigName);"
    "\n",
@@ -188,9 +198,17 @@ CVIDLLexports CVIDLLprototypes
    "\n",
    "int VeristandPythonInterop_VeriStandInterop_LaunchVeriStand(struct __VeristandPythonInterop_VeriStandInterop *__instance, void **__exception);"
    "\n",
+   "int VeristandPythonInterop_VeriStandInterop_LaunchVeriStand_1(struct __VeristandPythonInterop_VeriStandInterop *__instance, int runAs, void **__exception);"
+   "\n",
    "int VeristandPythonInterop_VeriStandInterop_OpenProject(struct __VeristandPythonInterop_VeriStandInterop *__instance, char *projectPath, void **__exception);"
    "\n",
    "int VeristandPythonInterop_VeriStandInterop_OpenWorkspace(struct __VeristandPythonInterop_VeriStandInterop *__instance, void **__exception);"
+   "\n",
+   "int VeristandPythonInterop_VeriStandInterop_RTSequenceExecuteAsynch(struct __VeristandPythonInterop_VeriStandInterop *__instance, char *RTSequenceFile, char **ParamNames, int __ParamNamesLength, char **ParamValues, int __ParamValuesLength, char **ParamTypes, int __ParamTypesLength, void **__exception);"
+   "\n",
+   "int VeristandPythonInterop_VeriStandInterop_RTSequenceState(struct __VeristandPythonInterop_VeriStandInterop *__instance, int *__returnValue, void **__exception);"
+   "\n",
+   "int VeristandPythonInterop_VeriStandInterop_RTSequenceUndeploy(struct __VeristandPythonInterop_VeriStandInterop *__instance, void **__exception);"
    "\n",
    "int VeristandPythonInterop_VeriStandInterop_RunProject(struct __VeristandPythonInterop_VeriStandInterop *__instance, void **__exception);"
    "\n",
@@ -207,6 +225,10 @@ CVIDLLexports CVIDLLprototypes
    "int VeristandPythonInterop_VeriStandInterop_StartDataLogging(struct __VeristandPythonInterop_VeriStandInterop *__instance, char *logConfigName, char *lDescription, char *lFilePath, double lTriggerHighLimit, double lTriggerLowLimit, int lReplaceFile, enum NationalInstruments_VeriStand_ClientAPI_LogInfo_trigger lTriggerType, char *lTriggerChannel, double lRate, char **lFilePropertiesNames, int __lFilePropertiesNamesLength, char **lFilePropertiesValues, int __lFilePropertiesValuesLength, char **lChannelsToLog, int __lChannelsToLogLength, void **__exception);"
    "\n",
    "int VeristandPythonInterop_VeriStandInterop_StartDataLogging2(struct __VeristandPythonInterop_VeriStandInterop *__instance, char *logConfigName, char *lDescription, char *lFilePath, double fTriggerLevel, int iTriggerSlope, char *lTriggerChannel, double lRate, char **lFilePropertiesNames, int __lFilePropertiesNamesLength, char **lFilePropertiesValues, int __lFilePropertiesValuesLength, char **lChannelsToLog, int __lChannelsToLogLength, double lDuration, double lPreTriggerDuration, int lReplaceFile, char **lChannelShortNames, int __lChannelShortNamesLength, void **__exception);"
+   "\n",
+   "int VeristandPythonInterop_VeriStandInterop_StimulusExecuteAsynch(struct __VeristandPythonInterop_VeriStandInterop *__instance, char *stimulusFile, char *uutSerialNumber, void **__exception);"
+   "\n",
+   "int VeristandPythonInterop_VeriStandInterop_StimulusState(struct __VeristandPythonInterop_VeriStandInterop *__instance, int *__returnValue, void **__exception);"
    "\n",
    "int VeristandPythonInterop_VeriStandInterop_StopDataLogging(struct __VeristandPythonInterop_VeriStandInterop *__instance, char *LogConfigName, void **__exception);"
    "\n",

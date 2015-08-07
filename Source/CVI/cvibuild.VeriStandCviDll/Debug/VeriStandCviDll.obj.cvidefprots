@@ -130,6 +130,26 @@ Prototype="int StopDataLogging(char *logConfigName);"
 Class="Function"
 Prototype="int StopDataLogging2(char *logConfigName);"
 
+[RTSequenceExecuteAsynch]
+Class="Function"
+Prototype="int RTSequenceExecuteAsynch(char *filePath, char **lParamNames, int lParamNamesLength, int lParamNamesLineLength, char **lParamValues, int lParamValuesLength, int lParamValuesLineLength, char **lParamTypes, int lParamTypesLength, int lParamTypesLineLength);"
+
+[StimulusExecuteAsynch]
+Class="Function"
+Prototype="int StimulusExecuteAsynch(char *filePath, char *UUTSerialNumber);"
+
+[GetStimulusState]
+Class="Function"
+Prototype="int GetStimulusState(int *sessionState);"
+
+[GetRTSequenceState]
+Class="Function"
+Prototype="int GetRTSequenceState(int *sessionState);"
+
+[RTSequenceUndeploy]
+Class="Function"
+Prototype="int RTSequenceUndeploy();"
+
 [TDMSOpen]
 Class="Function"
 Prototype="int TDMSOpen(char *filePath);"

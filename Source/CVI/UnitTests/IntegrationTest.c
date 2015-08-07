@@ -35,7 +35,7 @@
 //==============================================================================
 // Global variables
 
-char *prj = "C:\\NI Projects\\EXAM\\EXAM CVI dotnet\\VS\\Sinewave UnitTest.nivsproj";
+char *prj = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\VS\\Sinewave UnitTest.nivsproj";
 //char *prj = "C:\\NI Projects\\EXAM\\EXAM Platform Interface\\VS\\EngineEXAM.nivsproj";
 //char *prj = "D:\\NI Projects\\EXAM\\EXAM CVI dotnet\\VS\\sdfbhj.nivsproj"; 
 char cdescription[MAXERRORMSGLENGTH];
@@ -675,9 +675,145 @@ void StartAndStopLogging2ShouldStartAndStopLogging2(void)
 			
 }
 
+void RTSequenceExecuteAsynchShouldStartRTSequence(void)
+{			
+			
+			char *filePath = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\VS\\Stimulus Profiles\\RT Sequence and Stimulus profile\\Test  RT seq.nivsseq";
+			
+//			char *UUT = "010";
+			int stimState = 0;
+			int i = 0;
+			
+			int	lParamNamesLineLength = 255,lParamValuesLineLength = 255,lParamTypesLineLength = 255;
+			
+			int  lParamNamesLength = 2, 	lParamValuesLength = 2, 	lParamTypesLength = 2;
+			char *lParamNames[2], 			*lParamValues[2], 			*lParamTypes[2];	//Must match Lengths!
+			char *lParamNamesBlock, 		*lParamValuesBlock, 		*lParamTypesBlock; 
+			
+			//Need to allocate array in one block because of Python
+			lParamNamesBlock = malloc(lParamNamesLength*lParamNamesLineLength* sizeof(*lParamNamesBlock));
+			for (i = 0; i < lParamNamesLength; ++i)
+			{
+				lParamNames[i] = &lParamNamesBlock[i*lParamNamesLineLength];
+				lParamNames[i][0] = '\0';
+			}
+			
+			//Need to allocate array in one block because of Python
+			lParamValuesBlock = malloc(lParamValuesLength*lParamValuesLineLength* sizeof(*lParamValuesBlock));
+			for (i = 0; i < lParamValuesLength; ++i)
+			{
+				lParamValues[i] = &lParamValuesBlock[i*lParamValuesLineLength];
+				lParamValues[i][0] = '\0';
+			}
+			
+			//Need to allocate array in one block because of Python
+			lParamTypesBlock = malloc(lParamTypesLength*lParamTypesLineLength* sizeof(*lParamTypesBlock));
+			for (i = 0; i < lParamTypesLength; ++i)
+			{
+				lParamTypes[i] = &lParamTypesBlock[i*lParamTypesLineLength];
+				lParamTypes[i][0] = '\0';
+			}
+			
+			
+			status = OpenProject(prj);
+			if(HandleError(status,__FUNCTION__)) return;
+
+			status = ShowProjectWindow();
+			if(HandleError(status,__FUNCTION__)) return;
+			
+			status = RunProject();
+			if(HandleError(status,__FUNCTION__)) return;
+			
+			/*string[] paramNames = new string[2] {"UnitTest", "WaitParam"};
+            string[] paramValues = new string[2] { "Aliases/UnitTest1", "5" };
+            string[] paramTypes = new string[2] { "Path", "Double" };*/
+			
+			strcpy(lParamNames[0], "UnitTest");
+			strcpy(lParamNames[1], "WaitParam");
+			
+			strcpy(lParamValues[0], "Aliases/UnitTest1");
+			strcpy(lParamValues[1], "5");
+			
+			strcpy(lParamTypes[0], "Path");
+			strcpy(lParamTypes[1], "Double");
+			
+			
+			status = RTSequenceExecuteAsynch(filePath, lParamNames,lParamNamesLength, lParamNamesLineLength,
+							lParamValues,lParamValuesLength, lParamValuesLineLength,
+							lParamTypes,lParamTypesLength,lParamTypesLineLength);
+			if(HandleError(status,__FUNCTION__)) return;
+			
+			free(lParamNamesBlock);
+			free(lParamValuesBlock);
+			free(lParamTypesBlock);
+			
+			Delay(2);   
+			
+			status = GetRTSequenceState(&stimState);
+			if(HandleError(status,__FUNCTION__)) return;
+			
+			printf("\n Stimulus State: %d\n",stimState);
+			
+			CU_ASSERT_EQUAL(1, stimState);
+						
+			Delay(15);   
+			
+			status = GetRTSequenceState(&stimState);
+			if(HandleError(status,__FUNCTION__)) return;
+			
+			printf("\n Stimulus State: %d\n",stimState);
+			
+			CU_ASSERT_EQUAL(4, stimState);
+			
+			status = RTSequenceUndeploy();
+			if(HandleError(status,__FUNCTION__)) return;
+			
+			status = CloseProject();
+			if(HandleError(status,__FUNCTION__)) return;
+			
+	
+}
+
+void  StimulusExecuteAsynchShouldStartStimulus(void)
+{
+			char *filePath = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\VS\\Stimulus Profiles\\RT Sequence and Stimulus profile\\Test Stimulus.nivsstimprof";
+			
+			char *UUT = "010";
+			int stimState = 0;
+			
+			status = OpenProject(prj);
+			if(HandleError(status,__FUNCTION__)) return;
+
+			status = ShowProjectWindow();
+			if(HandleError(status,__FUNCTION__)) return;
+			
+			status = RunProject();
+			if(HandleError(status,__FUNCTION__)) return;
+			
+			
+			status = StimulusExecuteAsynch(filePath,UUT);
+			if(HandleError(status,__FUNCTION__)) return;
+			
+			
+			Delay(2);   
+			
+			status = GetStimulusState(&stimState);
+			if(HandleError(status,__FUNCTION__)) return;
+			
+			printf("\n Stimulus State: %d\n",stimState);
+			
+			CU_ASSERT_EQUAL(2, stimState);
+						
+			Delay(10);   
+			
+			status = CloseProject();
+			if(HandleError(status,__FUNCTION__)) return;
+			
+}
+
 void GetTDMSShouldReturnTDMSProperties(void)
 {
-			char *filePath = "C:\\NI Projects\\EXAM\\EXAM CVI dotnet\\VS\\Logs\\EXAM_TEMP__NIVS_testMeas_column.tdms";
+			char *filePath = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\VS\\Logs\\EXAM_TEMP__NIVS_testMeas_column.tdms";
 			
 			char *expectedProperty = "DT_DOUBLE";
 			char *propertyName = "datatype";
@@ -720,7 +856,7 @@ void GetTDMSShouldReturnTDMSProperties(void)
 
 void TDMSReadColumnShouldReturnTDMSColumn(void)
 {
-			char *filePath = "C:\\NI Projects\\EXAM\\EXAM CVI dotnet\\VS\\Logs\\EXAM_TEMP__NIVS_testMeas_column.tdms";
+			char *filePath = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\VS\\Logs\\EXAM_TEMP__NIVS_testMeas_column.tdms";
 			double	*returnDValues;  
 			
 			double loggingRate = 0; 
@@ -753,7 +889,7 @@ void TDMSReadColumnShouldReturnTDMSColumn(void)
 
 void TDMSReadTimeColumnShouldReturnTDMSTimeColumn(void)
 {
-			char *filePath = "C:\\NI Projects\\EXAM\\EXAM CVI dotnet\\VS\\Logs\\EXAM_TEMP__NIVS_testMeasTime.tdms";
+			char *filePath = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Interface-for-NI-VeriStand\\VS\\Logs\\EXAM_TEMP__NIVS_testMeasTime.tdms";
 			double	*returnDValues;  
 			
 			double loggingRate = 0; 
