@@ -521,9 +521,34 @@ namespace VeristandPythonInteropTest
             Thread.Sleep(2000);
 
             Assert.AreEqual(1, this.VeriStandInterop.RTSequenceState());
-            Thread.Sleep(10000);
+            Thread.Sleep(15000);
             Assert.AreEqual(4, this.VeriStandInterop.RTSequenceState());
             this.VeriStandInterop.RTSequenceUndeploy();            
+        }
+
+        [Test]
+        public void RTSequenceExecuteAsynchShouldReturnValue()
+        {
+            string filePath = @"d:\NI Projects\EXAM & cPython\Python development\cPython-Interface-for-NI-VeriStand\VS\Stimulus Profiles\RT Sequence and Stimulus profile\Test  RT seq.nivsseq";
+
+            this.VeriStandInterop.OpenProject(VeriStandInteropIntegrationTests.ExampleVeriStandProjectPath);
+            this.VeriStandInterop.DeployProject();
+            this.VeriStandInterop.OpenWorkspace();
+
+            string[] paramNames = new string[2] { "UnitTest", "WaitParam" };
+            string[] paramValues = new string[2] { "Aliases/UnitTest1", "5" };
+            string[] paramTypes = new string[2] { "Path", "Double" };
+
+
+            this.VeriStandInterop.RTSequenceExecuteAsynch(filePath, paramNames, paramValues, paramTypes);
+
+            Thread.Sleep(2000);
+
+            Assert.AreEqual(1, this.VeriStandInterop.RTSequenceState());
+            Thread.Sleep(15000);
+            Assert.AreEqual(4, this.VeriStandInterop.RTSequenceState());
+            Assert.AreEqual(1, this.VeriStandInterop.RTSequenceGetReturnValue());
+            this.VeriStandInterop.RTSequenceUndeploy();
         }
     }
 

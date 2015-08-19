@@ -831,6 +831,19 @@ namespace VeristandPythonInterop
 
         }
 
+        public double RTSequenceGetReturnValue()
+        {
+            ThrowExceptionIfVeriStandIsNotLaunched();
+            ThrowExceptionIfProjectIsNotOpened();
+
+            string activeRTSequenceName = this.activeRTSequence.SequenceNames[0];
+            ISequenceControl activeRTSequenceControl = this.activeRTSequence[activeRTSequenceName];
+            DataValue RTSequenceReturnValue = activeRTSequenceControl.GetReturnValue();
+            ScalarDataValue RTSequenceScalarReturnValue = (ScalarDataValue)RTSequenceReturnValue;
+            return RTSequenceScalarReturnValue.ToDouble();
+
+        }
+
         public void RTSequenceUndeploy()
         {
             ThrowExceptionIfVeriStandIsNotLaunched();
