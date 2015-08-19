@@ -102,6 +102,8 @@ CVIDLLexports CVIDLLprototypes
    "\n",
    "int LaunchVeriStand();"
    "\n",
+   "int LaunchVeriStandRunAs();"
+   "\n",
    "void LogErrorMessage(char *pszErrorMessage);"
    "\n",
    "int OpenProject(char *pszFileName);"

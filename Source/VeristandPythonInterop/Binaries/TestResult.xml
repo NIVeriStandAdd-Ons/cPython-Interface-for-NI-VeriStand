@@ -1,17 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="D:\NI Projects\EXAM &amp; cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\VeristandPythonInterop\Binaries\VeristandPythonInteropTest.dll" total="3" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-08-19" time="15:37:16">
+<test-results name="D:\NI Projects\EXAM &amp; cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\VeristandPythonInterop\Binaries\VeristandPythonInteropTest.dll" total="2" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-08-19" time="16:30:38">
   <environment nunit-version="2.6.1.12217" clr-version="2.0.50727.5485" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.1\bin" machine-name="HU-BUD-NB061" user="czkeprtj" user-domain="EMEA" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="D:\NI Projects\EXAM &amp; cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\VeristandPythonInterop\Binaries\VeristandPythonInteropTest.dll" executed="True" result="Success" success="True" time="157.125" asserts="0">
+  <test-suite type="Assembly" name="D:\NI Projects\EXAM &amp; cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\VeristandPythonInterop\Binaries\VeristandPythonInteropTest.dll" executed="True" result="Success" success="True" time="20.479" asserts="0">
     <results>
-      <test-suite type="Namespace" name="VeristandPythonInteropTest" executed="True" result="Success" success="True" time="157.120" asserts="0">
+      <test-suite type="Namespace" name="VeristandPythonInteropTest" executed="True" result="Success" success="True" time="20.473" asserts="0">
         <results>
-          <test-suite type="TestFixture" name="VeriStandInteropIntegrationTests" executed="True" result="Success" success="True" time="157.119" asserts="0">
+          <test-suite type="TestFixture" name="VeristandPythonInteropLaunchCloseTest" executed="True" result="Success" success="True" time="20.473" asserts="0">
             <results>
-              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.RTSequenceExecuteAsynchShouldReturnValue" executed="True" result="Success" success="True" time="55.167" asserts="3" />
-              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.RTSequenceExecuteAsynchShouldStartRTSequence" executed="True" result="Success" success="True" time="47.212" asserts="2" />
-              <test-case name="VeristandPythonInteropTest.VeriStandInteropIntegrationTests.StimulusExecuteAsynchShouldStartStimulus" executed="True" result="Success" success="True" time="42.552" asserts="1" />
+              <test-case name="VeristandPythonInteropTest.VeristandPythonInteropLaunchCloseTest.ShouldLaunchVeriStand" executed="True" result="Success" success="True" time="10.672" asserts="2" />
+              <test-case name="VeristandPythonInteropTest.VeristandPythonInteropLaunchCloseTest.ShouldLaunchVeriStandRunAs" executed="True" result="Success" success="True" time="9.789" asserts="2" />
             </results>
           </test-suite>
         </results>

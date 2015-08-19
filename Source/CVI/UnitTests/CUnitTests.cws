@@ -31,7 +31,7 @@ Save Changes Before Compiling = "Always"
 Hide Windows = False
 Break At First Statement = False
 Sort Type = "File Name"
-Number of Opened Files = 2
+Number of Opened Files = 3
 Window Confinement Region Enabled = True
 MainColumnWidth = 372
 FileDateColumnWidth = 70
@@ -61,18 +61,30 @@ Disk Date = 3522837526
 In Projects = "1,"
 Window Top = 32
 Window Left = 10
-Window Z-Order = 1
-Source Window State = "1,119,119,119,48,88,88,0,0,161,0,0,0,0,0,41,88,0,119,133,427,804,1,0,"
+Window Z-Order = 2
+Source Window State = "1,139,139,139,11,17,17,0,0,80,0,0,0,0,0,25,8,0,27,84,427,804,1,0,"
 
 [File 0003]
+Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
+Path Line0002 = "and/Source/CVI/UnitTests/IntegrationTest.h"
+File Type = "Include"
+Disk Date = 3522837116
+In Projects = "1,"
+Window Top = 272
+Window Left = 138
+Window Z-Order = 3
+Source Window State = "1,18,18,18,35,36,36,0,0,80,0,0,0,0,0,25,0,0,26,49,427,804,1,0,"
+
+[File 0004]
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Path Line0002 = "and/Source/CVI/CUnit/Sources/Automated/Automated.c"
 File Type = "CSource"
 Disk Date = 3435299174
 In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+Window Z-Order = 1
+Source Window State = "1,75,75,75,10,14,14,0,3,161,0,0,0,0,0,41,88,0,75,10,400,600,0,0,"
 
-[File 0004]
+[File 0005]
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Path Line0002 = "and/Source/CVI/CUnit/Sources/Basic/Basic.c"
 File Type = "CSource"
@@ -80,7 +92,7 @@ Disk Date = 3256684544
 In Projects = "1,"
 Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 
-[File 0005]
+[File 0006]
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Path Line0002 = "and/Source/CVI/CUnit/Sources/Framework/CUError.c"
 File Type = "CSource"
@@ -88,7 +100,7 @@ Disk Date = 3230924246
 In Projects = "1,"
 Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 
-[File 0006]
+[File 0007]
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Path Line0002 = "and/Source/CVI/UnitTests/IntegrationTest.c"
 File Type = "CSource"
@@ -97,9 +109,9 @@ In Projects = "1,"
 Window Top = 96
 Window Left = 595
 Window Released = True
-Source Window State = "1,872,872,872,28,29,28,0,0,198,0,0,0,0,0,61,828,0,860,73,475,813,0,0,"
+Source Window State = "1,872,872,872,28,29,28,0,0,81,0,0,0,0,0,25,828,0,836,64,475,813,0,0,"
 
-[File 0007]
+[File 0008]
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Path Line0002 = "and/Source/CVI/CUnit/Sources/Framework/MyMem.c"
 File Type = "CSource"
@@ -107,7 +119,7 @@ Disk Date = 3230979554
 In Projects = "1,"
 Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 
-[File 0008]
+[File 0009]
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Path Line0002 = "and/Source/CVI/CUnit/Sources/Framework/TestDB.c"
 File Type = "CSource"
@@ -115,7 +127,7 @@ Disk Date = 3232153502
 In Projects = "1,"
 Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 
-[File 0009]
+[File 0010]
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Path Line0002 = "and/Source/CVI/CUnit/Sources/Framework/TestRun.c"
 File Type = "CSource"
@@ -123,7 +135,7 @@ Disk Date = 3369893502
 In Projects = "1,"
 Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 
-[File 0010]
+[File 0011]
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Path Line0002 = "and/Source/CVI/CUnit/Sources/Framework/Util.c"
 File Type = "CSource"
@@ -131,7 +143,7 @@ Disk Date = 3256687638
 In Projects = "1,"
 Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 
-[File 0011]
+[File 0012]
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Path Line0002 = "and/Source/CVI/CUnit/Headers/Automated.h"
 File Type = "Include"
@@ -141,7 +153,7 @@ Window Top = 62
 Window Left = 26
 Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,427,804,1,0,"
 
-[File 0012]
+[File 0013]
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Path Line0002 = "and/Source/CVI/CUnit/Headers/Basic.h"
 File Type = "Include"
@@ -151,7 +163,7 @@ Window Top = 92
 Window Left = 42
 Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,427,804,1,0,"
 
-[File 0013]
+[File 0014]
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Path Line0002 = "and/Source/CVI/CUnit/Headers/Console.h"
 File Type = "Include"
@@ -161,7 +173,7 @@ Window Top = 122
 Window Left = 58
 Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,427,804,1,0,"
 
-[File 0014]
+[File 0015]
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Path Line0002 = "and/Source/CVI/CUnit/Headers/CUCurses.h"
 File Type = "Include"
@@ -171,7 +183,7 @@ Window Top = 152
 Window Left = 74
 Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,427,804,1,0,"
 
-[File 0015]
+[File 0016]
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Path Line0002 = "and/Source/CVI/CUnit/Headers/CUError.h"
 File Type = "Include"
@@ -181,7 +193,7 @@ Window Top = 182
 Window Left = 90
 Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,427,804,1,0,"
 
-[File 0016]
+[File 0017]
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Path Line0002 = "and/Source/CVI/CUnit/Headers/CUnit.h"
 File Type = "Include"
@@ -191,7 +203,7 @@ Window Top = 212
 Window Left = 106
 Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,427,804,1,0,"
 
-[File 0017]
+[File 0018]
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Path Line0002 = "and/Source/CVI/CUnit/Headers/CUnit_intl.h"
 File Type = "Include"
@@ -200,17 +212,6 @@ In Projects = "1,"
 Window Top = 242
 Window Left = 122
 Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,427,804,1,0,"
-
-[File 0018]
-Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
-Path Line0002 = "and/Source/CVI/UnitTests/IntegrationTest.h"
-File Type = "Include"
-Disk Date = 3522837116
-In Projects = "1,"
-Window Top = 272
-Window Left = 138
-Window Z-Order = 2
-Source Window State = "1,18,18,18,35,36,36,0,3,80,0,0,0,0,0,25,5,0,18,35,427,804,1,0,"
 
 [File 0019]
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
@@ -248,7 +249,7 @@ Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Path Line0002 = "and/Source/CVI/VeriStandCviDll.h"
 File Type = "Include"
-Disk Date = 3522836653
+Disk Date = 3522839220
 In Projects = "1,"
 Window Top = 32
 Window Left = 10
@@ -274,6 +275,8 @@ Tab 0001 Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-In
 Tab 0001 Line0002 = "and/Source/CVI/UnitTests/CUnitTests.c"
 Tab 0002 Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Tab 0002 Line0002 = "and/Source/CVI/UnitTests/IntegrationTest.h"
+Tab 0003 Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
+Tab 0003 Line0002 = "and/Source/CVI/CUnit/Sources/Automated/Automated.c"
 
 [Default Build Config 0001 Debug]
 Generate Browse Info = True

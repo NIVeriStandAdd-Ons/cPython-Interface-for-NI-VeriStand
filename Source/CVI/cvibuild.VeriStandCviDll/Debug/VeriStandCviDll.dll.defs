@@ -48,4 +48,5 @@ CloseProject
 RunProject
 CloseVeriStand
 OpenProject
+LaunchVeriStandRunAs
 LaunchVeriStand

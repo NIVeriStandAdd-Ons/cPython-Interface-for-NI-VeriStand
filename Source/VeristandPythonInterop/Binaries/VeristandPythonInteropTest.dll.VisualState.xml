@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="true">
-  <TopNode>[0-1048]D:\NI Projects\EXAM &amp; cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\VeristandPythonInterop\Binaries\VeristandPythonInteropTest.dll</TopNode>
-  <SelectedNode>[0-1027]VeristandPythonInteropTest.VeriStandInteropIntegrationTests.RTSequenceExecuteAsynchShouldReturnValue</SelectedNode>
+  <TopNode>[0-1049]D:\NI Projects\EXAM &amp; cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\VeristandPythonInterop\Binaries\VeristandPythonInteropTest.dll</TopNode>
+  <SelectedNode>[0-1037]VeristandPythonInteropTest.VeristandPythonInteropLaunchCloseTest.ShouldLaunchVeriStand</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
-    <Node UniqueName="[0-1048]D:\NI Projects\EXAM &amp; cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\VeristandPythonInterop\Binaries\VeristandPythonInteropTest.dll" Expanded="true" />
-    <Node UniqueName="[0-1049]VeristandPythonInteropTest" Expanded="true" />
+    <Node UniqueName="[0-1049]D:\NI Projects\EXAM &amp; cPython\Python development\cPython-Interface-for-NI-VeriStand\Source\VeristandPythonInterop\Binaries\VeristandPythonInteropTest.dll" Expanded="true" />
+    <Node UniqueName="[0-1050]VeristandPythonInteropTest" Expanded="true" />
     <Node UniqueName="[0-1000]VeristandPythonInteropTest.VeriStandInteropIntegrationTests" Expanded="true" />
-    <Node UniqueName="[0-1027]VeristandPythonInteropTest.VeriStandInteropIntegrationTests.RTSequenceExecuteAsynchShouldReturnValue" Checked="true" />
-    <Node UniqueName="[0-1026]VeristandPythonInteropTest.VeriStandInteropIntegrationTests.RTSequenceExecuteAsynchShouldStartRTSequence" Checked="true" />
-    <Node UniqueName="[0-1025]VeristandPythonInteropTest.VeriStandInteropIntegrationTests.StimulusExecuteAsynchShouldStartStimulus" Checked="true" />
     <Node UniqueName="[0-1028]VeristandPythonInteropTest.VeriStandInteropLoggingTests" Expanded="true" />
     <Node UniqueName="[0-1033]VeristandPythonInteropTest.VeristandPythonInteropLaunchCloseTest" Expanded="true" />
+    <Node UniqueName="[0-1037]VeristandPythonInteropTest.VeristandPythonInteropLaunchCloseTest.ShouldLaunchVeriStand" Checked="true" />
+    <Node UniqueName="[0-1038]VeristandPythonInteropTest.VeristandPythonInteropLaunchCloseTest.ShouldLaunchVeriStandRunAs" Checked="true" />
   </Nodes>
 </VisualState>

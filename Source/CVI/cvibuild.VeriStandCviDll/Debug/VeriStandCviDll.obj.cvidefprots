@@ -190,6 +190,10 @@ Prototype="int TDMSReadTimeColumn(double *logColumnData, int iColumnLength);"
 Class="Function"
 Prototype="int LaunchVeriStand();"
 
+[LaunchVeriStandRunAs]
+Class="Function"
+Prototype="int LaunchVeriStandRunAs();"
+
 [DllMain]
 Class="Function"
 Prototype="int DllMain(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"

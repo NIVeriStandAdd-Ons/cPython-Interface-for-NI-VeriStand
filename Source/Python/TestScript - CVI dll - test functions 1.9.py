@@ -311,5 +311,14 @@ errorCheck(veristandInterOp.CloseProject())
 
 print "CloseVeriStand"
 errorCheck(veristandInterOp.CloseVeriStand())
+sleep(10)
+
+print "LaunchVeriStandRunAs"
+errorCheck(veristandInterOp.LaunchVeriStandRunAs())
+sleep(10)
+print "CloseVeriStand"
+errorCheck(veristandInterOp.CloseVeriStand())
+
+
 print "Exit"
 

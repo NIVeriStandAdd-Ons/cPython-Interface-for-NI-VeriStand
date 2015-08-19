@@ -74,6 +74,15 @@ namespace VeristandPythonInteropTest
         }
 
         [Test]
+        public void ShouldLaunchVeriStandRunAs()
+        {
+            this.VeriStandInterop.LaunchVeriStand(true);
+
+            Assert.IsTrue(this.IsProcessOpen("NI VeriStand"), "The Veristand process failed to start");
+            Assert.IsNotNull(this.VeriStandInterop.Factory);
+        }
+
+        [Test]
         public void SetMultipleChannelValuesShouldThrowExceptionWhenArgumentsAreNotCorrect()
         {
             Exception e = Assert.Throws<ArgumentException>(() => {

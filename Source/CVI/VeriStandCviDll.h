@@ -20,6 +20,7 @@
 /******************************************************************************/
 
 int LaunchVeriStand(void);
+int LaunchVeriStandRunAs(void);
 int OpenProject(char *pszFileName);
 int CloseVeriStand(void);
 int RunProject(void);

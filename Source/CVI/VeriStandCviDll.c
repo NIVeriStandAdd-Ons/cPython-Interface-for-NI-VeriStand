@@ -1486,6 +1486,52 @@ int LaunchVeriStand(void)
 	return STATUS_OK;                 
 }
 
+int LaunchVeriStandRunAs(void)
+{
+  	CDotNetHandle exception_Handle;
+
+	int iStatus = 0;
+
+	char dllPath[MAX_FILENAME_LEN];
+	char driveName[MAX_DRIVENAME_LEN];
+	char dirName[MAX_DIRNAME_LEN];
+	char assemblyPath[MAX_FILENAME_LEN];
+
+	GetModuleFileName(hinstDLL_, dllPath, 300);
+	SplitPath (dllPath, driveName, dirName, NULL);
+	strcpy(assemblyPath,driveName);
+	strcat(assemblyPath,dirName);
+	strcat(assemblyPath,"\\VeristandPythonInterop.dll");	
+	
+	CDotNetRegisterAssemblyPath("VeristandPythonInterop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",assemblyPath);
+	
+	iStatus = Initialize_VeristandPythonInterop();
+	
+	if (iStatus != STATUS_OK) 
+	{
+		StoreErrorForGetLastError(__FUNCTION__, "Failed to Initialize .NET Veristand Interop API"); 
+		return iStatus; 
+	}
+
+	iStatus =  VeristandPythonInterop_VeriStandInterop_GetVeristandInterop(&instance_handle,&exception_Handle);
+
+	if (iStatus != STATUS_OK) 
+	{ 
+		StoreErrorForGetLastErrorFromDotNetHandle (__FUNCTION__, exception_Handle);
+		return iStatus; 
+	}
+	
+	iStatus = VeristandPythonInterop_VeriStandInterop_LaunchVeriStand_1(instance_handle,1, &exception_Handle);
+
+	if (iStatus != STATUS_OK) 
+	{ 
+		StoreErrorForGetLastErrorFromDotNetHandle (__FUNCTION__, exception_Handle);
+		return iStatus; 
+	}
+	
+	return STATUS_OK;                 
+}
+
 //==============================================================================
 // Debug Functions
 /*

@@ -2,6 +2,10 @@
 Class="Function"
 Prototype="int LaunchVeriStand();"
 
+[LaunchVeriStandRunAs]
+Class="Function"
+Prototype="int LaunchVeriStandRunAs();"
+
 [OpenProject]
 Class="Function"
 Prototype="int OpenProject(char *pszFileName);"
