@@ -41,5 +41,6 @@ void TDMSReadColumnShouldReturnTDMSColumn (void);
 void TDMSReadTimeColumnShouldReturnTDMSTimeColumn(void);
 void StimulusExecuteAsynchShouldStartStimulus(void);
 void RTSequenceExecuteAsynchShouldStartRTSequence(void);
+void RTSequenceExecuteAsynchShouldReturnValue(void);
 
 #endif  /* ndef __IntegrationTest_H__ */

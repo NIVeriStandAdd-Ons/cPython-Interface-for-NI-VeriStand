@@ -146,6 +146,10 @@ Prototype="int GetStimulusState(int *sessionState);"
 Class="Function"
 Prototype="int GetRTSequenceState(int *sessionState);"
 
+[GetRTSequenceReturnValue]
+Class="Function"
+Prototype="int GetRTSequenceReturnValue(double *RTSequenceScalarReturnValue);"
+
 [RTSequenceUndeploy]
 Class="Function"
 Prototype="int RTSequenceUndeploy();"

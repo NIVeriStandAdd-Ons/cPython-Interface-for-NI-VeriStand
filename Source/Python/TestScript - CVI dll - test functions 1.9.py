@@ -245,6 +245,7 @@ stimulusPath = "d:\\NI Projects\\EXAM & cPython\\Python development\\cPython-Int
 UUTnumber = "010"
 iStimulusState=c_int(0)
 iRTSequenceState=c_int(0)
+fRTSequenceReturnValue=c_double(0)
 lParamNamesLineLength = 255
 lParamValuesLineLength = 255
 lParamTypesLineLength = 255
@@ -289,7 +290,10 @@ print iRTSequenceState
 sleep(15)
 errorCheck(veristandInterOp.GetRTSequenceState(byref(iRTSequenceState)))
 print iRTSequenceState
-errorCheck(veristandInterOp.GetStimulusState(byref(iStimulusState)))
+
+errorCheck(veristandInterOp.GetRTSequenceReturnValue(byref(fRTSequenceReturnValue)))
+print fRTSequenceReturnValue
+
 
 #mandatory
 print "RT Sequence undeploy"

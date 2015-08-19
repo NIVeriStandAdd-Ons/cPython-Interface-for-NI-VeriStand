@@ -14,9 +14,9 @@ Number of Projects = 1
 Active Project = 1
 Project 0001 = "CUnitTests.prj"
 Drag Bar Left = 389
-Window Top = 85
+Window Top = 79
 Window Left = 2048
-Window Bottom = 999
+Window Bottom = 993
 Window Right = 3553
 Maximized = True
 Maximized Children = True
@@ -31,7 +31,7 @@ Save Changes Before Compiling = "Always"
 Hide Windows = False
 Break At First Statement = False
 Sort Type = "File Name"
-Number of Opened Files = 1
+Number of Opened Files = 2
 Window Confinement Region Enabled = True
 MainColumnWidth = 372
 FileDateColumnWidth = 70
@@ -50,19 +50,19 @@ Batch Build Debug = False
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Path Line0002 = "and/Source/CVI/DotNetController/VeristandPythonInterop.fp"
 File Type = "Function Panel"
-Disk Date = 3521707005
+Disk Date = 3522836813
 In Projects = "1,"
 
 [File 0002]
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Path Line0002 = "and/Source/CVI/UnitTests/CUnitTests.c"
 File Type = "CSource"
-Disk Date = 3521778929
+Disk Date = 3522837526
 In Projects = "1,"
 Window Top = 32
 Window Left = 10
 Window Z-Order = 1
-Source Window State = "1,96,96,96,12,13,12,0,0,161,0,0,0,0,0,41,82,0,106,13,427,804,1,0,"
+Source Window State = "1,119,119,119,48,88,88,0,0,161,0,0,0,0,0,41,88,0,119,133,427,804,1,0,"
 
 [File 0003]
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
@@ -92,12 +92,12 @@ Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Path Line0002 = "and/Source/CVI/UnitTests/IntegrationTest.c"
 File Type = "CSource"
-Disk Date = 3521778822
+Disk Date = 3522837423
 In Projects = "1,"
-Window Top = 66
-Window Left = 2089
+Window Top = 96
+Window Left = 595
 Window Released = True
-Source Window State = "1,740,742,740,55,79,55,0,0,204,0,0,0,0,0,61,679,0,696,57,475,813,0,0,"
+Source Window State = "1,872,872,872,28,29,28,0,0,198,0,0,0,0,0,61,828,0,860,73,475,813,0,0,"
 
 [File 0007]
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
@@ -205,11 +205,12 @@ Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,427,804,1,0,"
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Path Line0002 = "and/Source/CVI/UnitTests/IntegrationTest.h"
 File Type = "Include"
-Disk Date = 3521713191
+Disk Date = 3522837116
 In Projects = "1,"
 Window Top = 272
 Window Left = 138
-Source Window State = "1,41,41,41,45,52,45,0,0,0,0,0,0,0,0,0,3,0,37,33,427,804,1,0,"
+Window Z-Order = 2
+Source Window State = "1,18,18,18,35,36,36,0,3,80,0,0,0,0,0,25,5,0,18,35,427,804,1,0,"
 
 [File 0019]
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
@@ -247,17 +248,17 @@ Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Path Line0002 = "and/Source/CVI/VeriStandCviDll.h"
 File Type = "Include"
-Disk Date = 3521714339
+Disk Date = 3522836653
 In Projects = "1,"
 Window Top = 32
 Window Left = 10
-Source Window State = "1,63,63,63,4,27,27,0,0,80,0,0,0,0,0,25,45,0,67,50,427,804,1,0,"
+Source Window State = "1,63,63,63,4,27,27,0,0,0,0,0,0,0,0,0,45,0,67,50,427,804,1,0,"
 
 [File 0024]
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Path Line0002 = "and/Source/CVI/DotNetController/VeristandPythonInterop.h"
 File Type = "Include"
-Disk Date = 3521707005
+Disk Date = 3522836813
 In Projects = "1,"
 Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 
@@ -265,12 +266,14 @@ Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Path Line0002 = "and/Source/VeristandPythonInterop/Binaries/VeriStandCviDll.lib"
 File Type = "Library"
-Disk Date = 3521714439
+Disk Date = 3522836820
 In Projects = "1,"
 
 [Tab Order]
 Tab 0001 Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Tab 0001 Line0002 = "and/Source/CVI/UnitTests/CUnitTests.c"
+Tab 0002 Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
+Tab 0002 Line0002 = "and/Source/CVI/UnitTests/IntegrationTest.h"
 
 [Default Build Config 0001 Debug]
 Generate Browse Info = True

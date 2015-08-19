@@ -2126,6 +2126,43 @@ __Error:
 	return __error;
 }
 
+int CVIFUNC VeristandPythonInterop_VeriStandInterop_RTSequenceGetReturnValue(
+	VeristandPythonInterop_VeriStandInterop __instance,
+	double * __returnValue,
+	CDotNetHandle * __exception)
+{
+	int __error = 0;
+	unsigned int __returnValueTypeId;
+
+	if (__exception)
+		*__exception = 0;
+
+
+	// Pre-process return value
+	__returnValueTypeId = CDOTNET_DOUBLE;
+
+	// Call instance member
+	__errChk(CDotNetInvokeGenericMember(
+		__assemblyHandle, 
+		"VeristandPythonInterop.VeriStandInterop", 
+		__instance, 
+		CDOTNET_CALL_METHOD, 
+		"RTSequenceGetReturnValue", 
+		0, 
+		0, 
+		0, 
+		0, 
+		0, 
+		0, 
+		&__returnValueTypeId, 
+		__returnValue, 
+		__exception));
+
+
+__Error:
+	return __error;
+}
+
 int CVIFUNC VeristandPythonInterop_VeriStandInterop_RTSequenceUndeploy(
 	VeristandPythonInterop_VeriStandInterop __instance,
 	CDotNetHandle * __exception)

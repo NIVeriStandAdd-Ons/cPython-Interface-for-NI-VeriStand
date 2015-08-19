@@ -166,6 +166,10 @@ Prototype="int VeristandPythonInterop_VeriStandInterop_RTSequenceExecuteAsynch(s
 Class="Function"
 Prototype="int VeristandPythonInterop_VeriStandInterop_RTSequenceState(struct __VeristandPythonInterop_VeriStandInterop *__instance, int *__returnValue, void **__exception);"
 
+[VeristandPythonInterop_VeriStandInterop_RTSequenceGetReturnValue]
+Class="Function"
+Prototype="int VeristandPythonInterop_VeriStandInterop_RTSequenceGetReturnValue(struct __VeristandPythonInterop_VeriStandInterop *__instance, double *__returnValue, void **__exception);"
+
 [VeristandPythonInterop_VeriStandInterop_RTSequenceUndeploy]
 Class="Function"
 Prototype="int VeristandPythonInterop_VeriStandInterop_RTSequenceUndeploy(struct __VeristandPythonInterop_VeriStandInterop *__instance, void **__exception);"

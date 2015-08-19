@@ -1155,6 +1155,27 @@ int GetRTSequenceState(int *sessionState)
 	return iStatus;                 
 }
 
+int GetRTSequenceReturnValue(double *RTSequenceScalarReturnValue)
+{
+	// NOTE - Reference arguments must be allocated using CDotNetAllocateMemory
+	
+	CDotNetHandle exception_Handle;
+	int iStatus = 0;
+	
+	iStatus = VeristandPythonInterop_VeriStandInterop_RTSequenceGetReturnValue(
+		instance_handle,
+		RTSequenceScalarReturnValue,
+		&exception_Handle);
+	
+	if (iStatus != STATUS_OK) 
+	{ 
+		StoreErrorForGetLastErrorFromDotNetHandle (__FUNCTION__, exception_Handle);
+		return iStatus;             
+	}	
+	
+	return iStatus;                 
+}
+
 int RTSequenceUndeploy(void)
 {
 	// NOTE - Reference arguments must be allocated using CDotNetAllocateMemory

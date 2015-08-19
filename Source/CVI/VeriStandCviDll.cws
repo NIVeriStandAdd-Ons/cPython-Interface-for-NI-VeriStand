@@ -18,7 +18,7 @@ Window Top = 79
 Window Left = 2048
 Window Bottom = 993
 Window Right = 3553
-Maximized = False
+Maximized = True
 Maximized Children = True
 Max32 Number Of Errors = 20
 Track Include File Dependencies = True
@@ -50,7 +50,7 @@ Batch Build Debug = False
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Path Line0002 = "and/Source/CVI/DotNetController/VeristandPythonInterop.fp"
 File Type = "Function Panel"
-Disk Date = 3521781006
+Disk Date = 3522836813
 In Projects = "1,"
 Window Top = 92
 Window Left = 42
@@ -61,23 +61,23 @@ Window Width = 400
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Path Line0002 = "and/Source/CVI/VeriStandCviDll.c"
 File Type = "CSource"
-Disk Date = 3521781006
+Disk Date = 3522836723
 In Projects = "1,"
 Window Top = 32
 Window Left = 10
-Window Z-Order = 2
-Source Window State = "1,1157,1157,1157,4,22,22,0,0,80,0,0,0,0,0,23,1169,0,1175,40,395,804,1,0,"
+Window Z-Order = 1
+Source Window State = "1,1157,1157,1157,17,28,17,0,3,161,0,0,0,0,0,41,1153,0,1157,28,395,804,1,0,"
 
 [File 0003]
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"
 Path Line0002 = "and/Source/CVI/VeriStandCviDll.h"
 File Type = "Include"
-Disk Date = 3521781006
+Disk Date = 3522836653
 In Projects = "1,"
 Window Top = 62
 Window Left = 26
-Window Z-Order = 1
-Source Window State = "1,61,67,61,0,45,0,0,0,161,0,0,0,0,0,41,51,0,67,40,427,804,1,0,"
+Window Z-Order = 2
+Source Window State = "1,67,67,67,0,65,65,0,3,80,0,0,0,0,0,25,39,0,67,0,427,804,1,0,"
 
 [File 0004]
 Path Line0001 = "/d/NI Projects/EXAM & cPython/Python development/cPython-Interface-for-NI-VeriSt"

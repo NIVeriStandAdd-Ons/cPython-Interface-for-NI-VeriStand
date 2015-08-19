@@ -65,6 +65,7 @@ int RTSequenceExecuteAsynch(char *filePath, char ** lParamNames,int lParamNamesL
 							char ** lParamValues,int lParamValuesLength, int lParamValuesLineLength,
 							char ** lParamTypes,int lParamTypesLength, int lParamTypesLineLength);
 int GetRTSequenceState(int *RTSequenceState);
+int GetRTSequenceReturnValue(double *RTSequenceScalarReturnValue);
 int RTSequenceUndeploy(void);
 							 
 int GetTDMSLoggingRate(double *loggingRate);

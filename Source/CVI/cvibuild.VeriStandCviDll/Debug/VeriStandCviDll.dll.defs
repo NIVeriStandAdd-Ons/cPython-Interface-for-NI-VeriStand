@@ -10,6 +10,7 @@ GetTDMSLogLength
 GetTDMSLogChannelCount
 GetTDMSLoggingRate
 RTSequenceUndeploy
+GetRTSequenceReturnValue
 GetRTSequenceState
 RTSequenceExecuteAsynch
 GetStimulusState

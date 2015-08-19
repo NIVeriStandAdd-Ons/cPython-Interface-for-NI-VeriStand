@@ -80,6 +80,8 @@ CVIDLLexports CVIDLLprototypes
    "\n",
    "int GetMultipleChannelValues(char **channelNames, double *dValues, int iLength, int iCharLineLength);"
    "\n",
+   "int GetRTSequenceReturnValue(double *RTSequenceScalarReturnValue);"
+   "\n",
    "int GetRTSequenceState(int *sessionState);"
    "\n",
    "int GetStimulusState(int *sessionState);"
@@ -205,6 +207,8 @@ CVIDLLexports CVIDLLprototypes
    "int VeristandPythonInterop_VeriStandInterop_OpenWorkspace(struct __VeristandPythonInterop_VeriStandInterop *__instance, void **__exception);"
    "\n",
    "int VeristandPythonInterop_VeriStandInterop_RTSequenceExecuteAsynch(struct __VeristandPythonInterop_VeriStandInterop *__instance, char *RTSequenceFile, char **ParamNames, int __ParamNamesLength, char **ParamValues, int __ParamValuesLength, char **ParamTypes, int __ParamTypesLength, void **__exception);"
+   "\n",
+   "int VeristandPythonInterop_VeriStandInterop_RTSequenceGetReturnValue(struct __VeristandPythonInterop_VeriStandInterop *__instance, double *__returnValue, void **__exception);"
    "\n",
    "int VeristandPythonInterop_VeriStandInterop_RTSequenceState(struct __VeristandPythonInterop_VeriStandInterop *__instance, int *__returnValue, void **__exception);"
    "\n",

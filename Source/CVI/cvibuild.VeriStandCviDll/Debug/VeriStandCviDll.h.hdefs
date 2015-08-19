@@ -150,6 +150,10 @@ Prototype="int RTSequenceExecuteAsynch(char *filePath, char **lParamNames, int l
 Class="Function"
 Prototype="int GetRTSequenceState(int *RTSequenceState);"
 
+[GetRTSequenceReturnValue]
+Class="Function"
+Prototype="int GetRTSequenceReturnValue(double *RTSequenceScalarReturnValue);"
+
 [RTSequenceUndeploy]
 Class="Function"
 Prototype="int RTSequenceUndeploy();"

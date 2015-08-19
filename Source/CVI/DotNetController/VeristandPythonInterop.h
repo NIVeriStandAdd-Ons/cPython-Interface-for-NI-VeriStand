@@ -256,6 +256,10 @@ int CVIFUNC VeristandPythonInterop_VeriStandInterop_RTSequenceState(
 	VeristandPythonInterop_VeriStandInterop __instance,
 	int * __returnValue,
 	CDotNetHandle * __exception);
+int CVIFUNC VeristandPythonInterop_VeriStandInterop_RTSequenceGetReturnValue(
+	VeristandPythonInterop_VeriStandInterop __instance,
+	double * __returnValue,
+	CDotNetHandle * __exception);
 int CVIFUNC VeristandPythonInterop_VeriStandInterop_RTSequenceUndeploy(
 	VeristandPythonInterop_VeriStandInterop __instance,
 	CDotNetHandle * __exception);

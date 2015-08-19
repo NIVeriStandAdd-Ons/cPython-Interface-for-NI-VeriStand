@@ -58,6 +58,10 @@ Prototype="void StartAndStopLogging2ShouldStartAndStopLogging2();"
 Class="Function"
 Prototype="void RTSequenceExecuteAsynchShouldStartRTSequence();"
 
+[RTSequenceExecuteAsynchShouldReturnValue]
+Class="Function"
+Prototype="void RTSequenceExecuteAsynchShouldReturnValue();"
+
 [StimulusExecuteAsynchShouldStartStimulus]
 Class="Function"
 Prototype="void StimulusExecuteAsynchShouldStartStimulus();"
