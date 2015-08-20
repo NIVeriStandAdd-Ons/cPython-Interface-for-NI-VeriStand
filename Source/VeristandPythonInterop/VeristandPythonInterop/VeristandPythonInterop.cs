@@ -299,7 +299,7 @@ namespace VeristandPythonInterop
 
             bool writeFailed = true;
             Stopwatch sw = Stopwatch.StartNew();
-            while (sw.Elapsed < TimeSpan.FromMilliseconds(1000))
+            while (sw.Elapsed < TimeSpan.FromMilliseconds(10000))
             {
                 double[] valuesGet = GetMultipleChannelValues(names);
                 bool isEqual = Enumerable.SequenceEqual(values, valuesGet);
